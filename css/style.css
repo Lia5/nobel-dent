@@ -54,7 +54,7 @@ nav {
 .main-nav__item a {
  /* display: block;*/
 
-
+  color: #000000;
   border-bottom: 1px dotted #ff0000;
 
 }
