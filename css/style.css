@@ -30,7 +30,7 @@ nav {
   margin-top: 13px;
   text-align: right;
   font-family: 'Roboto-Regular';
-
+  color: #000000;
 }
 .main-nav__items {
   display: flex;
