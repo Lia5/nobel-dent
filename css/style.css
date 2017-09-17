@@ -1,21 +1,45 @@
 @font-face {
   font-family: 'OpenSans-Regular';
   src: url('../fonts/OpenSans/OpenSans-Regular.ttf') format('truetype');
-  font-style: bold;
+  font-style: normal;
   font-weight: normal;
 }
 @font-face {
   font-family: 'Roboto-Regular';
   src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
-  font-style: bold;
+  font-style: normal;
   font-weight: normal;
+}
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Raleway-Regular';
+  src: url('../fonts/Raleway/Raleway-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Raleway-Bold';
+  src: url('../fonts/Raleway/Raleway-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Raleway-ExtraBold';
+  src: url('../fonts/Raleway/Raleway-ExtraBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: bold;
 }
 .wrapper {
   display: flex;
-  width: 1170px;
+ /* width: 1170px;*/
   margin: 0 auto;
   flex-direction: column;
-  font-family: 'OpenSans-Regular', sans-serif;
+  font-family: 'OpenSans-Regular', Arial, sans-serif;
   font-size: 16px;
 }
 a, a:active, a:visited, a:focus {
@@ -29,7 +53,7 @@ p {
 nav {
   margin-top: 13px;
   text-align: right;
-  font-family: 'Roboto-Regular';
+  font-family: 'Roboto-Regular', Arial, sans-serif;
   color: #000000;
 }
 .main-nav__items {
@@ -62,9 +86,7 @@ nav {
   color: #ffffff;
   background-color: #faa61a;
 }
-.main-nav__item:last-child {
-  border-right: 1px;
-}
+
 
 
 header {
@@ -112,9 +134,10 @@ header {
 .select-number {
   width: 200px;    /* На 20px меньше, чем у select'а. Примерно такова ширина стандартной кнопки */
   overflow: hidden;    /* Кнопка будет находиться за пределами "обертки" */
-  display: inline-block;
+  display: block;
   position: relative;    /* Чтобы элементы с position:absolute позиционировались по "обертке" */
   text-align: right;
+  margin-left: auto;
 }
 
 .select-button {
@@ -221,4 +244,96 @@ header {
   color: #ffffff;
   background-color: #e2509d;
   border: 1px solid #e2509d;
+}
+
+
+
+/*main-menu*/
+.main-menu {
+  font-family: 'Roboto-Regular';
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #f4f3f3;
+}
+
+.main-menu__items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none; 
+  justify-content: space-around;
+}
+.main-menu__item {
+  padding: 0 15px;
+  font-size: 13px;
+  line-height: 31px;
+  color: #515151;
+  text-decoration: none;
+}
+.main-menu__item a {
+  color: #000000;
+}
+.main-menu__item a[href]:hover {
+  color: #ffffff;
+  background-color: #faa61a;
+}
+/*slider*/
+.slider {
+  display: flex;
+  background-image: url("../img/bg-slider.jpg");
+  flex-wrap: wrap;
+}
+.planmeca-top {
+  min-height: 25px;
+  width: 100%;
+  background-image: url("../img/planmeca-top-line.png");
+  background-size: cover;
+}
+.slider__foto {
+  width: 60%;
+}
+.slider__description {
+  width: 40%;
+}
+h1 {
+  margin: 5px 0 14px 0;
+  font-family: 'Raleway-Bold', Arial, sans-serif;
+  color: #e6007e;
+  font-size: 45px;
+}
+.slider__name {
+  font-family: 'Raleway-Regular', Arial, sans-serif;
+  color: #527da8;
+  font-size: 32px;
+}
+.slider__logo {
+  position: relative;
+  margin: 18px 0;
+  font-family: 'Raleway-ExtraBold', Arial, sans-serif;
+  color: #333333;
+  font-size: 68px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.part-color {
+  color: #e6007e;
+}
+.square{
+  position: absolute;
+  top: 0;
+  left: -98px;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 98px;
+  height: 78px;
+}
+.slider__methodologies {
+  padding-bottom: 30px;
+  font-family: 'Rpboto-Regular', Arial, sans-serif;
+  color: #333333;
+  font-size: 18px;
+  line-height: 31px;
+}
+.slider__methodologies-part {
+  font-family: 'Rpboto-Bold', Arial, sans-serif;
 }
