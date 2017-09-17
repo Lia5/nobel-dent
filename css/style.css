@@ -1,0 +1,224 @@
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('../fonts/OpenSans/OpenSans-Regular.ttf') format('truetype');
+  font-style: bold;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+  font-style: bold;
+  font-weight: normal;
+}
+.wrapper {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+  flex-direction: column;
+  font-family: 'OpenSans-Regular', sans-serif;
+  font-size: 16px;
+}
+a, a:active, a:visited, a:focus {
+	text-decoration: none;
+	outline: none;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  margin-top: 13px;
+  text-align: right;
+  font-family: 'Roboto-Regular';
+
+}
+.main-nav__items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none; 
+  text-align: right;
+  justify-content: flex-end;
+
+}
+
+.main-nav__item {
+  padding: 4px;
+  font-size: 13px;
+  line-height: 31px;
+  color: #515151;
+  text-decoration: none;
+}
+.main-nav__item a {
+ /* display: block;*/
+
+
+  border-bottom: 1px dotted #ff0000;
+
+}
+.main-nav__item a[href]:hover {
+  color: #ffffff;
+  background-color: #faa61a;
+}
+.main-nav__item:last-child {
+  border-right: 1px;
+}
+
+
+header {
+  display: flex;
+  padding: 20px 0 40px;
+  line-height: 28px;
+}
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0 0 0;
+}
+.header__telephone {
+  width: 38%;
+  padding: 0 9% 0 9%;
+  text-align: right;
+}
+.size30 {
+  font-size: 30px;
+}
+.size16 {
+  position: absolute;
+  padding-left: 20px;
+  font-size: 16px;
+}
+.select-number {
+
+}
+
+
+#select-number {
+
+  width: 220px;
+  padding-left: 45px;
+  border: none;
+  height: 22px;    /* Меньше, чем рисованная "кнопочка" на ширину нужного border'а */
+  font-size: 21px;
+  line-height: 22px;
+  position: relative;    /* Это нужно, чтобы работал z-index */
+  background: none;    /* Через прозрачный фон будет видно кнопку */
+  z-index: 100;
+
+}
+
+.select-number {
+  width: 200px;    /* На 20px меньше, чем у select'а. Примерно такова ширина стандартной кнопки */
+  overflow: hidden;    /* Кнопка будет находиться за пределами "обертки" */
+  display: inline-block;
+  position: relative;    /* Чтобы элементы с position:absolute позиционировались по "обертке" */
+  text-align: right;
+}
+
+.select-button {
+  height: 22px;    /* Размеры подготовленной картинки */
+  width: 15px;
+  position: absolute;    /* Размещаем объект по правому краю */
+  top: 0;
+  bottom: 0;
+  z-index: 50;    /* И спускаем его на нижний слой - чтобы ссылка */
+      /* не перехватывала событие щелчка от select'а */
+  text-align: center;
+}
+.select-button-number {
+  background: url('../img/select-down.png') center center no-repeat;
+  left: 0;
+}
+
+
+
+
+
+
+.btn-order {
+  display: inline-block;
+  color: #99cc00;
+  border-bottom: 1px dotted #ff0000;
+}
+
+
+
+
+
+
+
+.header__metro {
+  width: 9%;
+  padding: 1%;
+  text-align: right;
+}
+.header__adress {
+  width: 33%;
+  text-align: right;
+  font-size: 15px;
+}
+.header__adress-map {
+  color: #99cc00;
+  border-bottom: 1px dotted #ff0000;
+}
+.header__adress-time {
+  margin-top: 15px;
+}
+
+
+
+
+.header__buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  font-size: 13px;
+  line-height: 13px;
+}
+.icon-globe {
+  font-size: 20px;
+}
+
+#select-language {
+  width: 110px;
+  border: none;
+  height: 22px;    /* Меньше, чем рисованная "кнопочка" на ширину нужного border'а */
+  line-height: 22px;
+  position: relative;    /* Это нужно, чтобы работал z-index */
+  background: none;    /* Через прозрачный фон будет видно кнопку */
+  z-index: 100;
+}
+
+.select-language {
+  width: 90px;    /* На 20px меньше, чем у select'а. Примерно такова ширина стандартной кнопки */
+  overflow: hidden;    /* Кнопка будет находиться за пределами "обертки" */
+  display: inline-block;
+  position: relative;    /* Чтобы элементы с position:absolute позиционировались по "обертке" */
+
+}
+
+.select-button-language {
+  background: url('../img/select-down-small.png') center center no-repeat;
+  right: 0;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.btn {
+  display: block;
+  width: 165px;
+  padding: 7px 0;
+  border: 1px solid #515151;
+  text-align: center;
+}
+.header__buttons__question {
+  margin: 0 30px 0 15px;
+}
+.header__buttons__order {
+  color: #ffffff;
+  background-color: #e2509d;
+  border: 1px solid #e2509d;
+}
