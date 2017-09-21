@@ -774,8 +774,8 @@ footer {
   justify-content: space-between;
   padding: 10px 0;
   font-family: 'OpenSans-SemiBold', Arial, sans-serif;
-  font-size: 13px;
-  line-height: 16px;
+  font-size: 15px;
+  line-height: 18px;
 
 }
 .footer__list__items {
@@ -822,7 +822,4 @@ footer {
 .social-links a:hover {
 	background-color: #e6007e;
 	color: #ffffff;
-}
-.copy {
-  padding: 10px 0;
 }
