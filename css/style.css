@@ -793,6 +793,7 @@ footer {
 .footer__info {
   text-align: right;
   color: #ffffff;
+  padding: 10px 0;
 }
 .footer__info a {
   color: #ffffff;
