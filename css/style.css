@@ -772,6 +772,7 @@ footer {
   width: 1170px;
   display: flex;
   justify-content: space-between;
+  padding: 10px 0;
   font-family: 'OpenSans-SemiBold', Arial, sans-serif;
   font-size: 13px;
   line-height: 16px;
@@ -801,6 +802,7 @@ footer {
 }
 .social-links {
   margin-top: 1rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 .social-links a {
@@ -820,4 +822,7 @@ footer {
 .social-links a:hover {
 	background-color: #e6007e;
 	color: #ffffff;
+}
+.copy {
+  padding: 10px 0;
 }
