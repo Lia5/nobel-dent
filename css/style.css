@@ -64,6 +64,7 @@ p {
   margin: 0;
   padding: 0;
 }
+/*nav*/
 nav {
   width: 1170px;
   margin-top: 13px;
@@ -80,9 +81,7 @@ nav {
   list-style: none; 
   text-align: right;
   justify-content: flex-end;
-
 }
-
 .main-nav__item {
   padding: 4px;
   font-size: 13px;
@@ -91,11 +90,8 @@ nav {
   text-decoration: none;
 }
 .main-nav__item a {
- /* display: block;*/
-
   color: #515151;
   border-bottom: 1px dotted #ff0000;
-
 }
 .main-nav__item a[href]:hover {
   color: #ffffff;
@@ -103,7 +99,7 @@ nav {
 }
 
 
-
+/*header*/
 header {
   display: flex;
   width: 1170px;
@@ -129,7 +125,6 @@ header {
   font-size: 16px;
 }
 #select-number {
-
   width: 220px;
   padding-left: 45px;
   border: none;
@@ -140,7 +135,6 @@ header {
   background: none;    /* Через прозрачный фон будет видно кнопку */
   z-index: 100;
 }
-
 .select-number {
   width: 200px;    /* На 20px меньше, чем у select'а. Примерно такова ширина стандартной кнопки */
   overflow: hidden;    /* Кнопка будет находиться за пределами "обертки" */
@@ -149,7 +143,6 @@ header {
   text-align: right;
   margin-left: auto;
 }
-
 .select-button {
   height: 22px;    /* Размеры подготовленной картинки */
   width: 15px;
@@ -211,7 +204,6 @@ header {
   overflow: hidden;    /* Кнопка будет находиться за пределами "обертки" */
   display: inline-block;
   position: relative;    /* Чтобы элементы с position:absolute позиционировались по "обертке" */
-
 }
 .select-button-language {
   background: url('../img/select-down-small.png') center center no-repeat;
@@ -244,7 +236,6 @@ header {
   color: #000000;
   background-color: #f4f3f3;
 }
-
 .main-menu__items {
   display: flex;
   flex-direction: row;
@@ -270,8 +261,8 @@ header {
   color: #ffffff;
   background-color: #faa61a;
 }
-/*slider*/
 
+/*slider*/
 .slider {
   display: flex;
   width: 100%;
@@ -349,7 +340,6 @@ h1 {
   border-top: 1px dashed #e6007e;
   border-bottom: 1px dashed #e6007e;
 }
-
 .expert__h2 {
   margin: 0 0 47px 0;
   text-align: center;
@@ -383,7 +373,6 @@ h1 {
   padding: 10px 15px 0 15px;
   cursor: pointer;
   border-top-right-radius: 30px;
-
 }
 .tabs__service__menu__item a {
   color: #ffffff;
@@ -394,14 +383,13 @@ h1 {
 }
 .tabs__about-us__menu__item a {
   color: #000000;
-  background-color: #f6f6f7;
+  background-color: #BCBCC3;
   padding: 10px 15px 0 15px;
   cursor: pointer;
   border-top-right-radius: 30px;
 }
 .tabs__proect__menu__item {
   margin-left: auto;
-
 }
 .tabs__proect__menu__item a {
   color: #ffffff;
@@ -409,57 +397,28 @@ h1 {
   padding: 10px 15px 0 15px;
   cursor: pointer;
   border-top-left-radius: 30px;
-
 }
-
 
 #tab2, #tab3, #tab4 {
   position: fixed; 
 }
-/*
-.menu1 > a,
-.menu1 #tab2:target ~ a:nth-of-type(1),
-.menu1 #tab3:target ~ a:nth-of-type(1),
-.menu1 #tab4:target ~ a:nth-of-type(1),
-.menu1 > div { 
-  padding: 5px; border: 1px solid #aaa; 
-}
-
-.menu1 > a { 
-  line-height: 28px; 
-  background: #fff; 
-  text-decoration: none; 
-}*/
-
 #tab2,
 #tab3,
 #tab4,
-.menu1 > div,
-.menu1 #tab2:target ~ div:nth-of-type(1),
-.menu1 #tab3:target ~ div:nth-of-type(1),
-.menu1 #tab4:target ~ div:nth-of-type(1)  {
+.tabs > div,
+.tabs #tab2:target ~ div:nth-of-type(1),
+.tabs #tab3:target ~ div:nth-of-type(1),
+.tabs #tab4:target ~ div:nth-of-type(1)  {
   display: none; 
 }
-
-.menu1 > div:nth-of-type(1),
-.menu1 #tab2:target ~ div:nth-of-type(2),
-.menu1 #tab3:target ~ div:nth-of-type(3),
-.menu1 #tab4:target ~ div:nth-of-type(4)  { 
-  display: block; 
+.tabs > div:nth-of-type(1),
+.tabs #tab2:target ~ div:nth-of-type(2),
+.tabs #tab3:target ~ div:nth-of-type(3),
+.tabs #tab4:target ~ div:nth-of-type(4)  { 
+  display: flex; 
 }
-/*
-.menu1 > a:nth-of-type(1),
-.menu1 #tab2:target ~ a:nth-of-type(2),
-.menu1 #tab3:target ~ a:nth-of-type(3),
-.menu1 #tab4:target ~ a:nth-of-type(4) { 
-  border-bottom: 2px solid #fff; 
-}
-*/
 
-
-
-
-
+/*таб1*/
 .tabs__specialization {
   display: flex;
   flex-wrap: wrap;
@@ -468,7 +427,6 @@ h1 {
   border-top-width: 26px;
   padding: 18px 10px;
   justify-content: center;
-
 }
 .tabs__specialization__block {
   display: flex;
@@ -482,7 +440,9 @@ h1 {
   margin: 15px 10px 15px 15px;
 }
 .tabs__specialization__wrapper {
-  width: 59%;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
 }
 h3 {
   margin-left: 24px;
@@ -491,6 +451,9 @@ h3 {
   font-size: 26px;
   color: #e6007e;
   text-decoration: underline;
+}
+h3 a{
+  color: #e6007e;
 }
 .tabs__specialization__item {
   list-style-type: none; /*Убираем маркеры у списка*/
@@ -512,9 +475,8 @@ h3 {
 }
 .btn-more {
   margin-bottom: 18px;
+  margin-top: auto;
 }
-
-
 .btn-more a {
   margin-left: 24px;
   padding: 5px 10px;
@@ -524,11 +486,15 @@ h3 {
   border: 1px solid #e6007e;
   text-decoration: underline;
 }
-.tabs__specialization__block img {
-  margin-left: auto;
+.btn-more a:hover {
+  background-color: #e6007e;
+  color: #ffffff;
 }
-.tabs__trangle-down {
-
+.tabs__specialization__block img {
+  width: 30%;
+  margin: auto;
+}
+.tabs__specialization__trangle-down {
   width: 0;
 	height: 0;
 	border-left: 585px solid transparent;
@@ -536,8 +502,171 @@ h3 {
   border-top: 4px solid #347aa5;
   position: absolute;
   bottom: -5px;
+}
+
+/*таб2*/
+.tabs__service {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  border: 1px solid #7fc242;
+  border-top-width: 26px;
+  padding: 18px 10px;
+  justify-content: center;
+}
+.tabs__service__block {
+  display: flex;
+  flex-wrap: wrap;
+  width: 47%;
+  border: 1px solid #7fc242;
+ 
+  margin: 15px 15px 15px 10px;
+}
+.tabs__service__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.tabs__service__item {
+  padding-left: 26px;
+  font-family: 'OpenSans-Regular', Arial, sans-serif;
+  font-size: 18px;
+  color: #515151;
+}
+.tabs__service__item a {
+  padding-left: 5px;
+  color: #515151;
+}
+.tabs__service__price {
+  margin: 15px auto;
+  font-family: 'OpenSans-Regular', Arial, sans-serif;
+  font-size: 24px;
+  color: red;
+  text-align: center;
+}
+.tabs__service__block img {
+  width: 30%;
+  margin: auto;
+}
+.tabs__service__trangle-down {
+  width: 0;
+	height: 0;
+	border-left: 585px solid transparent;
+	border-right: 585px solid transparent;
+  border-top: 4px solid #7fc242;
+  position: absolute;
+  bottom: -5px;
 
 }
+
+/*таб3*/
+.tabs__about-us {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  border: 1px solid #BCBCC3;
+  border-top-width: 26px;
+  padding: 18px 10px;
+  justify-content: center;
+}
+.tabs__about-us__block {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #BCBCC3;
+  margin: 15px 15px 15px 10px;
+}
+.tabs__about-us__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.tabs__about-us__item {
+  padding-left: 26px;
+  font-family: 'OpenSans-Regular', Arial, sans-serif;
+  font-size: 18px;
+  color: #515151;
+}
+.tabs__about-us__item a {
+  padding-left: 5px;
+  color: #515151;
+}
+.tabs__about-us__price {
+  margin: 15px auto;
+  font-family: 'OpenSans-Regular', Arial, sans-serif;
+  font-size: 24px;
+  color: red;
+  text-align: center;
+}
+.tabs__about-us__block img {
+  width: 30%;
+  margin: auto;
+}
+.tabs__about-us__trangle-down {
+  width: 0;
+	height: 0;
+	border-left: 585px solid transparent;
+	border-right: 585px solid transparent;
+  border-top: 4px solid #BCBCC3;
+  position: absolute;
+  bottom: -5px;
+
+}
+
+/*таб4*/
+.tabs__proect {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  border: 1px solid #e6007e;
+  border-top-width: 26px;
+  padding: 18px 10px;
+  justify-content: center;
+}
+.tabs__proect__block {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #e6007e;
+  margin: 15px 15px 15px 10px;
+}
+
+.tabs__proect__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.tabs__proect__item {
+  padding-left: 26px;
+  font-family: 'OpenSans-Regular', Arial, sans-serif;
+  font-size: 18px;
+  color: #515151;
+}
+.tabs__proect__item a {
+  padding-left: 5px;
+  color: #515151;
+}
+.tabs__proect__price {
+  margin: 15px auto;
+  font-family: 'OpenSans-Regular', Arial, sans-serif;
+  font-size: 24px;
+  color: red;
+  text-align: center;
+}
+.tabs__proect__block img {
+  width: 30%;
+  margin: auto;
+}
+.tabs__proect__trangle-down {
+  width: 0;
+	height: 0;
+	border-left: 585px solid transparent;
+	border-right: 585px solid transparent;
+  border-top: 4px solid #e6007e;
+  position: absolute;
+  bottom: -5px;
+}
+
+/*конец табов*/
+
 .video__h2 {
   margin: 0;
   margin-top: 60px;
@@ -548,6 +677,7 @@ h3 {
   color: #e6007e;
   border-top: 1px dashed #e6007e;
 }
+
 /*video*/
 .video {
   display: flex;
@@ -558,10 +688,8 @@ h3 {
   padding-top: 100px;
   margin-bottom: 56px;
 }
-
 .video__max {
   width: 49%;
-
 }
 .video__min {
   width: 47%;
@@ -569,10 +697,8 @@ h3 {
   font-size: 18px;
 }
 .video__items {
-
   display: flex;
   flex-direction: column;
-
   padding:  0 3%;
   margin: 0;
   list-style: none; 
@@ -596,13 +722,11 @@ h3 {
   background-color: #e6e8ed;
 }
 .view-more {
-  
   margin-left: 54%;
   margin-top: 36px;
   margin-bottom: 35px;
   font-family: 'OpenSans-Bold', Arial, sans-serif;
   font-size: 18px;
-
 }
 .view-more:before {
   content: "\21fe  ";
@@ -670,11 +794,6 @@ h3 {
   border-bottom: 1px dotted #ff0000;
   align-self: flex-end;
 }
-/*
-.about__employees__all:before {
-  content: "⇾ "; 
-
-}*/
 .mark {
   position: absolute;
   left: -25px;
@@ -683,7 +802,6 @@ h3 {
 }
 .advantages {
   width: 100%;
-
 }
 .advantages__h2 {
   margin: 0;
@@ -699,7 +817,6 @@ h3 {
   background-color: #f4f3f3;
   width: 100%;
 }
-
 .advantages__info {
   width: 1170px;
   display: flex;
@@ -718,7 +835,6 @@ h4 {
   font-size: 16px;
   line-height: 31px;
 }
-
 .advantages__items {
   padding: 0;
 }
@@ -776,7 +892,6 @@ footer {
   font-family: 'OpenSans-SemiBold', Arial, sans-serif;
   font-size: 15px;
   line-height: 18px;
-
 }
 .footer__list__items {
   padding: 0;
@@ -788,7 +903,6 @@ footer {
   content: "\002756   "; /*Добавляем в качестве маркера символ снежинка*/
   font-size: 14px; /*U+2756  */
   color: #ffffff;
-
   text-align: center;
 }
 .footer__info {
@@ -797,6 +911,10 @@ footer {
   padding: 10px 0;
 }
 .footer__info a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.footer__info a:hover {
   color: #ffffff;
   text-decoration: underline;
 }
@@ -827,3 +945,9 @@ footer {
 	background-color: #e6007e;
 	color: #ffffff;
 }
+
+
+
+
+
+
