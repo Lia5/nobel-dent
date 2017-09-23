@@ -47,7 +47,7 @@
               <option>(098) 794-09-58</option>
               <option>(098) 794-09-58</option>
             </select>
-            <a class="select-button select-button-number "></a>
+            <a class="select-button select-button-number "><i class="icon-angle-down"></i></a>
           </div>
           <a class="btn-order" href="#">Заказать обратный звонок</a>
         </div>
@@ -61,15 +61,21 @@
           <p class="header__adress-time">Пн.- Вс. 09:00 - 18:00  |  <a class="header__adress-map" href="#"> карта проезда</a></p>
         </div>
         <div class="header__buttons">
+          <div class="header__search">
+            <i class="icon-search"></i>
+            <form action="" method="post" class="header__search__input">
+              <input type="search" name="q" placeholder="Поиск" class="search">
+              <input type="submit" name="" value="" class="header__search__submit">
+            </form>
+          </div>
           <i class="icon-globe"></i>
           <div class="select-language">
             <select id="select-language" name="select-language" size="1">
               <option>Rassian</option>
-              <option>Rassian1</option>
-              <option>Rassian2</option>
-              <option>Rassian3</option>
+              <option>Ukrainian</option>
+              <option>English</option>
             </select>
-            <a class="select-button select-button-language "></a>
+            <span class="select-button select-button-language "><i class="icon-angle-down"></i></span>
           </div>
           <a class="btn header__buttons__question uppercase" href="#">Задать вопрос</a>
           <a class="btn header__buttons__order uppercase" href="#">Записаться на прием</a>
@@ -77,8 +83,6 @@
       </div>
 
     </header>
-
-
     <div class="main-menu">
       <ul id="accordion" class="accordion main-menu__items ">
         <li class="main-menu__item">
@@ -790,7 +794,7 @@
 
   </div>
   
-  
+
 
   <script>
   $(function() {

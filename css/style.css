@@ -122,12 +122,12 @@ header {
 }
 .size16 {
   position: absolute;
-  padding-left: 20px;
+  padding-left: 26px;
   font-size: 16px;
 }
 #select-number {
-  width: 220px;
-  padding-left: 45px;
+  width: 230px;
+  padding-left: 54px;
   border: none;
   height: 22px;    /* Меньше, чем рисованная "кнопочка" на ширину нужного border'а */
   font-size: 21px;
@@ -137,7 +137,7 @@ header {
   z-index: 100;
 }
 .select-number {
-  width: 200px;    /* На 20px меньше, чем у select'а. Примерно такова ширина стандартной кнопки */
+  width: 210px;    /* На 20px меньше, чем у select'а. Примерно такова ширина стандартной кнопки */
   overflow: hidden;    /* Кнопка будет находиться за пределами "обертки" */
   display: block;
   position: relative;    /* Чтобы элементы с position:absolute позиционировались по "обертке" */
@@ -155,8 +155,9 @@ header {
   text-align: center;
 }
 .select-button-number {
-  background: url('../img/select-down.png') center center no-repeat;
-  left: 0;
+  top: 0;
+  left: -10px;
+  font-size: 32px;
 }
 .btn-order {
   display: inline-block;
@@ -194,6 +195,62 @@ header {
   font-size: 13px;
   line-height: 13px;
 }
+
+/*search*/
+.header__search {
+  width: 43%;
+  position: relative;
+}
+
+.header__search input {
+  border: none;
+}
+
+.header__search__input {
+  width: 45%;
+  padding: 0 13px 3px 8px;
+  
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px solid #000000;
+  font: 13px Tahoma, Arial, sans-serif;
+  outline: none;
+  margin-left: auto;
+  margin-right: 3%;
+}
+
+.header__search__input:focus {
+  background: #E8E8E8;
+}
+
+.header__search__submit {
+  position: absolute;
+  top: 0;
+  right: 2%;
+  width: 37px;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.icon-search {
+  position: absolute;
+  top: 0;
+  right: 4%;
+}
+.header__search .submit:hover {
+  opacity: 0.8;
+}
+input[type="search"] {
+  -webkit-appearance: none;
+}
+input {
+  outline:none;
+}
+
+
+
+
+
 .icon-globe {
   font-size: 20px;
 }
@@ -213,8 +270,9 @@ header {
   position: relative;    /* Чтобы элементы с position:absolute позиционировались по "обертке" */
 }
 .select-button-language {
-  background: url('../img/select-down-small.png') center center no-repeat;
-  right: 0;
+  top: 2px;
+  right: 10px;
+  font-size: 20px;
 }
 .uppercase {
   text-transform: uppercase;
@@ -227,7 +285,7 @@ header {
   text-align: center;
 }
 .header__buttons__question {
-  margin: 0 15px 0 15px;
+  margin: 0 10px 0 10px;
 }
 .header__buttons__question:hover {
   color: #ffffff;
@@ -248,7 +306,7 @@ header {
 .main-menu {
   width: 100%;
   font-family: 'Roboto-Regular', Arial, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   color: #000000;
   background-color: #f4f3f3;
 }
@@ -273,6 +331,7 @@ header {
   padding: 15px 15px 15px 15px;
   font-weight: 700;
   position: relative;
+  text-transform: uppercase;
   border-bottom: 1px solid #cccccc;
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
@@ -303,21 +362,22 @@ header {
 .main-menu__item.open .link { 
   background-color: #347aa5;
   color: #ffffff; 
+
 }
 .main-menu__item.open i { 
   color: #e2509d; 
 }
-.main-menu__item.open i.icon-angle-circled-down {
+.main-menu__item.open .link i.icon-angle-circled-down {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 .submenu__item.open i.icon-angle-circled-down {
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 /*Submenu*/
 .accordion .submenu__link {
@@ -344,6 +404,9 @@ header {
 .submenu a:hover {
   background: #3e6b98;
   color: #FFF;
+}
+.subsubmenu__items {
+  display: none;
 }
 
 /*slider*/
@@ -1066,6 +1129,10 @@ footer {
   .main-menu {
     width: 100%;
     position: static;
+    font-size: 13px;
+  }
+  .icon-angle-circled-down {
+    display: none;
   }
   .main-menu__items { 
     display: flex;
@@ -1078,10 +1145,10 @@ footer {
   }
   .main-menu__item i.icon-angle-circled-down {
     right: 0;
-
   }
   .accordion .link {
     padding: 15px 28px 15px 15px;
+    padding-left: auto;
     border-bottom: none;
   }
   .submenu {
@@ -1095,17 +1162,12 @@ footer {
     left: 0;
   }
 
-  .open ul {
-    display: flex;
-    flex-direction: column;
+  .open .submenu {
+    display: flex!important;
   }
   .submenu__item {
-    display: inline-block;
-    float: left;
-    width: 16.6%;
     border-bottom: none;
     margin: 0 auto;
-
   }
   .submenu a {
     padding-left: 0;
@@ -1117,6 +1179,8 @@ footer {
     min-height: 58px;
   }
   .subsubmenu__items {
+    display: block;
+    font-size: 11px;
     padding-left: 10px;
   }
   .submenu__link a {
