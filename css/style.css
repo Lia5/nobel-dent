@@ -1161,7 +1161,6 @@ footer {
     z-index: 3;
     left: 0;
   }
-
   .open .submenu {
     display: flex!important;
   }
