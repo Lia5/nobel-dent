@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="css/fontello-embedded.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.2.1.min.js"></script> 
 </head>
 
 <body>
@@ -79,18 +80,297 @@
 
 
     <div class="main-menu">
-      <ul class="main-menu__items">
-        <li class="main-menu__item"><a href="#">Имплантация</a></li>
-        <li class="main-menu__item"><a href="#">Удаление зубов/ Хирургия</a></li>
-        <li class="main-menu__item"><a href="#">Протезирование</a></li>
-        <li class="main-menu__item"><a href="#">Пародонтология</a></li>
-        <li class="main-menu__item"><a href="#">Лечение зубов</a></li>
-        <li class="main-menu__item"><a href="#">Отбеливание и гигиена</a></li>
+      <ul id="accordion" class="accordion main-menu__items ">
+        <li class="main-menu__item">
+          <div class="link">Имплантация<i class="icon-angle-circled-down"></i></div>
+          <ul class="submenu">
+            <li class="submenu__item">
+              <div class="submenu__link"><a href="#">Виды имплантации</a><i class="icon-angle-circled-down"></i></div>
+              <ul class="subsubmenu__items">
+                <li class="subsubmenu__item"><a href="#">Одноэтапная с немедленой нагрузкой</a></li>
+                <li class="subsubmenu__item"><a href="#">Двухэтапная с отстроченной нагрузкой</a></li>
+                <li class="subsubmenu__item"><a href="#">Базальная имплантация – Basal Complex</a></li>
+                <li class="subsubmenu__item"><a href="#">Производители имплантов</a></li>
+              </ul>
+            </li>
+            <li class="submenu__item">
+              <div class="submenu__link"><a href="#"> Имплантация all-on-4</a><i class="icon-angle-circled-down"></i></div>
+              <ul class="subsubmenu__items">
+                <li class="subsubmenu__item"><a href="#">Концепция лечения all-on-4</a></li>
+                <li class="subsubmenu__item"><a href="#">Трехмерная 3d визуализация планирования лечения</a></li>
+                <li class="subsubmenu__item"><a href="#">Показание к имплантации all-on-4</a></li>
+                <li class="subsubmenu__item"><a href="#">Этапы имплантации all-on-4</a></li>
+                <li class="subsubmenu__item"><a href="#">Преимущества и недостатки all-on-4</a></li>
+              </ul>
+            </li>
+            <li class="submenu__item">
+              <div class="submenu__link"><a href="#">Имплантация all-on- 6</a><i class="icon-angle-circled-down"></i></div>
+              <ul class="subsubmenu__items">
+                <li class="subsubmenu__item"><a href="#">Имплантация all-on- 6</a></li>
+                <li class="subsubmenu__item"><a href="#">Концепция лечения all-on-6</a></li>
+                <li class="subsubmenu__item"><a href="#">Трехмерная 3d визуализация планирования лечения all-on-6</a></li>
+                <li class="subsubmenu__item"><a href="#">Показания к имплантации all-on-6</a></li>
+                <li class="subsubmenu__item"><a href="#">Этапы имплантации all-on-6</a></li>
+                <li class="subsubmenu__item"><a href="#">Преимущества и недостатки all-on-6</a></li>
+                <li class="subsubmenu__item"><a href="#">Фото до и после all-on-6</a></li>
+              </ul>
+            </li>
+            <li class="submenu__item">
+              <div class="submenu__link"><a href="#">Немедленная нагрузка</a><i class="icon-angle-circled-down"></i></div>
+              <ul class="subsubmenu__items">
+                <li class="subsubmenu__item"><a href="#">Немедленная нагрузка</a></li>
+                <li class="subsubmenu__item"><a href="#">Трехмерная 3d визуализация планирования лечения</a></li>
+                <li class="subsubmenu__item"><a href="#">Этапы имплантации с немедленой нагрузкой</a></li>
+                <li class="subsubmenu__item"><a href="#">Преимущества метода</a></li>
+              </ul>
+            </li>
+            <li class="submenu__item">
+              <div class="submenu__link"><a href="#">Костная пластика</a><i class="icon-angle-circled-down"></i></div>
+              <ul class="subsubmenu__items">
+                <li class="subsubmenu__item"><a href="#">Протезы на импланты</a></li>
+                <li class="subsubmenu__item"><a href="#">Коронки на импланты</a></li>
+                <li class="subsubmenu__item"><a href="#">Условно-съемные</a></li>
+                <li class="subsubmenu__item"><a href="#">Несъемный протез</a></li>
+                <li class="subsubmenu__item"><a href="#">Цеменьируемые конструкци</a></li>
+                <li class="subsubmenu__item"><a href="#">Прикручиываемые конструкции</a></li>
+              </ul>
+            </li>
+            <li class="submenu__item">
+              <div class="submenu__link"><a href="#">Костная пластика</a><i class="icon-angle-circled-down"></i></div>
+              <ul class="subsubmenu__items">
+                <li class="subsubmenu__item"><a href="#">Костная пластика</a></li>
+                <li class="subsubmenu__item"><a href="#">Синус-лифтинг</a></li>
+                <li class="subsubmenu__item"><a href="#">Вертикальная и горизонтальная аугментация</a></li>
+                <li class="subsubmenu__item"><a href="#">Расщипеление альвеолярного отростка</a></li>
+                <li class="subsubmenu__item"><a href="#">Этапы проведения операции</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="main-menu__item">
+          <div class="link">Удаление зубов/ Хирургия<i class="icon-angle-circled-down"></i></div>
+          <ul class="submenu">
+            <li class="submenu__item">
+              <div class="submenu__link"><a href="#">Удаление зубов</a><i class="icon-angle-circled-down"></i></div>
+              <ul class="subsubmenu__items">
+                <li class="subsubmenu__item"><a href="#">Удаление зуба ретенированного</a></li>
+                <li class="subsubmenu__item"><a href="#">Простое удаление зуба</a></li>
+                <li class="subsubmenu__item"><a href="#">Сложное удаление зуба</a></li>
+              </ul>
+            </li>
+            <li class="submenu__item">
+              <div class="submenu__link"><a href="#">Пластика уздечки</a><i class="icon-angle-circled-down"></i></div>
+              <ul class="subsubmenu__items">
+                <li class="subsubmenu__item"><a href="#">Пластика уздечки языка</a></li>
+                <li class="subsubmenu__item"><a href="#">Пластика уздечки губы</a></li>
+                <li class="subsubmenu__item"><a href="#">Этапы проведения операции</a></li>
+              </ul>
+            </li>
+            <li class="submenu__item">
+              <div class="submenu__link"><a href="#">PRP сгусток крови</a><i class="icon-angle-circled-down"></i></div>
+              <ul class="subsubmenu__items">
+                <li class="subsubmenu__item"><a href="#">Показания к применения PRP-технологии</a></li>
+                <li class="subsubmenu__item"><a href="#">Концепция PRP-технологии в стоматологии</a></li>
+                <li class="subsubmenu__item"><a href="#">Эфективность применения PRP-технологии</a></li>
+              </ul>
+            </li>
+            <li class="submenu__item">
+              <div class="submenu__link"><a href="#">PRF Мебрана</a><i class="icon-angle-circled-down"></i></div>
+              <ul class="subsubmenu__items">
+                <li class="subsubmenu__item">Показания к применения PRF-технологии<a href="#"></a></li>
+                <li class="subsubmenu__item"><a href="#">Концепция PRF-технологии в стомотологии</a></li>
+                <li class="subsubmenu__item"><a href="#">Эффективность применения PRF-технологии</a></li>
+              </ul>
+            </li>
+            <li class="submenu__item">
+              <div class="submenu__link"><a href="#">Пластика преддверия</a><i class="icon-angle-circled-down"></i></div>
+              <ul class="subsubmenu__items">
+                <li class="subsubmenu__item"><a href="#">Показания к вмешательству</a></li>
+                <li class="subsubmenu__item"><a href="#">Вестибулопластика</a></li>
+                <li class="subsubmenu__item">Увеличение площади кератинизированой десны<a href="#"></a></li>
+                <li class="subsubmenu__item"><a href="#">Этапы проведения операции</a></li>
+                <li class="subsubmenu__item"><a href="#">Гигиена после операции</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="main-menu__item">
+          <div class="link">Протезирование<i class="icon-angle-circled-down"></i></div>
+          <ul class="submenu">
+            <li class="submenu__item">
+              <div class="submenu__link"><a href="#">Общие сведения</a><i class="icon-angle-circled-down"></i></div>
+              <ul class="subsubmenu__items">
+                <li class="subsubmenu__item"><a href="#">Показания к протезированию зубов</a></li>
+                <li class="subsubmenu__item"><a href="#">Виды и этапы протезирования</a></li>
+                <li class="subsubmenu__item"><a href="#">Правила ухода за протезами</a></li>
+              </ul>
+            </li>
+            <li class="submenu__item">
+              <div class="submenu__link"><a href="#">Несъемные</a><i class="icon-angle-circled-down"></i></div>
+              <ul class="subsubmenu__items">
+                <li class="subsubmenu__item"><a href="#">Целнокерамические (безметаловые) конструкции</a></li>
+                <li class="subsubmenu__item"><a href="#">Металлокерамические несъемные</a></li>
+                <li class="subsubmenu__item"><a href="#">На основе диоксида циркония</a></li>
+                <li class="subsubmenu__item"><a href="#">Композитные</a></li>
+              </ul>
+            </li>
+            <li class="submenu__item">
+              <div class="submenu__link"><a href="#">Съемные</a><i class="icon-angle-circled-down"></i></div>
+              <ul class="subsubmenu__items">
+                <li class="subsubmenu__item"><a href="#">Акриловые протезы</a></li>
+                <li class="subsubmenu__item"><a href="#">Нейлоновые протезы</a></li>
+                <li class="subsubmenu__item"><a href="#">Бюгельные протезы</a></li>
+                <li class="subsubmenu__item"><a href="#">Виды атачментов</a></li>
+              </ul>
+            </li>
+            <li class="submenu__item">
+              <div class="submenu__link"><a href="#">Виниры</a><i class="icon-angle-circled-down"></i></div>
+              <ul class="subsubmenu__items">
+                <li class="subsubmenu__item"><a href="#">Керамические виниры</a></li>
+                <li class="subsubmenu__item"><a href="#">Композитные виниры</a></li>
+                <li class="subsubmenu__item"><a href="#">Люминиры</a></li>
+              </ul>
+            </li>
+            <li class="submenu__item">
+              <div class="submenu__link"><a href="#">Виды керамики</a><i class="icon-angle-circled-down"></i></div>
+              <ul class="subsubmenu__items">
+                <li class="subsubmenu__item"><a href="#">Duceram Kiss (Германия)</a></li>
+                <li class="subsubmenu__item"><a href="#">Vita</a></li>
+                <li class="subsubmenu__item"><a href="#">E-MAX (Германия)</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="main-menu__item">
+          <div class="link">Пародонтология<i class="icon-angle-circled-down"></i></div>
+          <ul class="submenu">
+            <li class="submenu__item">
+              <div class="submenu__link"><a href="#">Пародонтит</a><i class="icon-angle-circled-down"></i></div>
+              <ul class="subsubmenu__items">
+                <li class="subsubmenu__item"><a href="#">Этиология и патоогенез</a></li>
+                <li class="subsubmenu__item"><a href="#">Характерные симптомы</a></li>
+                <li class="subsubmenu__item"><a href="#">Профилактика</a></li>
+                <li class="subsubmenu__item"><a href="#">Подвижность зубов</a></li>
+              </ul>
+            </li>
+            <li class="submenu__item">
+              <div class="submenu__link"><a href="#">Хирургическая чистка</a><i class="icon-angle-circled-down"></i></div>
+              <ul class="subsubmenu__items">
+                <li class="subsubmenu__item"><a href="#">Показания к применению</a></li>
+                <li class="subsubmenu__item"><a href="#">Закрытый кюретаж десен</a></li>
+                <li class="subsubmenu__item"><a href="#">Открытый кюретаж десен</a></li>
+              </ul>
+            </li>
+            <li class="submenu__item">
+              <div class="submenu__link"><a href="#">Шинирование зубов</a><i class="icon-angle-circled-down"></i></div>
+              <ul class="subsubmenu__items">
+                <li class="subsubmenu__item"><a href="#">Показания к шинированию</a></li>
+                <li class="subsubmenu__item"><a href="#">Способы и виды шинирования</a></li>
+                <li class="subsubmenu__item"><a href="#">Этапы проведения процедуры</a></li>
+              </ul>
+            </li>
+            <li class="submenu__item">
+              <div class="submenu__link"><a href="#">Вектор-терапия</a><i class="icon-angle-circled-down"></i></div>
+              <ul class="subsubmenu__items">
+                <li class="subsubmenu__item"><a href="#">Показания к применению</a></li>
+                <li class="subsubmenu__item"><a href="#">Лечение аппаратом Вектор</a></li>
+                <li class="subsubmenu__item"><a href="#">Продолжительность и этапы лечения</a></li>
+              </ul>
+            </li>
+            <li class="submenu__item">
+              <div class="submenu__link"><a href="#">Гингивит</a><i class="icon-angle-circled-down"></i></div>
+              <ul class="subsubmenu__items">
+                <li class="subsubmenu__item"><a href="#">Воспаление и кровоточивость десен</a></li>
+                <li class="subsubmenu__item"><a href="#">Диагностика и лечение</a></li>
+                <li class="subsubmenu__item"><a href="#">Профилактика</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="main-menu__item">
+          <div class="link">Лечение зубов<i class="icon-angle-circled-down"></i></div>
+          <ul class="submenu">
+            <li class="submenu__item">
+              <div class="submenu__link"><a href="#">Лечение кариеса</a><i class="icon-angle-circled-down"></i></div>
+              <ul class="subsubmenu__items">
+                <li class="subsubmenu__item"><a href="#">Причины развития кариеса</a></li>
+                <li class="subsubmenu__item"><a href="#">Классификация кариеса</a></li>
+                <li class="subsubmenu__item"><a href="#">Симптомы кариеса</a></li>
+                <li class="subsubmenu__item"><a href="#">Лечение кариеса прямым методом</a></li>
+                <li class="subsubmenu__item"><a href="#">Лечение кариеса непрямым методом</a></li>
+                <li class="subsubmenu__item"><a href="#">Профилактика кариеса</a></li>
+              </ul>
+            </li>
+            <li class="submenu__item">
+              <div class="submenu__link"><a href="#">Герметизация фиссур</a><i class="icon-angle-circled-down"></i></div>
+              <ul class="subsubmenu__items">
+                <li class="subsubmenu__item"><a href="#">Показания к применению</a></li>
+                <li class="subsubmenu__item"><a href="#">Методы и этапы проведения герметизации</a></li>
+              </ul>
+            </li>
+            <li class="submenu__item">
+              <div class="submenu__link"><a href="#">Лечение пульпита</a><i class="icon-angle-circled-down"></i></div>
+              <ul class="subsubmenu__items">
+                <li class="subsubmenu__item"><a href="#">Причины развития пульпита</a></li>
+                <li class="subsubmenu__item"><a href="#">Классификация пульпита</a></li>
+                <li class="subsubmenu__item"><a href="#">Симптомы пульпита</a></li>
+                <li class="subsubmenu__item"><a href="#">Этапы лечения пульпита</a></li>
+              </ul>
+            </li>
+            <li class="submenu__item">
+              <div class="submenu__link"><a href="#">Периодонтит</a><i class="icon-angle-circled-down"></i></div>
+              <ul class="subsubmenu__items">
+                <li class="subsubmenu__item"><a href="#">Причины возникновения периодонтита</a></li>
+                <li class="subsubmenu__item"><a href="#">Классификация периодонтита</a></li>
+                <li class="subsubmenu__item"><a href="#">Терапевтическое лечение периодонтита</a></li>
+                <li class="subsubmenu__item"><a href="#">Хирургическое лечение периодонтита</a></li>
+              </ul>
+            </li>
+            <li class="submenu__item">
+              <div class="submenu__link"><a href="#">Лечение каналов</a><i class="icon-angle-circled-down"></i></div>
+              <ul class="subsubmenu__items">
+                <li class="subsubmenu__item"><a href="#">Механическая обработка корневых каналов</a></li>
+                <li class="subsubmenu__item"><a href="#">Антисептическая обработка корневых каналов</a></li>
+                <li class="subsubmenu__item"><a href="#">Пломбировка корневых каналов</a></li>
+              </ul>
+            </li>
+            <li class="submenu__item">
+              <div class="submenu__link"><a href="#">Реставрация зубов</a><i class="icon-angle-circled-down"></i></div>
+              <ul class="subsubmenu__items">
+                <li class="subsubmenu__item"><a href="#">Реставрация по шаблону с Wax Up</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="main-menu__item">
+          <div class="link">Отбеливание и гигиена<i class="icon-angle-circled-down"></i></div>
+          <ul class="submenu">
+            <li class="submenu__item">
+              <div class="submenu__link"><a href="#">Гигиеническая чистка</a><i class="icon-angle-circled-down"></i></div>
+              <ul class="subsubmenu__items">
+                <li class="subsubmenu__item"><a href="#">Показания к чистке зубов от камня и налета</a></li>
+                <li class="subsubmenu__item"><a href="#">Современные технологии удаления камня и налета</a></li>
+                <li class="subsubmenu__item"><a href="#">Ультразвуковая чистка зубов от камня и налета</a></li>
+                <li class="subsubmenu__item"><a href="#">Чистка PROPHYflex</a></li>
+                <li class="subsubmenu__item"><a href="#">После процедуры чистки зубов</a></li>
+              </ul>
+            </li>
+            <li class="submenu__item">
+              <div class="submenu__link"><a href="#">Отбеливание</a><i class="icon-angle-circled-down"></i></div>
+              <ul class="subsubmenu__items">
+                <li class="subsubmenu__item"><a href="#">Современные технологии отбеливания</a></li>
+                <li class="subsubmenu__item"><a href="#">Отбеливание Zoom 4</a></li>
+                <li class="subsubmenu__item"><a href="#">После процедуры отбеливания зубов</a></li>
+                <li class="subsubmenu__item"><a href="#">Отбеливание в домашних условиях</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
       </ul>
     </div>
     <div class="slider">
       <div class="slider__wrapper">
-        <div class="planmeca-top"></div>
+        <div class="planka-top"></div>
         <div class="slider__foto"></div>
         
         <div class="slider__description">
@@ -296,14 +576,8 @@
             <div class="tabs__proect__block ">
               <div class="tabs__proect__wrapper">
                 <h2 class="about__h2">Проект <span class="part-color">Nobel</span>Dent+</h2>
-                  <p class="tabs__proect__item">Практические результаты и анализ ошибок за последние 10 лет 
-              различных подходов, в том числе базальной (однофазной) 
-              имплантации и метода all-on-4 для реабилитации адентии позволил 
-              выйти на «золотые» стандарты технологии.</p>
-                  <p class="tabs__proects__item about__short__info">Обеспечив пациентов красивыми и удобными протезами несмотря 
-              на сложные случаи, которые еще в начале этого века большинству. </p>
+                  <p class="tabs__proect__item">Текст Текст Текст Текст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст Текст</p>
                   
-
 
               </div>
               <img class="about__short__we" src="img/foto-clinik.jpg" alt="Фотография клиники">
@@ -382,7 +656,7 @@
           <li class="about__employees__item"><a href="#"><img src="img/foto-sotr.jpg" alt=""></a></li>
         </ul>
         <a class="about__employees__all" href="#">Все сотрудники
-          <span class="mark">&#10139; </span>
+          <span class="mark">&#8594;  </span>
         </a>
         
     </div>
@@ -445,7 +719,7 @@
                   <li class="advantages__important__item">фиксированные цены </li>
                 </ul>
             </div>
-            <div class="planmeca-bottom"></div>
+            <div class="planka-bottom"></div>
         </div>
       </div>
     </div>
@@ -497,7 +771,7 @@
           <a href="#">Карта сайта </a>  
           
           <div class="social-links">
-              <a href="#"><i class="icon-youtube"></i></a>
+              <a href="#"><i class="icon-youtube-play"></i></a>
               <a href="#"><i class="icon-facebook"></i></a>
               <a href="#"><i class="icon-instagram"></i></a>
               <a href="#"><i class="icon-gplus"></i></a>
@@ -515,7 +789,69 @@
 
 
   </div>
+  
+  
+
+  <script>
+  $(function() {
+	var Accordion = function(el, multiple) {
+		this.el = el || {};
+		this.multiple = multiple || false;
+
+		// Variables privadas
+		var links = this.el.find('.link');
+		// Evento
+		links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+	}
+
+	Accordion.prototype.dropdown = function(e) {
+		var $el = e.data.el;
+			$this = $(this),
+			$next = $this.next();
+
+		$next.slideToggle();
+		$this.parent().toggleClass('open');
+
+		if (!e.data.multiple) {
+			$el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+		};
+	}	
+
+	var accordion = new Accordion($('#accordion'), false);
+});
 
 
+    </script>
+      <script>
+          $(function() {
+          var Accordion = function(el, multiple) {
+            this.el = el || {};
+            this.multiple = multiple || false;
+        
+            // Variables privadas
+            var links = this.el.find('.submenu__link');
+            // Evento
+            links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+          }
+        
+          Accordion.prototype.dropdown = function(e) {
+            var $el = e.data.el;
+              $this = $(this),
+              $next = $this.next();
+        
+            $next.slideToggle();
+            $this.parent().toggleClass('open');
+        
+            if (!e.data.multiple) {
+              $el.find('.submenu__items').not($next).slideUp().parent().removeClass('open');
+            };
+          }	
+        
+          var accordion = new Accordion($('#accordion'), false);
+        });
+        
+        
+   </script>
+    
 </body>
 </html>
