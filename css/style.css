@@ -1135,6 +1135,194 @@ footer {
 	color: #ffffff;
 }
 
+/*call phone*/
+.call-phone {
+  position: fixed;
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+  top: 75%;
+  left: -2%;
+}
+.call-phone__circle {
+  width: 160px;
+  height: 160px;
+  top: 20px;
+  left: 20px;
+  margin: 0;
+  position: absolute;
+  background-color: transparent;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  border: 2px solid rgba(82,125,168,0.4);
+  -webkit-animation: call-phone__circle-anim 1.2s infinite ease-in-out;
+  -moz-animation: call-phone__circle-anim 1.2s infinite ease-in-out;
+  -ms-animation: call-phone__circle-anim 1.2s infinite ease-in-out;
+  -o-animation: call-phone__circle-anim 1.2s infinite ease-in-out;
+  animation: call-phone__circle-anim 1.2s infinite ease-in-out;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  vertical-align: baseline;
+}
+@-moz-keyframes call-phone__circle-anim {
+  0%{-moz-transform:rotate(0deg) scale(0.5) skew(1deg);
+    opacity:.1;
+    -moz-opacity:.1;
+    -webkit-opacity:.1;
+    -o-opacity:.1}
+  30%{-moz-transform:rotate(0deg) scale(0.7) skew(1deg);
+    opacity:.5;
+    -moz-opacity:.5;
+    -webkit-opacity:.5;
+    -o-opacity:.5}
+  100%{-moz-transform:rotate(0deg) scale(1) skew(1deg);
+    opacity:.6;
+    -moz-opacity:.6;
+    -webkit-opacity:.6;-o-opacity:.1  }
+}
+@-webkit-keyframes call-phone__circle-anim{
+  0%{-webkit-transform:rotate(0deg) scale(0.5) skew(1deg);
+    -webkit-opacity:.1  }
+  30%{-webkit-transform:rotate(0deg) scale(0.7) skew(1deg);
+    -webkit-opacity:.5  }
+  100%{-webkit-transform:rotate(0deg) scale(1) skew(1deg);
+    -webkit-opacity:.1  }
+}
+@-o-keyframes call-phone__circle-anim{
+  0%{-o-transform:rotate(0deg) kscale(0.5) skew(1deg);
+    -o-opacity:.1  }
+  30%{-o-transform:rotate(0deg) scale(0.7) skew(1deg);
+    -o-opacity:.5  }
+  100%{-o-transform:rotate(0deg) scale(1) skew(1deg);
+    -o-opacity:.1  }
+}
+@keyframes call-phone__circle-anim{
+  0%{transform:rotate(0deg) scale(0.5) skew(1deg);
+    opacity:.1  }
+  30%{transform:rotate(0deg) scale(0.7) skew(1deg);
+    opacity:.5  }
+  100%{transform:rotate(0deg) scale(1) skew(1deg);
+    opacity:.1  }
+}
+.call-phone__circle-fill {
+  background-color: rgba(82,125,168,1);
+  opacity: 0.75;
+  width: 100px;
+  height: 100px;
+  top: 50px;
+  left: 50px;
+  position: absolute;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  opacity: 0.1;
+  -webkit-animation: call-phone__circle-fill-anim 2.3s infinite ease-in-out;
+  -moz-animation: call-phone__circle-fill-anim 2.3s infinite ease-in-out;
+  -ms-animation: call-phone__circle-fill-anim 2.3s infinite ease-in-out;
+  -o-animation: call-phone__circle-fill-anim 2.3s infinite ease-in-out;
+  animation: call-phone__circle-fill-anim 2.3s infinite ease-in-out;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+@-moz-keyframes call-phone__circle-fill-anim{
+  0%{-moz-transform:rotate(0deg) scale(0.7) skew(1deg);
+    opacity:.2  }
+  50%{-moz-transform:rotate(0deg) -moz-scale(1) skew(1deg);
+    opacity:.2  }
+  100%{-moz-transform:rotate(0deg) scale(0.7) skew(1deg);
+    opacity:.2  }
+}
+@-webkit-keyframes call-phone__circle-fill-anim{
+  0%{-webkit-transform:rotate(0deg) scale(0.7) skew(1deg);
+    opacity:.2  }
+  50%{-webkit-transform:rotate(0deg) scale(1) skew(1deg);
+    opacity:.2  }
+  100%{-webkit-transform:rotate(0deg) scale(0.7) skew(1deg);
+    opacity:.2  }
+}
+@-o-keyframes call-phone__circle-fill-anim{
+  0%{-o-transform:rotate(0deg) scale(0.7) skew(1deg);
+    opacity:.2  }
+  50%{-o-transform:rotate(0deg) scale(1) skew(1deg);
+    opacity:.2  }
+  100%{-o-transform:rotate(0deg) scale(0.7) skew(1deg);
+    opacity:.2  }
+}
+@keyframes call-phone__circle-fill-anim{
+  0%{transform:rotate(0deg) scale(0.7) skew(1deg);
+    opacity:.2  }
+  50%{transform:rotate(0deg) scale(1) skew(1deg);
+    opacity:.2  }
+  100%{transform:rotate(0deg) scale(0.7) skew(1deg);opacity:.2  }
+}
+.call-phone__circle-img {
+  position: relative;
+  background-color: rgba(82,125,168,0.1);
+  width: 60px;
+  height: 60px;
+  top: 70px;
+  left: 70px;
+  position: absolute;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  opacity: 0.7;
+  -webkit-animation: call-phone__circle-img-anim 1s infinite ease-in-out;
+  -moz-animation: call-phone__circle-img-anim 1s infinite ease-in-out;
+  -ms-animation: call-phone__circle-img-anim 1s infinite ease-in-out;
+  -o-animation: call-phone__circle-img-anim 1s infinite ease-in-out;
+  animation: call-phone__circle-img-anim 1s infinite ease-in-out;
+}
+@keyframes call-phone__circle-img-anim{
+  0%{transform:rotate(0deg) scale(1) skew(1deg)  }
+  10%{transform:rotate(-25deg) scale(1) skew(1deg)  }
+  20%{transform:rotate(25deg) scale(1) skew(1deg)  }
+  30%{transform:rotate(-25deg) scale(1) skew(1deg)  }
+  40%{transform:rotate(25deg) scale(1) skew(1deg)  }
+  100%,50%{transform:rotate(0deg) scale(1) skew(1deg)  }
+}
+@-moz-keyframes call-phone__circle-img-anim{
+  0%{transform:rotate(0deg) scale(1) skew(1deg)  }
+  10%{-moz-transform:rotate(-25deg) scale(1) skew(1deg)  }
+  20%{-moz-transform:rotate(25deg) scale(1) skew(1deg)  }
+  30%{-moz-transform:rotate(-25deg) scale(1) skew(1deg)  }
+  40%{-moz-transform:rotate(25deg) scale(1) skew(1deg)  }
+  100%,50%{-moz-transform:rotate(0deg) scale(1) skew(1deg)  }
+}
+@-webkit-keyframes call-phone__circle-img-anim{
+  0%{-webkit-transform:rotate(0deg) scale(1) skew(1deg)  }
+  10%{-webkit-transform:rotate(-25deg) scale(1) skew(1deg)  }
+  20%{-webkit-transform:rotate(25deg) scale(1) skew(1deg)  }
+  30%{-webkit-transform:rotate(-25deg) scale(1) skew(1deg)  }
+  40%{-webkit-transform:rotate(25deg) scale(1) skew(1deg)  }
+  100%,50%{-webkit-transform:rotate(0deg) scale(1) skew(1deg)  }
+}
+@-o-keyframes call-phone__circle-img-anim{
+  0%{-o-transform:rotate(0deg) scale(1) skew(1deg)  }
+  10%{-o-transform:rotate(-25deg) scale(1) skew(1deg)  }
+  20%{-o-transform:rotate(25deg) scale(1) skew(1deg)  }
+  30%{-o-transform:rotate(-25deg) scale(1) skew(1deg)  }
+  40%{-o-transform:rotate(25deg) scale(1) skew(1deg)  }
+  100%,50%{-o-transform:rotate(0deg) scale(1) skew(1deg)  }
+}
+.icon-phone {
+  position: absolute;
+  font-size: 39px;
+  color: #527da8;
+  border: 5px solid #527da8;
+  border-radius: 50%;
+  top: -2px;
+  left: -2px;
+  padding: 5px 0 5px 0;
+}
+
+
+
+
 
 @media screen and (min-width: 768px) {
   .main-menu {
@@ -1150,13 +1338,17 @@ footer {
 }
 
 
+
+
+
+
+
 @media screen and (min-width: 1244px) {
   /*main-menu*/
   .main-menu {
     width: 100%;
     position: static;
     font-size: 13px;
-
   }
   .icon-angle-down {
     display: none;
@@ -1195,7 +1387,6 @@ footer {
   .submenu__item {
     border-bottom: none;
     margin: 0 auto;
-
   }
   .submenu a {
     padding-left: 0;
@@ -1218,7 +1409,7 @@ footer {
   }
   .subsubmenu__item {
     padding-left: 15px;
-}
+  }
 }
 
 
