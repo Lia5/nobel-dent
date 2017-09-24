@@ -1186,7 +1186,7 @@ footer {
     left: 0;
   }
   .submenu__link {
-    min-width: 159px;
+    min-width: 165px;
   }
   .open .submenu {
     display: flex!important;
