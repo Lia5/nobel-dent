@@ -10,31 +10,46 @@
     <link rel="stylesheet" href="css/fontello-embedded.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.2.1.min.js"></script> 
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
 </head>
 
 <body>
   <div class="wrapper">
-  
-    <nav>
-        <ul class="main-nav__items">
+    <div class="nav__wrapper">
+      <nav class="cd-main-nav-wrapper">
+        <ul class="cd-main-nav">
           <li class = "main-nav__item"><a href="#">О клинике</a></li>
-          <li class = "main-nav__item">|</li>
+          <li class = "main-nav__item hidden">|</li>
           <li class = "main-nav__item"><a href="#">До и после</a></li>
-          <li class = "main-nav__item">|</li>
+          <li class = "main-nav__item hidden">|</li>
           <li class = "main-nav__item"><a href="#">Услуги</a></li>
-          <li class = "main-nav__item">|</li>
+          <li class = "main-nav__item hidden">|</li>
           <li class = "main-nav__item"><a href="#">Цены</a></li>
-          <li class = "main-nav__item">|</li>
+          <li class = "main-nav__item hidden">|</li>
           <li class = "main-nav__item"><a href="#">Акции</a></li>
-          <li class = "main-nav__item">|</li>
+          <li class = "main-nav__item hidden">|</li>
           <li class = "main-nav__item"><a href="#">Инфоцентр</a></li>
-          <li class = "main-nav__item">|</li>
+          <li class = "main-nav__item hidden">|</li>
           <li class = "main-nav__item"><a href="#">Контакты</a></li>
         </ul>
-    </nav>
+      </nav>
+      <a href="#" class="cd-nav-trigger">"Menu"
+        <span></span>
+      </a>
+    </div>
+    <main class="cd-main-content">
+      <!-- main content here -->
+    </main>
     <header>
       <div class="logo">
+        <!--
+        <picture class="icon">
+          <source srcset = "img/logo.png" media = "(min-width: 1244px)">
+          <source srcset = "img/logo.png" media = "(min-width: 768px)">
+          <img srcset="img/logo-min.png" alt="NobelDent клиника эстетической стоматологии">
+        </picture>-->
         <img src="img/logo.png" alt="NobelDent клиника эстетической стоматологии">
+        
       </div>
       <div class="header__wrapper">
         <div class="header__telephone">
@@ -50,26 +65,29 @@
             <a class="select-button select-button-number "><i class="icon-angle-down"></i></a>
           </div>
           <a class="btn-order" href="#">Заказать обратный звонок</a>
+
         </div>
-        <div class="header__metro">
-          <img src="img/logo-metro.png" alt="метро">
-        </div>
+        
         <div class="header__adress">
-          
+          <span class="header__metro">
+          <img src="img/logo-metro.png" alt="метро">
+          </span>
           <p class="header__adress-street">Киев, б-р Тараса Шевченко, 48 а, офис 2<br>
           10 минут пешком от метро Осокорки</p>
           <p class="header__adress-time">Пн.- Вс. 09:00 - 18:00  |  <a class="header__adress-map" href="#"> карта проезда</a></p>
-        </div>
-        <div class="header__buttons">
-          <div class="header__search">
-            <i class="icon-search"></i>
-            <form action="" method="post" class="header__search__input">
-              <input type="search" name="q" placeholder="Поиск" class="search">
-              <input type="submit" name="" value="" class="header__search__submit">
-            </form>
-          </div>
-          <i class="icon-globe"></i>
+        
+    </div>
+    <div class="header__buttons">
+      <div class="header__search">
+        <i class="icon-search"></i>
+        <form action="" method="post" class="header__search__input">
+          <input type="search" name="q" placeholder="Поиск" class="search">
+          <input type="submit" name="" value="" class="header__search__submit">
+        </form>
+      </div>
+          
           <div class="select-language">
+            <i class="icon-globe"></i>
             <select id="select-language" name="select-language" size="1">
               <option>Rassian</option>
               <option>Ukrainian</option>
@@ -80,7 +98,7 @@
           <a class="btn header__buttons__question uppercase" href="#">Задать вопрос</a>
           <a class="btn header__buttons__order uppercase" href="#">Записаться на прием</a>
         
-      </div>
+      </div>    
 
     </header>
     <div class="main-menu">
@@ -424,70 +442,70 @@
           <img src="img/spec-all-in-4.jpg" alt="all-in-4">
         </div>
         <div class="tabs__specialization__block nth2n">
-            <div class="tabs__specialization__wrapper">
-              <h3><a href="#">Имплантация ALL-on-6</a></h3>
-              <ul class="tabs__specialization__items">
-                <li class="tabs__specialization__item"><a href="#">Концепция лечения All-on-6</a></li>
-                <li class="tabs__specialization__item"><a href="#">Показания к имплантации</a></li>
-                <li class="tabs__specialization__item"><a href="#">Этапы имплантации</a></li>
-                <li class="tabs__specialization__item"><a href="#">Фото: до и после</a></li>
-              </ul>
-              <div class="btn-more"><a href="#">Подробнее</a> </div>
-            </div>
-            <img src="img/spec-all-in-6.jpg" alt="all-in-6">
+          <div class="tabs__specialization__wrapper">
+            <h3><a href="#">Имплантация ALL-on-6</a></h3>
+            <ul class="tabs__specialization__items">
+              <li class="tabs__specialization__item"><a href="#">Концепция лечения All-on-6</a></li>
+              <li class="tabs__specialization__item"><a href="#">Показания к имплантации</a></li>
+              <li class="tabs__specialization__item"><a href="#">Этапы имплантации</a></li>
+              <li class="tabs__specialization__item"><a href="#">Фото: до и после</a></li>
+            </ul>
+            <div class="btn-more"><a href="#">Подробнее</a> </div>
           </div>
-          <div class="tabs__specialization__block">
-              <div class="tabs__specialization__wrapper">
-                <h3><a href="#">Немедленная нагрузка</a></h3>
-                <ul class="tabs__specialization__items">
-                  <li class="tabs__specialization__item"><a href="#">Концепция Immediate Load</a></li>
-                  <li class="tabs__specialization__item"><a href="#">Показания к имплантации</a></li>
-                  <li class="tabs__specialization__item"><a href="#">Этапы имплантации</a></li>
-                  <li class="tabs__specialization__item"><a href="#">Фото: до и после</a></li>
-                </ul>
-                <div class="btn-more"><a href="#">Подробнее</a> </div>
-              </div>
-              <img src="img/spec-immediate-load.jpg" alt="immediate load">
-            </div>
-            <div class="tabs__specialization__block nth2n">
-                <div class="tabs__specialization__wrapper">
-                  <h3><a href="#">Удаление зубов</a></h3>
-                  <ul class="tabs__specialization__items">
-                    <li class="tabs__specialization__item"><a href="#">Показания к удалению</a></li>
-                    <li class="tabs__specialization__item"><a href="#">Простое удаление</a></li>
-                    <li class="tabs__specialization__item"><a href="#">Сложное удаление</a></li>
-                    <li class="tabs__specialization__item"><a href="#">Техника удаления</a></li>
-                  </ul>
-                  <div class="btn-more"><a href="#">Подробнее</a> </div>
-                </div>
-                <img src="img/spec-extraction-of-teeth.jpg" alt="extraction of teeth">
-              </div>
-              <div class="tabs__specialization__block">
-                  <div class="tabs__specialization__wrapper">
-                    <h3><a href="#">Протезирование зубов</a></h3>
-                    <ul class="tabs__specialization__items">
-                      <li class="tabs__specialization__item"><a href="#">Несъемное протезирование</a></li>
-                      <li class="tabs__specialization__item"><a href="#">Съемное протезирование</a></li>
-                      <li class="tabs__specialization__item"><a href="#">Виниры и люминиры </a></li>
-                      <li class="tabs__specialization__item"><a href="#">Фото: до и после</a></li>
-                    </ul>
-                    <div class="btn-more"><a href="#">Подробнее</a> </div>
-                  </div>
-                  <img src="img/spec-protez.jpg" alt="protez">
-                </div>
-                <div class="tabs__specialization__block nth2n">
-                    <div class="tabs__specialization__wrapper">
-                      <h3><a href="#">Лечение зубов</a></h3>
-                      <ul class="tabs__specialization__items">
-                        <li class="tabs__specialization__item"><a href="#">Лечение кариеса</a></li>
-                        <li class="tabs__specialization__item"><a href="#">Лечение пульпита</a></li>
-                        <li class="tabs__specialization__item"><a href="#">Лечение каналов</a></li>
-                        <li class="tabs__specialization__item"><a href="#">Лечение периодонтита</a></li>
-                      </ul>
-                      <div class="btn-more"><a href="#">Подробнее</a> </div>
-                    </div>
-                    <img src="img/spec-dental-treatment.jpg" alt="dental treatment">
-                  </div>
+          <img src="img/spec-all-in-6.jpg" alt="all-in-6">
+        </div>
+        <div class="tabs__specialization__block">
+          <div class="tabs__specialization__wrapper">
+            <h3><a href="#">Немедленная нагрузка</a></h3>
+            <ul class="tabs__specialization__items">
+              <li class="tabs__specialization__item"><a href="#">Концепция Immediate Load</a></li>
+              <li class="tabs__specialization__item"><a href="#">Показания к имплантации</a></li>
+              <li class="tabs__specialization__item"><a href="#">Этапы имплантации</a></li>
+              <li class="tabs__specialization__item"><a href="#">Фото: до и после</a></li>
+            </ul>
+            <div class="btn-more"><a href="#">Подробнее</a> </div>
+          </div>
+          <img src="img/spec-immediate-load.jpg" alt="immediate load">
+        </div>
+        <div class="tabs__specialization__block nth2n">
+          <div class="tabs__specialization__wrapper">
+            <h3><a href="#">Удаление зубов</a></h3>
+            <ul class="tabs__specialization__items">
+              <li class="tabs__specialization__item"><a href="#">Показания к удалению</a></li>
+              <li class="tabs__specialization__item"><a href="#">Простое удаление</a></li>
+              <li class="tabs__specialization__item"><a href="#">Сложное удаление</a></li>
+              <li class="tabs__specialization__item"><a href="#">Техника удаления</a></li>
+            </ul>
+            <div class="btn-more"><a href="#">Подробнее</a> </div>
+          </div>
+          <img src="img/spec-extraction-of-teeth.jpg" alt="extraction of teeth">
+        </div>
+        <div class="tabs__specialization__block">
+          <div class="tabs__specialization__wrapper">
+            <h3><a href="#">Протезирование зубов</a></h3>
+            <ul class="tabs__specialization__items">
+              <li class="tabs__specialization__item"><a href="#">Несъемное протезирование</a></li>
+              <li class="tabs__specialization__item"><a href="#">Съемное протезирование</a></li>
+              <li class="tabs__specialization__item"><a href="#">Виниры и люминиры </a></li>
+              <li class="tabs__specialization__item"><a href="#">Фото: до и после</a></li>
+            </ul>
+            <div class="btn-more"><a href="#">Подробнее</a> </div>
+          </div>
+          <img src="img/spec-protez.jpg" alt="protez">
+        </div>
+        <div class="tabs__specialization__block nth2n">
+          <div class="tabs__specialization__wrapper">
+            <h3><a href="#">Лечение зубов</a></h3>
+            <ul class="tabs__specialization__items">
+              <li class="tabs__specialization__item"><a href="#">Лечение кариеса</a></li>
+              <li class="tabs__specialization__item"><a href="#">Лечение пульпита</a></li>
+              <li class="tabs__specialization__item"><a href="#">Лечение каналов</a></li>
+              <li class="tabs__specialization__item"><a href="#">Лечение периодонтита</a></li>
+            </ul>
+            <div class="btn-more"><a href="#">Подробнее</a> </div>
+          </div>
+          <img src="img/spec-dental-treatment.jpg" alt="dental treatment">
+        </div>
         <div class="tabs__specialization__trangle-down"></div>
       </div>
 
@@ -581,23 +599,12 @@
             <div class="tabs__proect__block ">
               <div class="tabs__proect__wrapper">
                 <h2 class="about__h2">Проект <span class="part-color">Nobel</span>Dent+</h2>
-                  <p class="tabs__proect__item">Текст Текст Текст Текст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст Текст</p>
-                  
-
+                <p class="tabs__proect__item">Текст Текст Текст Текст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст ТекстТекст Текст</p>
               </div>
               <img class="about__short__we" src="img/foto-clinik.jpg" alt="Фотография клиники">
             </div>
-
             <div class="tabs__about-us__trangle-down"></div>
           </div>
- 
- 
-
-
-
-
-
-
 
 
       <h2 class="video__h2">Видео <span class="part-color">Nobel</span>Dent</h2>
@@ -606,22 +613,23 @@
 
   <div class="video">
 
-      <div class="video__max"><a href="#"><img src="img/video-max.jpg" alt="" width="557"></a></div><!--<iframe width="560" height="315" src="https://www.youtube.com/embed/iTWuZav-elY" frameborder="0" allowfullscreen></iframe>-->
+      <div class="video__max"><a class="video__item-max" href="#">
+        <img src="img/video-max.jpg" alt=""></a></div><!--<iframe width="560" height="315" src="https://www.youtube.com/embed/iTWuZav-elY" frameborder="0" allowfullscreen></iframe>-->
       <div class="video__min">
         <ul class="video__items">
           <li class="video__item-min">
             <a  class="video__item-min" href="#">
-              <img src="img/video-min.jpg" alt="" width="166">
+              <img src="img/video-min.jpg" alt="">
               <p>Имплантация All-on-4 и All-on-6: показания и преимущества</p>
             </a></li>
           <li class="video__item-min">
             <a  class="video__item-min" href="#">
-              <img src="img/video-min.jpg" alt="" width="166">
+              <img src="img/video-min.jpg" alt="">
               <p>Одноэтапная имплантация с немедленой нагрузой: новый зуб за 3 дня</p>
             </a></li>
           <li class="video__item-min">
             <a class="video__item-min" href="#">
-              <img src="img/video-min.jpg" alt="" width="166">
+              <img src="img/video-min.jpg" alt="">
               <p>Восстановление улыбки за 3 дня</p>
           </a></li>
         </ul>
@@ -793,10 +801,33 @@
       <div class="call-phone__circle-fill"></div>
       <div class="call-phone__circle-img"><i class="icon-phone"></i> </div>
     </div>
+  <!--Форма обратной связи-->
+
+      
+      <div class="form" id="form">
+        
+        <div class="form__order">Записаться на прием</div>
+        <div class="form__wrapper">
+          <div class="form__title">Записаться на прием</div>
+          <div id="messegeResult"></div>
+        
+          <form>
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="NobelDent">
+            <input type="hidden" name="admin_email" value="liaforweb@gmail.com">
+            <input type="hidden" name="form_subject" value="NobelDent-вопрос">
+            <!-- END Hidden Required Fields -->
+            <input type="text" name="Имя" placeholder="Ваше имя" required><br>
+            <input type="text" name="Телефон" placeholder="Ваш телефон*" required><br>
+            <input type="text" name="Цель" placeholder="Цель визита" required><br>
+
+            <button class="form__btn">Подтвердить заявку</button>
+          </form>
+        </div>
+      </div>
 
 
 
-    
   </div>
   
 
@@ -848,7 +879,7 @@
               $next = $this.next();
         
             $next.slideToggle();
-            $this.parent().toggleClass('open');
+            $this.parent().toggleClass('opened');
         
             if (!e.data.multiple) {
               $el.find('.submenu__items').not($next).slideUp().parent().removeClass('open');
@@ -860,6 +891,85 @@
         
         
    </script>
-    
+         <script>
+            $(function() {
+            var Order = function(el, multiple) {
+              this.el = el || {};
+              this.multiple = multiple || false;
+          
+              // Variables privadas
+              var ord = this.el.find('.form__order');
+              // Evento
+              ord.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+            }
+          
+            Order.prototype.dropdown = function(e) {
+              var $el = e.data.el;
+                $this = $(this),
+                $next = $this.next();
+          
+              $next.slideToggle();
+              $this.parent().toggleClass('open');
+          
+              if (!e.data.multiple) {
+                $el.find('.form__wrapper').not($next).slideUp().parent().removeClass('open');
+              };
+            }	
+          
+            var order = new Order($('#form'), false);
+          });
+          
+          
+     </script>
+    <script>
+    jQuery(document).ready(function($){
+	//move nav element position according to window width
+	moveNavigation();
+	$(window).on('resize', function(){
+		(!window.requestAnimationFrame) ? setTimeout(moveNavigation, 300) : window.requestAnimationFrame(moveNavigation);
+	});
+
+	//mobile version - open/close navigation
+	$('.cd-nav-trigger').on('click', function(event){
+		event.preventDefault();
+		if($('.nav__wrapper').hasClass('nav-is-visible')) $('.moves-out').removeClass('moves-out');
+		
+		$('.nav__wrapper').toggleClass('nav-is-visible');
+		$('.cd-main-nav').toggleClass('nav-is-visible');
+		$('.cd-main-content').toggleClass('nav-is-visible');
+	});
+
+	//mobile version - go back to main navigation
+	$('.go-back').on('click', function(event){
+		event.preventDefault();
+		$('.cd-main-nav').removeClass('moves-out');
+	});
+
+	//open sub-navigation
+	$('.cd-subnav-trigger').on('click', function(event){
+		event.preventDefault();
+		$('.cd-main-nav').toggleClass('moves-out');
+	});
+
+	function moveNavigation(){
+		var navigation = $('.cd-main-nav-wrapper');
+  		var screenSize = checkWindowWidth();
+        if ( screenSize ) {
+        	//desktop screen - insert navigation inside header element
+			navigation.detach();
+			navigation.insertBefore('.cd-nav-trigger');
+		} else {
+			//mobile screen - insert navigation after .cd-main-content element
+			navigation.detach();
+			navigation.insertAfter('.cd-main-content');
+		}
+	}
+
+	function checkWindowWidth() {
+		var mq = window.getComputedStyle(document.querySelector('.nav__wrapper'), '::before').getPropertyValue('content').replace(/"/g, '');
+		return ( mq == 'mobile' ) ? false : true;
+	}
+});
+    </script>
 </body>
 </html>
