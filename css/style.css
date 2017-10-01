@@ -1379,7 +1379,7 @@ h3 a{
 /*advantages*/
 .advantages {
   width: 100%;
-  padding: 
+
 }
 .advantages__h2 {
   margin: 0;
@@ -1395,12 +1395,14 @@ h3 a{
   justify-content: center;
   background-color: #f4f3f3;
   width: 100%;
+
 }
 .advantages__info {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
 }
 h4 {
   font-family: 'Raleway-ExtraBold', Arial, sans-serif;
@@ -1410,6 +1412,7 @@ h4 {
 }
 .advantages__excellence {
   width: 100%;
+  padding-left: 3%;
   font-family: 'OpenSans-Regular', Arial, sans-serif;
   font-size: 16px;
   line-height: 31px;
@@ -1438,6 +1441,7 @@ h4 {
 }
 .advantages__important {
   width: 100%;
+  padding-right: 3%;
   font-family: 'OpenSans-Regular', Arial, sans-serif;
   font-size: 16px;
   line-height: 31px;
@@ -1938,17 +1942,23 @@ textarea,
     border-right: 375px solid transparent;
   }
 
-/*video*/
+  /*video*/
 
-.advantages__excellence, 
-.advantages__noname,
-.advantages__important {
-  width: 32%;
-}
-.footer__list {
-  width: 25%;
-}
+  .advantages__excellence, 
+  .advantages__noname,
+  .advantages__important {
+    width: 32%;
+  }
+  .footer__list {
+    width: 25%;
+  }
 
+  .advantages__excellence {
+    padding-left: 1%;
+  }
+  .advantages__important {
+    padding-right: 1%;
+  }
 }
 
 
@@ -2380,8 +2390,11 @@ textarea,
   .footer__list {
     width: 19%;
   }
-  .footer__info {
-
+  .advantages__excellence {
+    padding-left: 0;
+  }
+  .advantages__important {
+    padding-right: 0;
   }
 }
 
