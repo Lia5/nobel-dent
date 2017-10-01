@@ -111,7 +111,6 @@
               <ul class="subsubmenu__items">
                 <li class="subsubmenu__item"><a href="#">Одноэтапная с немедленой нагрузкой</a></li>
                 <li class="subsubmenu__item"><a href="#">Двухэтапная с отстроченной нагрузкой</a></li>
-                <li class="subsubmenu__item"><a href="#">Базальная имплантация – Basal Complex</a></li>
                 <li class="subsubmenu__item"><a href="#">Производители имплантов</a></li>
               </ul>
             </li>
@@ -405,7 +404,7 @@
           </p>
           <p class="slider__methodologies"><span class="slider__methodologies-part part-color">Успешная практика в лечении и полном <br>
             восстановлении зубов с использованием  <br>
-            методик </span>All-on-4, All-on-6 <span class="slider__methodologies-part part-color">и  </span>BASAL COMPLEX<br>
+            методик </span>All-on-4 <span class="slider__methodologies-part part-color"></span>и</span> All-on-6 <br>
             <span class="slider__methodologies-part part-color">по протоколу  Immediate Load</span></p>
         </div>
       </div>
@@ -846,13 +845,14 @@
 	Accordion.prototype.dropdown = function(e) {
 		var $el = e.data.el;
 			$this = $(this),
-			$next = $this.next();
-
-		$next.slideToggle();
+      $next = $this.next();
+      
 		$this.parent().toggleClass('open');
+		$next.slideToggle();
+
 
 		if (!e.data.multiple) {
-			$el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+			$el.find('.submenu').slideUp().not($next).removeClass('open');
 		};
 	}	
 
@@ -877,12 +877,12 @@
             var $el = e.data.el;
               $this = $(this),
               $next = $this.next();
-        
+            $this.parent().toggleClass('opened');        
             $next.slideToggle();
-            $this.parent().toggleClass('opened');
+
         
             if (!e.data.multiple) {
-              $el.find('.submenu__items').not($next).slideUp().parent().removeClass('open');
+              $el.find('.submenu__items').slideUp().not($next).parent().removeClass('open');
             };
           }	
         
