@@ -18,6 +18,12 @@
   font-weight: normal;
 }
 @font-face {
+  font-family: 'Roboto-Medium';
+  src: url('../fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
   font-family: 'Roboto-Bold';
   src: url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
   font-style: normal;
@@ -797,6 +803,31 @@ input {
 .subsubmenu__item a:hover {
   color: #FFF;
 }
+
+/*fix-menu*/
+.fix-menu {
+  display: none;
+}
+.fix-menu__items {
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*slider*/
 .slider {
@@ -1757,7 +1788,8 @@ footer {
   z-index: 2;
   bottom: 0;
   right: 0;
-  padding: 10px;
+  padding: 10px; 
+  padding-right: 45px;
   border: 2px solid #ffffff;
   border-radius: 20px;
   background-color: #e6007e;
@@ -1805,18 +1837,26 @@ textarea,
   border: 0;
 }
 
-.form.open .form__order i.icon-angle-down {
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
+.form i.icon-angle-down {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 26px;
 }
 
 .form .form__order i.icon-angle-down {
-  -webkit-transform: rotate(180deg);
+  -webkit-transform: rotate(180eg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
+}
+
+.form.open .form__order i.icon-angle-down {
+  top: 8px;
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  -o-transform: rotate(0);
+  transform: rotate(0);
 }
 
 
@@ -1830,7 +1870,8 @@ textarea,
     justify-content: space-between;
   }
   .logo {
-    width: 30%;
+    width: 21%;
+    padding: 3%;
   }
   .header__wrapper {
     width: 70%;
@@ -1881,7 +1922,48 @@ textarea,
   }
   .accordion .link {
     padding-right: 30px;
+    }
+  /*fix-menu*/
+  .fix-menu {
+    display: flex;
+    font-size: 14px; 
+    line-height: 15px;
+    font-family: 'Roboto-Medium', Arial, sans-serif;
   }
+  .fix-menu li {
+    display: block;
+  }
+  .fix-menu__items {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .fix-menu__item {
+    padding: 15px 12px 15px 12px;
+  }
+  .fix-menu__items li:first-child {
+    padding-left: 0;
+  }
+  .fix-menu__items li:last-child {
+    padding-right: 0;
+  }
+  .fix-menu__item__select-number {
+    font-size: 18px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*slider*/
   .slider__foto {
     width: 60%;
