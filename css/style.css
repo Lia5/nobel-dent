@@ -1764,7 +1764,7 @@ footer {
 form {
   padding: 25px;
 }
-.opened {
+.open {
   display: block;
 }
 
@@ -2227,25 +2227,29 @@ textarea,
   }
   .submenu {
     /*min-width: 1170px;*/
+    display: flex;
     width: 100%;
-   /* display:none;*/
-   min-height: 300px;
     position:absolute;
     background-color: #347aa5;
     color: #ffffff;
     z-index: 3;
     left: 0;
+
   }
   .submenu__link {
     min-width: 189px;
   }
+
+  .main-menu__item .submenu {
+    display: none!important;
+
+  }  
   .open .submenu {
     display: flex!important;
-    justify-content: center;
+
   }
   .submenu__item {
     border-bottom: none;
-    margin: 0 auto;
   }
   .submenu a {
     padding-left: 0;
@@ -2255,7 +2259,6 @@ textarea,
   .submenu__link {
     color: #ffffff;
     padding: 15px 9px 15px 11px;
-    border-bottom: 3px solid rgba(56,94,133,0.45);
   /* -webkit-box-shadow: 0px 5px 4px -2px rgba(56,94,133,0.65);
    -moz-box-shadow: 0px 5px 4px -2px rgba(56,94,133,0.65);
    box-shadow: 0px 5px 4px -2px rgba(56,94,133,0.65);*/
@@ -2269,7 +2272,21 @@ textarea,
   .subsubmenu__item {
     padding-left: 15px;
   }
-
+  @keyframes hr {
+    to {
+      border-top: 3px solid rgba(56,94,133,0.45);
+    }
+  }
+  .open .hr {
+    position: absolute;
+    width: 1170px;
+    z-index: 3;
+    bottom: -50px;
+    left: 0;
+    animation-name: hr;
+    animation-fill-mode: forwards;
+    animation-delay: 0.4s;
+  }
 
 
   /*slider*/

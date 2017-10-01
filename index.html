@@ -166,6 +166,7 @@
               </ul>
             </li>
           </ul>
+          <div class="hr"></div>
         </li>
         <li class="main-menu__item">
           <div class="link">Удаление зубов/ Хирургия<i class="icon-angle-down"></i></div>
@@ -213,6 +214,7 @@
               </ul>
             </li>
           </ul>
+          <div class="hr"></div>
         </li>
         <li class="main-menu__item">
           <div class="link">Протезирование<i class="icon-angle-down"></i></div>
@@ -260,6 +262,7 @@
               </ul>
             </li>
           </ul>
+          <div class="hr"></div>
         </li>
         <li class="main-menu__item">
           <div class="link">Пародонтология<i class="icon-angle-down"></i></div>
@@ -306,6 +309,7 @@
               </ul>
             </li>
           </ul>
+          <div class="hr"></div>
         </li>
         <li class="main-menu__item">
           <div class="link">Лечение зубов<i class="icon-angle-down"></i></div>
@@ -361,6 +365,7 @@
               </ul>
             </li>
           </ul>
+          <div class="hr"></div>
         </li>
         <li class="main-menu__item">
           <div class="link">Отбеливание и гигиена<i class="icon-angle-down"></i></div>
@@ -385,6 +390,7 @@
               </ul>
             </li>
           </ul>
+          <div class="hr"></div>
         </li>
       </ul>
     </div>
@@ -846,13 +852,13 @@
 		var $el = e.data.el;
 			$this = $(this),
       $next = $this.next();
-      
+		$next.slideToggle();      
 		$this.parent().toggleClass('open');
-		$next.slideToggle();
+
 
 
 		if (!e.data.multiple) {
-			$el.find('.submenu').slideUp().not($next).removeClass('open');
+			$el.find('.submenu').not($next).slideUp().parent().removeClass('open');
 		};
 	}	
 
@@ -877,12 +883,13 @@
             var $el = e.data.el;
               $this = $(this),
               $next = $this.next();
-            $this.parent().toggleClass('opened');        
-            $next.slideToggle();
+            $next.slideToggle();              
+            $this.parent().toggleClass('open');        
+
 
         
             if (!e.data.multiple) {
-              $el.find('.submenu__items').slideUp().not($next).parent().removeClass('open');
+              $el.find('.submenu__items').not($next).slideUp().parent().removeClass('open');
             };
           }	
         
