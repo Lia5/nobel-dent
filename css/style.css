@@ -1923,40 +1923,7 @@ textarea,
   .accordion .link {
     padding-right: 30px;
     }
-  /*fix-menu*/
-  .fix-menu {
-    display: flex;
-    font-size: 14px; 
-    line-height: 15px;
-    font-family: 'Roboto-Medium', Arial, sans-serif;
-  }
-  .fix-menu li {
-    display: block;
-  }
-  .fix-menu__items {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .fix-menu__item {
-    padding: 15px 12px 15px 12px;
-  }
-  .fix-menu__items li:first-child {
-    padding-left: 0;
-  }
-  .fix-menu__items li:last-child {
-    padding-right: 0;
-  }
-  .fix-menu__item__select-number {
-    font-size: 18px;
-  }
-
-
-
-
-
-
+  
 
 
 
@@ -2379,6 +2346,174 @@ textarea,
     animation-fill-mode: forwards;
     animation-delay: 0.4s;
   }
+
+
+/*fix-menu*/
+.fix-menu {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-size: 14px; 
+  line-height: 15px;
+  font-family: 'Roboto-Medium', Arial, sans-serif;
+  color: #ffffff;
+  background-color: #527da8;
+  vertical-align: middle;
+  z-index: 5;
+  position: absolute;
+  left: -100%;
+}
+.fix-menu__wrapper {
+  width: 1170px;
+}
+
+.fix-menu a {
+  color: #ffffff;
+}
+.fix-menu li {
+  display: block;
+}
+.fix-menu__items {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.fix-menu__item a{
+  display: block;
+  padding: 15px 20px 12px 20px;
+}
+.fix-menu__items li:first-child a {
+  padding-left: 0;
+}
+.fix-menu__items li:last-child a {
+  padding-right: 0;
+}
+.fix-menu__item__nd {
+  background-color: #527da8;
+}
+
+.fix-menu__item__bef-af {
+  background-color: #1088a6;
+}
+.fix-menu__item__select-number {
+  width: 223px;
+  font-size: 18px;
+  position: relative;
+  background-color: #7fc242;  
+  padding-top: 10px;
+}
+.fix-menu__item__phone {
+  background-color: #7fc242;  
+}
+#fix-menu__item__select-number {
+  position: relative;   /* Это нужно, чтобы работал z-index */   
+  width: 249px;
+  padding-left: 64px;
+  padding-right: 34px;
+  border: none;
+  height: 22px;    /* Меньше, чем рисованная "кнопочка" на ширину нужного border'а */
+  color: #ffffff;
+  background-color: transparent;
+  z-index: 2;
+}
+#fix-menu__item__select-number option {
+  background-color: #7fc242; 
+}
+.fix-menu__select-button-number {
+  position: absolute;
+  top: -2px;
+  right: -14px;
+  color: #ffffff;
+}
+select {
+  outline:none;
+}
+.fix-menu .icon-phone {
+  position: absolute;
+  font-size: 16px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  top: 6px;
+  left: 2px;
+  padding: 5px 0 5px 0;
+}
+.tel {
+  position: absolute;
+  top: 14px;
+  left: 30px;
+  color: #ffffff;
+}
+.fix-menu__item__usl {
+  background-color: #e6007e;
+  z-index: 2;
+}
+.fix-menu__item__select-language {
+  position: relative;
+  width: 56px;
+  background-color: #1088a6;
+  border: none;
+  padding-top: 13px;
+  color: #ffffff;
+}
+.fix-menu__item__select-language select {
+  background-color: #1088a6;
+}
+.fix-menu__item__select-language .icon-angle-down {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#fix-menu__item__select-language {
+  position: relative;
+  width: 73px;
+  padding-right: 10px;
+  border: none;
+  color: #ffffff;
+  height: 22px; 
+  background-color: transparent;
+  z-index: 2;
+}
+#fix-menu__item__select-language option {
+  background-color: #1087A6; 
+}
+.fix-menu__item__language {
+  background-color: #1087A6;
+}
+.fix-menu__select-button-language {
+  position: absolute;
+  top: 14px;
+  right: 0;
+}
+.fix-menu__item__akcii {
+  background-color: #527da8;
+  z-index: 2;
+}
+.fix-menu__item__cont {
+  background-color: #1088a6;
+}
+.fix-menu__item__order {
+  text-transform: uppercase;
+  background-color: #faa61a;
+}
+  
+/*закрепление fix-menu*/
+
+
+.fixed {
+  position:fixed;
+  top:0;
+  left:0;
+  width: 100%;
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 7px 17px -2px rgba(117,117,117,1);
+  -moz-box-shadow: 0px 7px 17px -2px rgba(117,117,117,1);
+  box-shadow: 0px 7px 17px -2px rgba(117,117,117,1);
+}
+
 
 
   /*slider*/
