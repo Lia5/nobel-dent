@@ -1071,8 +1071,8 @@ h3 a{
 .tabs__specialization__trangle-down {
   width: 0;
 	height: 0;
-	border-left: 240px solid transparent;
-	border-right: 240px solid transparent;
+	border-left: 185px solid transparent;
+	border-right: 185px solid transparent;
   border-top: 4px solid #347aa5;
   position: absolute;
   bottom: -5px;
@@ -1124,8 +1124,8 @@ h3 a{
 .tabs__service__trangle-down {
   width: 0;
 	height: 0;
-	border-left: 240px solid transparent;
-	border-right: 240px solid transparent;
+	border-left: 185px solid transparent;
+	border-right: 185px solid transparent;
   border-top: 4px solid #7fc242;
   position: absolute;
   bottom: -5px;
@@ -1177,8 +1177,8 @@ h3 a{
 .tabs__about-us__trangle-down {
   width: 0;
 	height: 0;
-	border-left: 240px solid transparent;
-	border-right: 240px solid transparent;
+	border-left: 185px solid transparent;
+	border-right: 185px solid transparent;
   border-top: 4px solid #BCBCC3;
   position: absolute;
   bottom: -5px;
@@ -1231,8 +1231,8 @@ h3 a{
 .tabs__proect__trangle-down {
   width: 0;
 	height: 0;
-	border-left: 240px solid transparent;
-	border-right: 240px solid transparent;
+	border-left: 185px solid transparent;
+	border-right: 185px solid transparent;
   border-top: 4px solid #e6007e;
   position: absolute;
   bottom: -5px;
@@ -1858,10 +1858,32 @@ textarea,
   -o-transform: rotate(0);
   transform: rotate(0);
 }
+/*Страница service*/
+/*All-on-4*/
+.service__nav {
+  width: 100%;
+  justify-content: center;
 
-
-
-
+}
+.service__nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+}
+.service__nav li {
+  padding: 5px;
+}
+.service__nav li:first-child {
+  padding-left: 0;
+}
+.service {
+  margin: 0 auto;
+}
+.container-nav {
+  background-color: #f3f3f3;
+  position: relative;
+}
 
 
 @media screen and (min-width: 768px) {
@@ -2613,6 +2635,52 @@ select {
   .advantages__important {
     padding-right: 0;
   }
+
+/*Страница service*/
+/*All-on-4*/
+  .service__nav ul {
+    width: 1170px;
+
+  }
+  .service {
+    width: 1170px;
+  }
+  .container-nav::before {
+    border-left: 105px solid transparent;
+    border-right: 105px solid transparent;
+    border-top: 70px solid #f3f3f3;
+    bottom: -70px;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 0;
+  }
+  .container-nav::after {
+    background: #fff;
+    border-radius: 50%;
+    bottom: -41px;
+    content: "";
+    height: 38px;
+    left: 50%;
+    margin: 0 0 0 -19px;
+    position: absolute;
+    width: 38px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
