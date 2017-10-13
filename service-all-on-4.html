@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.2.1.min.js"></script> 
     <script src="js/modernizr.js"></script> <!-- Modernizr -->
+    <link  href="css/fotorama.css" rel="stylesheet">
 </head>
 
 <body>
@@ -565,41 +566,18 @@
           <p><ins>Lorem Ipsum </ins>– это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</p>
           <p><ins>Lorem Ipsum </ins>– это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</p>
           <p><ins>Lorem Ipsum </ins>– это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</p>
-          <h2>Фото: до и после All-on-4</h2>
-
-
+          <h2 class="galllery-carusel">Фото: до и после All-on-4</h2>
+          <div class="fotorama" data-nav="thumbs">
+            <a href="http://s.fotorama.io/2.jpg"><img src="http://s.fotorama.io/2_thumb.jpg"></a> <!--Первую картинку нужного размера-->
+           <a href="img/gallery/1.jpg"><img src="img/gallery/1_thumb.jpg"></a>
+            <a href="img/gallery/1.jpg"><img src="img/gallery/1_thumb.jpg"></a>
+            <a href="img/gallery/1.jpg"><img src="img/gallery/1_thumb.jpg"></a>
+            <a href="img/gallery/1.jpg"><img src="img/gallery/1_thumb.jpg"></a>
+            <a href="img/gallery/1.jpg"><img src="img/gallery/1_thumb.jpg"></a>
+          </div>
+          <div class="btn galllery-btn">Еще фото: до и после</div>
         </div>
-<!--         
-
-
-
-
-
-Еще фото: до и после
-
-ЦЕНЫ
-Комплекс All-on-4 на имплантах OSSTEM (Юж. Корея), 1 челюсть одноэтапная, протез на 3 день 
-Комплекс ALL-on-6 (Nobel Biocare) на 1 челюсть одноэтапная имплантация, протез через 1-3 дня 
-по показаниям 
-6 Двусоставных имплантов с мульти-юнит абатментом
-Комплекс ALL-on-6 (BIOMED) на 1 челюсть одноэтапная имплантация, протез через 1-3 дня 
-по показаниям
-Комплекс ALL-on-6 на имплантах OSSTEM (Юж. Корея) на 1 челюсть одноэтапная, протез на 3 день.
-Комплекс All-on-4 (Nobel Biocare) на 1 челюсть одноэтапная имплантация, протез через 1-3 дня 
-по показаниям
-4 двусоставных импланта
-
-консультирует
-пециализация: Хирург-имплантолог,
-
-
-
--->
-
-
-
       </div>
-      
       <div class="service__sidebar">
         <h2>Меню услуги</h2>
         <div class="main-menu">
@@ -901,10 +879,67 @@
 
 
     <div class="service__price">
+      <h3>Цены
+        <span class="price-close"></span>
+      </h3>
+      <table class="service__price__table">
+        <tr>
+          <td width="90%">
+            <strong class="ttl">Комплекс All-on-4 на имплантах OSSTEM (Юж. Корея), 1 челюсть одноэтапная, протез на 3 день</strong>
+          </td>
+          <td class="cost">150 000 грн</td>
+        </tr>
+        <tr>
+          <td width="90%">
+            <strong class="ttl">Комплекс ALL-on-6 (Nobel Biocare) на 1 челюсть одноэтапная имплантация, протез через 1-3 дня по показаниям </strong><br>
+            <span>6 Двусоставных имплантов с мульти-юнит абатментом</span>
+          </td>
+          <td class="cost">
+              <p class="old-cost del-cross"><del class="cross">150 000 грн</del></p>
+              <strong class="cost">90 000 грн</strong>
+          </td>
+        </tr>
+        <tr>
+          <td width="90%"><strong class="ttl">Комплекс ALL-on-6 (BIOMED) на 1 челюсть одноэтапная имплантация, протез через 1-3 дня по показаниям</strong>
+          </td>
+          <td class="cost">
+              <p class="old-cost del-cross"><del class="cross">370 000 грн</del></p>
+              <strong class="cost">220 000 грн</strong>
+          </td>
+        </tr>
+        <tr>
+          <td width="90%"><strong class="ttl">Комплекс ALL-on-6 на имплантах OSSTEM (Юж. Корея) на 1 челюсть одноэтапная, протез на 3 день.</strong><br>
+          <span>4 двусоставных импланта</span></td>
+          <td class="cost">
+              <p class="old-cost del-cross"><del class="cross">370 000 грн</del></p>
+              <strong class="cost">220 000 грн</strong>
+          </td>
+        </tr>
+        <tr>
+          <td width="90%"><strong class="ttl">Комплекс All-on-4 (Nobel Biocare) на 1 челюсть одноэтапная имплантация, протез через 1-3 дня по показаниям</strong></td>
+          <td class="cost">
+              <p class="old-cost del-cross"><del class="cross">370 000 грн</del></p>
+              <strong class="cost">220 000 грн</strong>
+          </td>
+        </tr>
 
+      </table>
+<!--         
+
+консультирует
+пециализация: Хирург-имплантолог,
+
+
+
+-->
     </div>
     <div class="service__question">
+      <div class="doctor">
 
+      </div>
+      <div class="question-form">
+        
+      </div>
     </div>
 
 
@@ -1018,6 +1053,6 @@
       $('.tabs__stages__item a').not($(this)).parent().removeClass('tabs__stages__item-active');
     });
   </script>
-      
+  <script src="js/fotorama.js"></script>
 </body>
 </html>

@@ -2183,29 +2183,107 @@ textarea,
   width: 100%;
   text-align: center;
 }
+.galllery-btn {
+  margin: 2% auto;
+  cursor: pointer;
 
-
-
-
-
-
+}
+.galllttery-btn:hover {
+  color: #ffffff;
+  background-color: #e6007e;
+  border: 1px solid #ffffff;;
+}
 
 .service__sidebar {
   width: 100%;
   padding: 15px;
 }
-
 .service__sidebar .open {
   display: block;
 }
-
-
-
-
-
-
-
-
+.service__price {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.service__price h3 {
+  width: 100%;
+  margin: 0;
+  padding: 2%;
+  position: relative;
+  font-family: 'Roboto-Bold';
+  background: #347aa5;
+  color:  #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.service__price__table {
+  border-collapse: collapse;
+  border-spacing: 2px;
+  border-color: grey;
+}
+.service__price__table td{
+  border-bottom: 1px solid #b3b3b3;
+  border-left: 1px solid #b3b3b3;
+  padding: 10px;
+}
+.price-close {
+  background: #ffffff;
+  border-radius: 3px;
+  height: 28px;
+  margin: -14px 0 0;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  width: 28px;
+  z-index: 2;
+}
+.price-close:after{
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 4px;
+  margin: -2px 0 0;
+  left: 6px;
+  right: 6px;
+  top: 50%;
+  background: #347aa5;
+}
+.service__price__table td:last-child {
+  border-right: medium none;
+  white-space: nowrap;
+}
+del.cross {
+  display:inline-block; /* запрещает перенос текста на следующую строку */
+  text-decoration:none;
+  position:relative;
+}
+.del-cross {
+  display:block;
+  position:relative;
+  overflow:hidden; /* запрещает обтекать другие блоки */
+}
+del.cross:before,
+.del-cross:before {
+  content:'';
+  position:absolute;
+  display:block;
+  width:auto;
+  height:auto;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  background: rgba(0,0,0,0) url(../img/cross.svg) no-repeat;
+  background-size:100% 100%; /* растягивает фон на всю ширину и высоту блока */
+}
+.service__question {
+  width: 100%;
+  display: flex;
+}
 
 
 
@@ -2486,7 +2564,10 @@ textarea,
     width: 24%;
   }
 
-
+  .service__price {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 
 }
 
@@ -3295,9 +3376,16 @@ select {
 .tabs__stages__img {
   width: 40%;
 }
-
-
-
+.galllery-btn {
+  margin: 2% auto;
+}
+.service__price {
+  width: 1170px;
+  margin-bottom: 50px;
+}
+.service__question {
+  width: 1170px;
+}
 
 
 }
