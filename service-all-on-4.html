@@ -881,16 +881,18 @@
     <div class="service__price">
       <h3>Цены
         <span class="price-close"></span>
+        <span class="price-plus"></span>
       </h3>
+      
       <table class="service__price__table">
         <tr>
-          <td width="90%">
+          <td width="95%">
             <strong class="ttl">Комплекс All-on-4 на имплантах OSSTEM (Юж. Корея), 1 челюсть одноэтапная, протез на 3 день</strong>
           </td>
           <td class="cost">150 000 грн</td>
         </tr>
         <tr>
-          <td width="90%">
+          <td width="95%">
             <strong class="ttl">Комплекс ALL-on-6 (Nobel Biocare) на 1 челюсть одноэтапная имплантация, протез через 1-3 дня по показаниям </strong><br>
             <span>6 Двусоставных имплантов с мульти-юнит абатментом</span>
           </td>
@@ -900,7 +902,7 @@
           </td>
         </tr>
         <tr>
-          <td width="90%"><strong class="ttl">Комплекс ALL-on-6 (BIOMED) на 1 челюсть одноэтапная имплантация, протез через 1-3 дня по показаниям</strong>
+          <td width="95%"><strong class="ttl">Комплекс ALL-on-6 (BIOMED) на 1 челюсть одноэтапная имплантация, протез через 1-3 дня по показаниям</strong>
           </td>
           <td class="cost">
               <p class="old-cost del-cross"><del class="cross">370 000 грн</del></p>
@@ -908,7 +910,7 @@
           </td>
         </tr>
         <tr>
-          <td width="90%"><strong class="ttl">Комплекс ALL-on-6 на имплантах OSSTEM (Юж. Корея) на 1 челюсть одноэтапная, протез на 3 день.</strong><br>
+          <td width="95%"><strong class="ttl">Комплекс ALL-on-6 на имплантах OSSTEM (Юж. Корея) на 1 челюсть одноэтапная, протез на 3 день.</strong><br>
           <span>4 двусоставных импланта</span></td>
           <td class="cost">
               <p class="old-cost del-cross"><del class="cross">370 000 грн</del></p>
@@ -916,7 +918,7 @@
           </td>
         </tr>
         <tr>
-          <td width="90%"><strong class="ttl">Комплекс All-on-4 (Nobel Biocare) на 1 челюсть одноэтапная имплантация, протез через 1-3 дня по показаниям</strong></td>
+          <td width="95%"><strong class="ttl">Комплекс All-on-4 (Nobel Biocare) на 1 челюсть одноэтапная имплантация, протез через 1-3 дня по показаниям</strong></td>
           <td class="cost">
               <p class="old-cost del-cross"><del class="cross">370 000 грн</del></p>
               <strong class="cost">220 000 грн</strong>
@@ -1051,6 +1053,20 @@
     $('.tabs__stages__item a').click(function() {
       $(this).parent().toggleClass('tabs__stages__item-active');
       $('.tabs__stages__item a').not($(this)).parent().removeClass('tabs__stages__item-active');
+    });
+  </script>
+  <script>
+    $('.price-close').click(function() {
+      $('.service__price__table').toggleClass('service__price__table-closed');
+      $('.price-plus').toggleClass('price-plus-open');
+     
+    });
+  </script>
+  <script>
+    $('.price-plus').click(function() {
+       $('.service__price__table').removeClass('service__price__table-closed');
+      $('.price-plus').removeClass('price-plus-open');
+      
     });
   </script>
   <script src="js/fotorama.js"></script>
