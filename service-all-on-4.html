@@ -872,12 +872,9 @@
               <div class="hr"></div>
             </li>
           </ul>
-        </div>    
+        </div>
       </div>
     </div>
-
-
-
     <div class="service__price">
       <h3>Цены
         <span class="price-close"></span>
@@ -910,37 +907,65 @@
           </td>
         </tr>
         <tr>
-          <td width="95%"><strong class="ttl">Комплекс ALL-on-6 на имплантах OSSTEM (Юж. Корея) на 1 челюсть одноэтапная, протез на 3 день.</strong><br>
-          <span>4 двусоставных импланта</span></td>
+          <td width="95%"><strong class="ttl">Комплекс ALL-on-6 на имплантах OSSTEM (Юж. Корея) на 1 челюсть одноэтапная, протез на 3 день.</strong></td>
           <td class="cost">
               <p class="old-cost del-cross"><del class="cross">370 000 грн</del></p>
               <strong class="cost">220 000 грн</strong>
           </td>
         </tr>
         <tr>
-          <td width="95%"><strong class="ttl">Комплекс All-on-4 (Nobel Biocare) на 1 челюсть одноэтапная имплантация, протез через 1-3 дня по показаниям</strong></td>
+          <td width="95%"><strong class="ttl">Комплекс All-on-4 (Nobel Biocare) на 1 челюсть одноэтапная имплантация, протез через 1-3 дня по показаниям</strong><br>
+          <span>4 двусоставных импланта</span></td>
           <td class="cost">
               <p class="old-cost del-cross"><del class="cross">370 000 грн</del></p>
               <strong class="cost">220 000 грн</strong>
           </td>
         </tr>
-
       </table>
-<!--         
-
-консультирует
-пециализация: Хирург-имплантолог,
-
-
-
--->
     </div>
-    <div class="service__question">
-      <div class="doctor">
 
+    <div class="service__question">
+      <div class="service__question__doctor">
+        <div class="doctor">
+          <img src="img/services/doctor-urtin.jpg" alt="">
+        </div>
+        <div class="doctor__about">
+          <h2>консультирует:</h2>
+          <strong>Юртин Павел Николаевич</strong>
+          <p class="service__specialization">Специализация: Хирург-имплантолог, ортопед</p>
+          <p class="service__experience">Стаж: более 10 лет</p>
+        </div>
       </div>
-      <div class="question-form">
-        
+      <!--Форма обратной связи-->
+      <div class="service__question__form" id="service__question__form">
+        <h2>Вопросы по этой теме?</h2>
+        <p>Оставьте контакты для бесплатной консультации.</p>
+        <div id="messegeResult2"></div>
+        <form>
+          <!-- Hidden Required Fields -->
+          <input type="hidden" name="project_name" value="NobelDent">
+          <input type="hidden" name="admin_email" value="liaforweb@gmail.com">
+          <input type="hidden" name="form_subject" value="NobelDent-бесплатная консультация по All-on-4">
+          <!-- END Hidden Required Fields -->
+          <div class="fieldset-wrapper">
+            <div class="fieldset-wrapper-row">
+              <input type="text" name="Имя" placeholder="Имя" required>
+              <input type="text" name="Телефон" placeholder="Телефон" required>
+            </div>
+            <div class="fieldset-wrapper-row">
+              <textarea class="close" placeholder="Опишите что вас беспокоит." name="content"></textarea>
+            </div>
+            <div class="fieldset-wrapper-row">
+              <input class="close" type="email" placeholder="Email" name="email">
+            </div>
+          </div>
+          
+          <div class="send-wrapper">
+            <p>Предпочитаете общаться по E-mail?<br>
+            <span>Нажмите здесь.</span></p>
+            <button class="form__btn">Позвонить мне!</button>
+          </div>
+        </form>
       </div>
     </div>
 
@@ -1047,7 +1072,107 @@
 
 
   </div>
-  
+  <script>
+      $(function() {
+      var Accordion = function(el, multiple) {
+        this.el = el || {};
+        this.multiple = multiple || false;
+    
+        // Variables privadas
+        var links = this.el.find('.link');
+        // Evento
+        links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+      }
+      Accordion.prototype.dropdown = function(e) {
+        var $el = e.data.el;
+          $this = $(this),
+          $next = $this.next();
+        $next.slideToggle();      
+        $this.parent().toggleClass('open');
+        if (!e.data.multiple) {
+          $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+        };
+      }	
+      var accordion = new Accordion($('#accordion'), false);
+      var accordion2 = new Accordion($('#accordion2'), false);
+    });
+
+        </script>
+          <script>
+              $(function() {
+              var Accordion = function(el, multiple) {
+                this.el = el || {};
+                this.multiple = multiple || false;
+            
+                // Variables privadas
+                var links = this.el.find('.submenu__link');
+                // Evento
+                links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+              }
+              Accordion.prototype.dropdown = function(e) {
+                var $el = e.data.el;
+                  $this = $(this),
+                  $next = $this.next();
+                $next.slideToggle();              
+                $this.parent().toggleClass('open');        
+                if (!e.data.multiple) {
+                  $el.find('.submenu__items').not($next).slideUp().parent().removeClass('open');
+                };
+              }	
+              var accordion = new Accordion($('#accordion'), false);
+              var accordion2 = new Accordion($('#accordion2'), false);
+            });
+       </script>
+       <script>
+          jQuery(document).ready(function($){
+        //move nav element position according to window width
+        moveNavigation();
+        $(window).on('resize', function(){
+          (!window.requestAnimationFrame) ? setTimeout(moveNavigation, 300) : window.requestAnimationFrame(moveNavigation);
+        });
+      
+        //mobile version - open/close navigation
+        $('.cd-nav-trigger').on('click', function(event){
+          event.preventDefault();
+          if($('.nav__wrapper').hasClass('nav-is-visible')) $('.moves-out').removeClass('moves-out');
+          
+          $('.nav__wrapper').toggleClass('nav-is-visible');
+          $('.cd-main-nav').toggleClass('nav-is-visible');
+          $('.cd-main-content').toggleClass('nav-is-visible');
+        });
+      
+        //mobile version - go back to main navigation
+        $('.go-back').on('click', function(event){
+          event.preventDefault();
+          $('.cd-main-nav').removeClass('moves-out');
+        });
+      
+        //open sub-navigation
+        $('.cd-subnav-trigger').on('click', function(event){
+          event.preventDefault();
+          $('.cd-main-nav').toggleClass('moves-out');
+        });
+      
+        function moveNavigation(){
+          var navigation = $('.cd-main-nav-wrapper');
+            var screenSize = checkWindowWidth();
+              if ( screenSize ) {
+                //desktop screen - insert navigation inside header element
+            navigation.detach();
+            navigation.insertBefore('.cd-nav-trigger');
+          } else {
+            //mobile screen - insert navigation after .cd-main-content element
+            navigation.detach();
+            navigation.insertAfter('.cd-main-content');
+          }
+        }
+      
+        function checkWindowWidth() {
+          var mq = window.getComputedStyle(document.querySelector('.nav__wrapper'), '::before').getPropertyValue('content').replace(/"/g, '');
+          return ( mq == 'mobile' ) ? false : true;
+        }
+      });
+          </script>
 
   <script>
     $('.tabs__stages__item a').click(function() {
@@ -1059,14 +1184,45 @@
     $('.price-close').click(function() {
       $('.service__price__table').toggleClass('service__price__table-closed');
       $('.price-plus').toggleClass('price-plus-open');
-     
     });
   </script>
   <script>
     $('.price-plus').click(function() {
-       $('.service__price__table').removeClass('service__price__table-closed');
+      $('.service__price__table').removeClass('service__price__table-closed');
       $('.price-plus').removeClass('price-plus-open');
-      
+    });
+  </script>
+  <script>
+    $('.send-wrapper span').click(function() {
+      $('.fieldset-wrapper-row textarea').toggleClass('open');
+      $('.fieldset-wrapper-row input[type="email"]').toggleClass('open');
+      $('.send-wrapper p').toggleClass('close');
+    });
+  </script>
+  <script>
+    $(function() {
+      var Order = function(el, multiple) {
+        this.el = el || {};
+        this.multiple = multiple || false;
+    
+        // Variables privadas
+        var ord = this.el.find('.form__order');
+        // Evento
+        ord.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+      }
+      Order.prototype.dropdown = function(e) {
+        var $el = e.data.el;
+          $this = $(this),
+          $next = $this.next();
+    
+        $next.slideToggle();
+        $this.parent().toggleClass('open');
+    
+        if (!e.data.multiple) {
+          $el.find('.form__wrapper').not($next).slideUp().parent().removeClass('open');
+        };
+      }	
+      var order = new Order($('#form'), false);
     });
   </script>
   <script src="js/fotorama.js"></script>

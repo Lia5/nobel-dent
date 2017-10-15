@@ -30,6 +30,18 @@
   font-weight: bold;
 }
 @font-face {
+  font-family: 'Roboto-BoldItalic';
+  src: url('../fonts/Roboto/Roboto-BoldItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Roboto-Italic';
+  src: url('../fonts/Roboto/Roboto-Italic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: normal;
+}
+@font-face {
   font-family: 'RobotoCondensed-Regular';
   src: url('../fonts/RobotoCondensed/RobotoCondensed-Regular.ttf') format('truetype');
   font-style: normal;
@@ -1812,9 +1824,7 @@ footer {
 form {
   padding: 25px;
 }
-.open {
-  display: block;
-}
+
 
 #form input{
   height: 50px;
@@ -2211,7 +2221,7 @@ textarea,
   margin: 0;
   padding: 2%;
   position: relative;
-  font-family: 'Roboto-Bold';
+  font-family: 'Roboto-Bold', Arial, sans-serif;
   background: #347aa5;
   color:  #ffffff;
   font-size: 18px;
@@ -2223,7 +2233,7 @@ textarea,
 .service__price__table {
   border-collapse: collapse;
   border-spacing: 2px;
-  border-color: grey;
+  background-color: #f4f3f3;
 }
 .service__price__table-closed {
   display: none;
@@ -2232,6 +2242,11 @@ textarea,
   border-bottom: 1px solid #b3b3b3;
   border-left: 1px solid #b3b3b3;
   padding: 10px;
+}
+.service__price__table td:first-child{
+
+  border-left: none;
+
 }
 .price-close {
   background: #ffffff;
@@ -2323,13 +2338,139 @@ del.cross:before,
 .service__question {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 58px;
+  padding: 15px;
+  justify-content: center;
+  background-color: #1088a6;
+}
+.service__question__doctor {
+  display: flex;
+
+}
+.doctor {
+  width: 37%;
+}
+.doctor img {
+  width: 100%;
 }
 
 
+.doctor__about {
+  padding: 0 10px;
+  color: #ffffff;
+}
+.doctor__about h2 {
+  font-family: 'Roboto-Regular', Arial, sans-serif;
+  margin: 0 0 10px 0;
+  font-size: 36px;
+  line-height: 54px;
+}
 
+.doctor__about strong {
+  font-family: 'Roboto-Bold', Arial, sans-serif;
+  font-size: 19px;
+  line-height: 54px;
+}
+.doctor__about p {
+  font-family: 'Roboto-Regular', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+}
+.service__specialization {
+  margin-top: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+.service__experience {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ffffff;
+}
+.service__question__form {
+  background-color: #ffffff;
+  color: #515151;
+  padding: 20px; 
+}
+.service__question__form h2 {
+  font-family: 'Raleway-Bold', Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  color: #e6007e;
+  text-transform: uppercase;
+}
+.service__question__form p {
+  font-family: 'Roboto-Italic', Arial, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 31px;
+}
+.service__question__form form {
+  padding: 0;
+}
+.fieldset-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.fieldset-wrapper-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 
-
-
+.service__question__form input {
+  margin: 15px 5px;
+  padding: 12px;
+  width: 45%;
+}
+.fieldset-wrapper-row textarea {
+  width: 100%;
+  margin: 15px 5px;
+  padding: 12px;
+  height: 122px;
+  max-height: 275px;
+  min-height: 50px;
+}
+.fieldset-wrapper-row input[type="email"] {
+  width: 100%;
+}
+.send-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  text-align: right;
+}
+.send-wrapper p {
+  font-size: 18px;
+  line-height: 25px;
+  margin: 0;
+}
+.send-wrapper span {
+  color: #e6007e;
+  font-family: 'Roboto-BoldItalic', Arial, sans-serif;
+}
+.send-wrapper .form__btn {
+  margin: 10px 0;
+  margin-left: auto;
+  border: none;
+  background-color: #faa61a;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  font-family: 'Roboto-Bold', Arial, sans-serif;
+  font-size: 16px;
+  white-space: nowrap;
+}
+.close {
+  display: none;
+}
+.open {
+  display: block;
+}
 
 
 
@@ -2608,6 +2749,12 @@ del.cross:before,
     margin-top: 30px;
     margin-bottom: 30px;
   }
+  .service__question__form {
+    max-width: 616px;
+  }
+
+
+
 
 }
 
@@ -3425,6 +3572,12 @@ select {
 }
 .service__question {
   width: 1170px;
+}
+.service__question__doctor {
+  width: 43%;
+}
+.service__question__form {
+  width: 57%;
 }
 
 
