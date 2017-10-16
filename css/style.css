@@ -1986,6 +1986,7 @@ textarea,
   margin: 0 auto;
 }
 .service__content {
+  position: relative;
   width: 100%;
   padding: 15px;
   text-align:justify;
@@ -2032,11 +2033,13 @@ textarea,
   padding: 10px;
   text-decoration: none;
   font-size: 18px;
+  background-color: #f3f3f3;
 }
 .container-nav__items {
   list-style: none;
   padding: 5px;
   background-color: #f3f3f3;
+  margin: 0;
 }
 .container-nav__item {
   margin-bottom: 10px;
@@ -2456,6 +2459,7 @@ del.cross:before,
   margin: 0;
 }
 .send-wrapper span {
+  text-decoration: underline;
   color: #e6007e;
   font-family: 'Roboto-BoldItalic', Arial, sans-serif;
 }
@@ -3577,7 +3581,11 @@ select {
     position: absolute;
     width: 30px;
   }
-
+  .fix-wrapper-fixed {
+    position: fixed;
+    top: 0;
+    width: 164px;
+  }
 
 
 
