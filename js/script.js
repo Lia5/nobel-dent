@@ -1,3 +1,17 @@
+//select-number form
+jQuery(function($){
+  $("#phone").mask("+38(999) 999-9999");
+  });
+
+
+  $('.select-number .form__order').click(function() {
+    $('.select-number .form__wrapper').toggleClass('open');
+  });
+
+  $('.select-number .select-button-number').click(function() {
+    $('.select-number .form__wrapper').toggleClass('open');
+  });
+
 //fix-menu
 $(document).ready(function() {
     
@@ -79,6 +93,27 @@ jQuery(document).ready(function($){
   }
   });
 
+
+//menu-mobile
+
+  $( document ).ready(function() {
+    $( ".button__hamburger" ).click(function() {
+      
+      $( ".menu-mobile" ).slideToggle( "slow", function() {
+        $( ".menu-mobile" ).toggleClass('menu-mobile-open');
+        $( ".button__hamburger" ).toggleClass('close');
+        $( ".button__cross" ).removeClass('close');
+      });
+    });
+    
+    $( ".button__cross" ).click(function() {
+      $( ".menu-mobile" ).slideToggle( "slow", function() {
+         $('.menu-mobile').removeClass('menu-mobile-open');
+         $( ".button__cross" ).toggleClass('close');
+        $( ".button__hamburger" ).removeClass('close');
+      });
+    });
+  });
 
 
    // меню nav, menu sidebar
@@ -165,12 +200,12 @@ jQuery(document).ready(function($){
 //fix service__container-nav services
 $(document).ready(function() {
   
- var navPos, winPos, navHeight;
+ var navPos, winPos, navHeight, endPos;
    
  function refreshVar() {
    navPos = $('.service__description').offset().top;
    navHeight = $('.fix-wrapper').outerHeight(true);
-   endPos = $('.service__price').offset().top;
+   endPos = $('.galllery-carusel').offset().top;
  }
  
  refreshVar();
@@ -193,3 +228,31 @@ $(document).ready(function() {
  
  });
 
+ //fix button order
+$(document).ready(function() {
+  
+ var winPos, endPos;
+   
+ function refreshVar() {
+   endPos = $('footer').offset().top;
+ }
+ 
+ refreshVar();
+ $(window).resize(refreshVar);
+ 
+  
+   
+ $(window).scroll(function() {
+   winPos = $(window).scrollTop();
+   
+   if (winPos >= endPos) {
+     $('.form').addClass('close');  
+   }  
+
+   else {
+    $('.form').removeClass('close');
+   }
+
+ });
+ 
+ });

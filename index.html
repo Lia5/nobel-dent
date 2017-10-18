@@ -10,12 +10,11 @@
     <link rel="stylesheet" href="css/fontello-embedded.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.2.1.min.js"></script> 
-    <script src="js/modernizr.js"></script> <!-- Modernizr -->
 </head>
 
 <body>
   <div class="wrapper">
-    <div class="nav__wrapper">
+    <div class="nav__wrapper nav__wrapper-320">
       <nav class="cd-main-nav-wrapper">
         <ul class="cd-main-nav">
           <li class = "main-nav__item"><a href="#">О клинике</a></li>
@@ -41,6 +40,7 @@
       <!-- main content here -->
     </main>
     <header>
+      <div class="planka-top planka-top-320"></div>
       <div class="logo">
         <!--
         <picture class="icon">
@@ -51,23 +51,86 @@
         <img src="img/logo.png" alt="NobelDent клиника эстетической стоматологии">
         
       </div>
+      <div class="header-mobile">
+        <div class="fix-menu__item__select-language">
+            <select id="fix-menu__item__select-language-mobile" name="select-language" size="1">
+              <option>RUS</option>
+              <option>UKR</option>
+              <option>EN</option>
+            </select>
+            <span class="fix-menu__select-button-language ">
+              <i class="icon-angle-down"></i>
+            </span>
+          </div>
+        <div class="select-number">
+          
+
+              
+          <div class="form" id="select-number">
+            
+            <div class="form__order"><span class="size16">+38</span>(098) 794-09-58</div>
+            <div class="form__wrapper form__wrapper__number">
+              <div class="form__title">Заказать обратный звонок</div>
+              <div id="messegeResult"></div>
+            
+              <form>
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="NobelDent">
+                <input type="hidden" name="admin_email" value="liaforweb@gmail.com">
+                <input type="hidden" name="form_subject" value="NobelDent-заказ обратного звонка">
+                <!-- END Hidden Required Fields -->
+                <input type="text" id="phone" name="Телефон" placeholder="Номер телефона" required="">
+                
+                <button class="form__btn">OK</button>
+              </form>
+            </div>
+          </div>
+          <a class="select-button select-button-number "><i class="icon-angle-down"></i></a>
+        </div>
+        <div class="nav__wrapper-mobile">
+          <nav class="cd-main-nav-wrapper-mobile">
+            <div class="buttons"> 
+              <button class="button__hamburger">&#9776;</button>
+              <button class="button__cross close">&#735;</button>
+            </div>
+            <div class="menu-mobile">
+              <ul class="cd-main-nav-mobile">
+                <li class="main-nav__item-mobile"><a href="#">О клинике</a></li>
+                <li class="main-nav__item-mobile"><a href="#">До и после</a></li>
+                <li class="main-nav__item-mobile"><a href="#">Услуги</a></li>
+                <li class="main-nav__item-mobile"><a href="#">Цены</a></li>
+                <li class="main-nav__item-mobile"><a href="#">Акции</a></li>
+                <li class="main-nav__item-mobile"><a href="#">Инфоцентр</a></li>
+                <li class="main-nav__item-mobile"><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
       <div class="header__wrapper">
         <div class="header__telephone">
           <p>+38 <span class="size30">(044) 234 25 49</span></p>
           <div class="select-number">
-            <p class="size16">+38</p>
-            <select id="select-number" name="select-number" size="1">
-              <option>(098) 794-09-58</option>
-              <option>(098) 794-09-58</option>
-              <option>(098) 794-09-58</option>
-              <option>(098) 794-09-58</option>
-            </select>
+            <div class="form"  id="select-number">
+              <div class="form__order"><span class="size16">+38</span>(098) 794-09-58</div>
+              <div class="form__wrapper form__wrapper__number">
+                <div class="form__title">Заказать обратный звонок</div>
+                <div id="messegeResult"></div>
+                <form>
+                  <!-- Hidden Required Fields -->
+                  <input type="hidden" name="project_name" value="NobelDent">
+                  <input type="hidden" name="admin_email" value="liaforweb@gmail.com">
+                  <input type="hidden" name="form_subject" value="NobelDent-заказ обратного звонка">
+                  <!-- END Hidden Required Fields -->
+                  <input type="text" id="phone" name="Телефон" placeholder="Номер телефона" required>
+                  <button class="form__btn">OK</button>
+                </form>
+              </div>
+            </div>
             <a class="select-button select-button-number "><i class="icon-angle-down"></i></a>
           </div>
-          <a class="btn-order" href="#">Заказать обратный звонок</a>
-
+          <p class="btn-order" href="#">Заказать обратный звонок</p>
         </div>
-        
         <div class="header__adress">
           <span class="header__metro">
           <img src="img/logo-metro.png" alt="метро">
@@ -116,7 +179,7 @@
               <ul class="subsubmenu__items">
                 <li class="subsubmenu__item"><a href="service-all-on-4.html#all-on-4-concept">Концепция лечения all-on-4</a></li>
                 <li class="subsubmenu__item"><a href="service-all-on-4.html#all-on-4-3d">Трехмерная 3d визуализация планирования лечения</a></li>
-                <li class="subsubmenu__item"><a href="service-all-on-4.html#all-on-4-indications">Показание к имплантации all-on-4</a></li>
+                <li class="subsubmenu__item"><a href="service-all-on-4.html#all-on-4-indications">Показания к имплантации all-on-4</a></li>
                 <li class="subsubmenu__item"><a href="service-all-on-4.html#all-on-4-stages">Этапы имплантации all-on-4</a></li>
                 <li class="subsubmenu__item"><a href="service-all-on-4.html#all-on-4-advantages">Преимущества и недостатки all-on-4</a></li>
               </ul>
@@ -434,10 +497,7 @@
     </div>
     <div class="slider">
       <div class="slider__wrapper">
-        <div class="planka-top"></div>
-        <div class="slider__foto">
-          <img src="img/bg-slider.png" alt="">
-        </div>
+        <div class="planka-top planka-top-680"></div>
         
         <div class="slider__description">
           
@@ -448,6 +508,10 @@
           </p>
           <p class="slider__methodologies"><span class="slider__methodologies-part part-color">Успешная практика в лечении и полном восстановлении зубов с использованием методик </span>All-on-4 <span class="slider__methodologies-part part-color">и</span> All-on-6 <span class="slider__methodologies-part part-color">по протоколу  Immediate Load</span></p>
         </div>
+        <div class="slider__foto">
+          <img src="img/bg-slider.png" alt="">
+        </div>
+        
       </div>
     </div>
 
@@ -469,21 +533,21 @@
       </ul>
       <div class="tabs__specialization">
         <div class="tabs__specialization__block ">
+          <h3><a href="service-all-on-4.html">Имплантация ALL-on-4</a></h3>
           <div class="tabs__specialization__wrapper">
-            <h3><a href="#">Имплантация ALL-on-4</a></h3>
             <ul class="tabs__specialization__items">
-              <li class="tabs__specialization__item"><a href="#">Концепция лечения All-on-4</a></li>
-              <li class="tabs__specialization__item"><a href="#">Показания к имплантации</a></li>
-              <li class="tabs__specialization__item"><a href="#">Этапы имплантации</a></li>
-              <li class="tabs__specialization__item"><a href="#">Фото: до и после</a></li>
+              <li class="tabs__specialization__item"><a href="service-all-on-4.html#all-on-4-concept">Концепция лечения All-on-4</a></li>
+              <li class="tabs__specialization__item"><a href="service-all-on-4.html#all-on-4-indications">Показания к имплантации</a></li>
+              <li class="tabs__specialization__item"><a href="service-all-on-4.html#all-on-4-stages">Этапы имплантации</a></li>
+              <li class="tabs__specialization__item"><a href="service-all-on-4.html#all-on-4-galllery">Фото: до и после</a></li>
             </ul>
             <div class="btn-more"><a href="#">Подробнее</a> </div>
           </div>
           <img src="img/spec-all-in-4.jpg" alt="all-in-4">
         </div>
         <div class="tabs__specialization__block nth2n">
+          <h3><a href="#">Имплантация ALL-on-6</a></h3>
           <div class="tabs__specialization__wrapper">
-            <h3><a href="#">Имплантация ALL-on-6</a></h3>
             <ul class="tabs__specialization__items">
               <li class="tabs__specialization__item"><a href="#">Концепция лечения All-on-6</a></li>
               <li class="tabs__specialization__item"><a href="#">Показания к имплантации</a></li>
@@ -495,8 +559,8 @@
           <img src="img/spec-all-in-6.jpg" alt="all-in-6">
         </div>
         <div class="tabs__specialization__block">
+          <h3><a href="#">Немедленная нагрузка</a></h3>
           <div class="tabs__specialization__wrapper">
-            <h3><a href="#">Немедленная нагрузка</a></h3>
             <ul class="tabs__specialization__items">
               <li class="tabs__specialization__item"><a href="#">Концепция Immediate Load</a></li>
               <li class="tabs__specialization__item"><a href="#">Показания к имплантации</a></li>
@@ -508,8 +572,8 @@
           <img src="img/spec-immediate-load.jpg" alt="immediate load">
         </div>
         <div class="tabs__specialization__block nth2n">
+          <h3><a href="#">Удаление зубов</a></h3>
           <div class="tabs__specialization__wrapper">
-            <h3><a href="#">Удаление зубов</a></h3>
             <ul class="tabs__specialization__items">
               <li class="tabs__specialization__item"><a href="#">Показания к удалению</a></li>
               <li class="tabs__specialization__item"><a href="#">Простое удаление</a></li>
@@ -521,8 +585,8 @@
           <img src="img/spec-extraction-of-teeth.jpg" alt="extraction of teeth">
         </div>
         <div class="tabs__specialization__block">
+          <h3><a href="#">Протезирование зубов</a></h3>
           <div class="tabs__specialization__wrapper">
-            <h3><a href="#">Протезирование зубов</a></h3>
             <ul class="tabs__specialization__items">
               <li class="tabs__specialization__item"><a href="#">Несъемное протезирование</a></li>
               <li class="tabs__specialization__item"><a href="#">Съемное протезирование</a></li>
@@ -534,8 +598,8 @@
           <img src="img/spec-protez.jpg" alt="protez">
         </div>
         <div class="tabs__specialization__block nth2n">
+          <h3><a href="#">Лечение зубов</a></h3>
           <div class="tabs__specialization__wrapper">
-            <h3><a href="#">Лечение зубов</a></h3>
             <ul class="tabs__specialization__items">
               <li class="tabs__specialization__item"><a href="#">Лечение кариеса</a></li>
               <li class="tabs__specialization__item"><a href="#">Лечение пульпита</a></li>
@@ -553,53 +617,53 @@
 
       <div class="tabs__service">
           <div class="tabs__service__block ">
+          <h3><a href="#">Зубные протезы нового поколения</a></h3> 
             <div class="tabs__service__wrapper">
-              <h3><a href="#">Зубные протезы нового поколения</a></h3>
-                <p class="tabs__service__item"><a href="#">Акриловые протезы нового поколения - Акри Фри.</a></p>
-                <p class="tabs__service__price">Цена, грн.</p>
+              <p class="tabs__service__item"><a href="#">Акриловые протезы нового поколения - Акри Фри.</a></p>
+              <p class="tabs__service__price">Цена, грн.</p>
               <div class="btn-more"><a href="#">Читать об услуге</a> </div>
             </div>
             <img src="img/service-protez.png" alt="implant">
           </div>
           <div class="tabs__service__block ">
+            <h3><a href="#">Сделать зубы за 1 день</a></h3>
             <div class="tabs__service__wrapper">
-              <h3><a href="#">Сделать зубы за 1 день</a></h3>
-                <p class="tabs__service__item"><a href="#">Одноэтапная имплантация с установкой постоянного протеза в этот же день.</a></p>
-                <p class="tabs__service__price">Цена, грн.</p>
+              <p class="tabs__service__item"><a href="#">Одноэтапная имплантация с установкой постоянного протеза в этот же день.</a></p>
+              <p class="tabs__service__price">Цена, грн.</p>
               <div class="btn-more"><a href="#">Читать об услуге</a> </div>
             </div>
             <img src="img/service-one-day.png" alt="implant">
           </div>
           <div class="tabs__service__block ">
+            <h3><a href="#">Лечение зубов без боли</a></h3>
             <div class="tabs__service__wrapper">
-              <h3><a href="#">Лечение зубов без боли</a></h3>
-                <p class="tabs__service__item"><a href="#">Эффективное и безболезненное лечение кариеса и пульпита.</a></p>
-                <p class="tabs__service__price">Цена, от грн.</p>
-              <div class="btn-more"><a href="#">Читать об услуге</a> </div>
+              <p class="tabs__service__item"><a href="#">Эффективное и безболезненное лечение кариеса и пульпита.</a></p>
+              <p class="tabs__service__price">Цена, от грн.</p>
+            <div class="btn-more"><a href="#">Читать об услуге</a> </div>
             </div>
             <img src="img/service-without-pain.png" alt="implant">
           </div>
           <div class="tabs__service__block ">
+            <h3><a href="#">Прозрачные брекеты</a></h3>
             <div class="tabs__service__wrapper">
-              <h3><a href="#">Прозрачные брекеты</a></h3>
-                <p class="tabs__service__item"><a href="#">Выравнивание зубов без брекетов и незаметно для окружающих.</a></p>
-                <p class="tabs__service__price">Цена, грн.</p>
-              <div class="btn-more"><a href="#">Читать об услуге</a> </div>
+              <p class="tabs__service__item"><a href="#">Выравнивание зубов без брекетов и незаметно для окружающих.</a></p>
+              <p class="tabs__service__price">Цена, грн.</p>
+            <div class="btn-more"><a href="#">Читать об услуге</a> </div>
             </div>
             <img src="img/service-brekets.png" alt="implant">
           </div>
           <div class="tabs__service__block ">
+            <h3><a href="#">Удаление камня на зубах</a></h3>
             <div class="tabs__service__wrapper">
-              <h3><a href="#">Удаление камня на зубах</a></h3>
-                <p class="tabs__service__item"><a href="#">Отбеливание зубов и профилактика зубных болезней.</a></p>
-                <p class="tabs__service__price">Цена, грн.</p>
-              <div class="btn-more"><a href="#">Читать об услуге</a> </div>
+              <p class="tabs__service__item"><a href="#">Отбеливание зубов и профилактика зубных болезней.</a></p>
+              <p class="tabs__service__price">Цена, грн.</p>
+            <div class="btn-more"><a href="#">Читать об услуге</a> </div>
             </div>
             <img src="img/service-stone.png" alt="implant">
           </div>
           <div class="tabs__service__block ">
+            <h3><a href="#">Виниры на зубы</a></h3>
             <div class="tabs__service__wrapper">
-              <h3><a href="#">Виниры на зубы</a></h3>
                 <p class="tabs__service__item"><a href="#">Голливудская улыбка с винирами нового поколения. Улыбайтесь не стесняясь.</a></p>
                 <p class="tabs__service__price">Цена, от грн.</p>
               <div class="btn-more"><a href="#">Читать об услуге</a> </div>
@@ -613,13 +677,9 @@
           <div class="tabs__about-us">
             <div class="tabs__about-us__block ">
               <div class="tabs__about-us__wrapper">
-                <h2 class="about__h2">Коротко о <span class="part-color">Nobel</span>Dent</h2>
-                  <p class="tabs__about-us__item">Практические результаты и анализ ошибок за последние 10 лет 
-              различных подходов, в том числе базальной (однофазной) 
-              имплантации и метода all-on-4 для реабилитации адентии позволил 
-              выйти на «золотые» стандарты технологии.</p>
-                  <p class="tabs__about-us__item about__short__info">Обеспечив пациентов красивыми и удобными протезами несмотря 
-              на сложные случаи, которые еще в начале этого века большинству. </p>
+                <h2 class="about__h2">Кратко о <span class="part-color">Nobel</span>Dent</h2>
+                  <p class="tabs__about-us__item">Практические результаты и анализ ошибок за последние 10 лет различных подходов, в том числе базальной (однофазной) имплантации и метода all-on-4 для реабилитации адентии позволил выйти на «золотые» стандарты технологии.</p>
+                  <p class="tabs__about-us__item about__short__info">Обеспечив пациентов красивыми и удобными протезами несмотря на сложные случаи, которые еще в начале этого века большинству. </p>
                   <ul class="about__short__items">
                     <li class="about__short__item"><a href="#">Подробнее о клинике</a></li>
                     <li class="about__short__item"><a href="#">Специалисты клинике</a></li>
@@ -680,7 +740,7 @@
   </div>
   <div class="about">
     <div class="about__short">
-        <h2 class="about__h2">Коротко о <span class="part-color">Nobel</span>Dent</h2>
+        <h2 class="about__h2">Кратко о <span class="part-color">Nobel</span>Dent</h2>
       <img class="about__short__we" src="img/foto-clinik.jpg" alt="Фотография клиники">
       <p>Практические результаты и анализ ошибок за последние 10 лет 
   различных подходов, в том числе базальной (однофазной) 
@@ -866,7 +926,7 @@
         </div>
       </div>
   </div>
-  
-    <script src="js/script.js"></script>
+  <script src="js/maskedinput.js" type="text/javascript"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
