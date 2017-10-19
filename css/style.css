@@ -485,14 +485,39 @@ Main Components
 header {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   order: -1;
   justify-content: center;
   line-height: 28px;
 }
 .logo {
   width: 100%;
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
+.logo__h2 {
+  margin: 0;
+  padding: 10px;
+  font-family: 'Raleway-Bold', Arial, sans-serif;
+  font-size: 30px;
+  color: #e2509d;
+
+}
+.part-info {
+  font-family: 'Roboto-Regular', Arial, sans-serif;
+  color:  #515151;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  white-space: nowrap;
+}
+.part-info-desctop {
+  display: none;
+}
+
+
+
 .header__wrapper {
   display: none;
   flex-wrap: wrap;
@@ -551,9 +576,7 @@ header {
 .header__wrapper .select-button-number {
   left: -10px;
 }
-.header-mobile .select-number:hover {
-  cursor: pointer;
-}
+
 .btn-order {
   display: inline-block;
   color: #99cc00;
@@ -711,10 +734,50 @@ input {
   display: flex;
   width: 100%;
 }
+.header-mobile-time-adress {
+  padding: 10px;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+}
+.header__adress-time-mobile {
+  
+  font-size: 14px;
+  font-family: 'Roboto-Italic', Arial, sans-serif;
+  color: #e2509d;
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px solid #000000;
+}
+
+.header__adress-map-mobile {
+  
+  
+  margin-top: 15px;
+  font-size: 14px;
+  font-family: 'Roboto-Italic', Arial, sans-serif;
+  ;
+}
+.header__adress-map-mobile a {
+  color: #faa61a;
+  cursor: pointer;
+}
+.header__map-marker {
+  width: 33px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.header__map-marker img {
+  width: 100%;
+}
 
 .header-mobile .fix-menu__item__select-language {
    padding-top: 9px;
 }
+.header-mobile .select-number:hover {
+  cursor: pointer;
+}
+
 .fix-menu__item__select-language {
   position: relative;
   width: 54px;
@@ -2722,12 +2785,6 @@ del.cross:before,
   font-size: 16px;
   white-space: nowrap;
 }
-.close {
-  display: none;
-}
-.open {
-  display: block;
-}
 
 .service__discounts {
   background-color: #f4f3f3;
@@ -2845,8 +2902,43 @@ del.cross:before,
     width: 100%;
   }
 
-
-
+  .close {
+    display: none;
+  }
+  .open {
+    display: block;
+  }
+  .fix-form {
+    display: none;
+  }
+  .call-note {
+    display: flex;
+    width: 100%;
+    margin-top: 8px;
+    cursor: pointer;
+  }
+  .call-note img {
+    padding-right: 10px;
+  }
+  .call-note p {
+    margin: 0 auto;
+    text-transform: uppercase;
+    
+  }
+  .call-note__call {
+    display: flex;
+    width: 50%;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #99cc00;
+  }
+  .call-note__note {
+    display: flex;
+    width: 50%;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #347aa5;
+  }
 
 
 
@@ -2921,7 +3013,7 @@ del.cross:before,
       font-family: 'Raleway-ExtraBold', Arial, sans-serif;
       font-size: 36px;
       text-align: center;
-      color: #e6007e;
+      color: #E6007D;
     }
     .footer__list {
       display: block;
@@ -2947,21 +3039,21 @@ del.cross:before,
     justify-content: space-between;
   }
   .logo {
-    width: 21%;
-    padding: 3%;
+    width: 24%;
+    flex-direction: column;
   }
   .header__wrapper {
     width: 70%;
   }
   .header__telephone {
-    width: 51%;
+    width: 53%;
     padding: 0 3% 3% 3%;
 }
   .header__metro {
     padding-left: 24%;
   }
   .header__adress {
-    width: 48%;
+    width: 46%;
     margin-right: 1%;
   }
   .header__buttons {
@@ -3207,7 +3299,9 @@ del.cross:before,
   }
 
   
-
+  .fix-form {
+    display: block;
+  }
 
 
 }
@@ -3260,6 +3354,15 @@ del.cross:before,
 
 
 @media screen and (min-width: 1244px) {
+  .part-info-desctop {
+    display: inline-block;
+    font-family: 'Roboto-Regular', Arial, sans-serif;
+    color: #99cc00;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    white-space: nowrap;
+  }
   /*nav*/
   .nav__wrapper {
     width: 1170px;
@@ -3460,10 +3563,10 @@ del.cross:before,
     margin: 0;
 }
   .header__telephone {
-    width: 44%;
+    width: 38%;
   }
   .header__adress {
-    width: 55%;
+    width: 58%;
   }
   .header__search {
     margin: 0;

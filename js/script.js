@@ -231,28 +231,19 @@ $(document).ready(function() {
  //fix button order
 $(document).ready(function() {
   
- var winPos, endPos;
-   
- function refreshVar() {
-   endPos = $('footer').offset().top;
- }
- 
- refreshVar();
- $(window).resize(refreshVar);
- 
-  
-   
- $(window).scroll(function() {
-   winPos = $(window).scrollTop();
-   
-   if (winPos >= endPos) {
-     $('.form').addClass('close');  
-   }  
-
-   else {
-    $('.form').removeClass('close');
-   }
-
- });
- 
- });
+  var winPos, endPos;
+  function refreshVar() {
+    endPos = $('footer').offset().top;
+  }
+  refreshVar();
+  $(window).resize(refreshVar);
+  $(window).scroll(function() {
+    winPos = $(window).scrollTop();
+    if (winPos >= endPos) {
+      $('.fix-form').addClass('close');  
+    }  
+    else {
+     $('.fix-form').removeClass('close');
+    }
+  });
+});
