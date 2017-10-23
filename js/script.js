@@ -15,17 +15,23 @@ jQuery(function($){
 //fix-menu
 $(document).ready(function() {
     
-   var navPos, winPos, navHeight;
+   var navPos, navPosService, winPos, navHeight;
      
    function refreshVar() {
-     navPos = $('.slider').offset().top;
+     try {
+       navPos = $('.slider').offset().top;
+     } catch (e){}
+    try {
+       navPosService = $('.service').offset().top;
+    } catch (e){}
      navHeight = $('.fix-menu').outerHeight(true);
    }
-   
+
    refreshVar();
    $(window).resize(refreshVar);
-   
+
      $('<div class="clone-fix-menu"></div>').insertBefore('.slider').css('height', navHeight).hide();
+     $('<div class="clone-fix-menu"></div>').insertBefore('.service').css('height', navHeight).hide();
      
    $(window).scroll(function() {
      winPos = $(window).scrollTop();
@@ -33,7 +39,10 @@ $(document).ready(function() {
      if (winPos >= navPos) {
        $('.fix-menu').addClass('fixed shadow');  
        $('.clone-fix-menu').show();
-     }  
+     } else if (winPos >= navPosService) {
+      $('.fix-menu').addClass('fixed shadow');  
+      $('.clone-fix-menu').show();
+    }
      else {
        $('.fix-menu').removeClass('fixed shadow');
        $('.clone-fix-menu').hide();
@@ -203,7 +212,9 @@ $(document).ready(function() {
  var navPos, winPos, navHeight, endPos;
    
  function refreshVar() {
-   navPos = $('.service__description').offset().top;
+   try {
+     navPos = $('.service__description').offset().top;
+   } catch (e){}
    navHeight = $('.fix-wrapper').outerHeight(true);
    endPos = $('.galllery-carusel').offset().top;
  }
