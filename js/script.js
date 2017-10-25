@@ -258,3 +258,68 @@ $(document).ready(function() {
     }
   });
 });
+
+
+
+
+$('.tabs__stages__item a').click(function() {
+  $(this).parent().toggleClass('tabs__stages__item-active');
+  $('.tabs__stages__item a').not($(this)).parent().removeClass('tabs__stages__item-active');
+});
+
+//.block-on-off
+
+
+$('.minus').click(function() {
+  $(this).parent().siblings().toggleClass('close');
+  $(this).siblings().toggleClass('plus-open');
+});
+
+$('.plus').click(function() {
+  $(this).parent().siblings().removeClass('close');
+  $(this).removeClass('plus-open');
+});
+
+$('.send-wrapper span').click(function() {
+  $('.fieldset-wrapper-row textarea').toggleClass('open');
+  $('.fieldset-wrapper-row input[type="email"]').toggleClass('open');
+  $('.send-wrapper p').toggleClass('close');
+});
+
+//service__sidebar__form
+
+function getName (str){
+  if (str.lastIndexOf('\\')){
+      var i = str.lastIndexOf('\\')+1;
+  }
+  else{
+      var i = str.lastIndexOf('/')+1;
+  }						
+  var filename = str.slice(i);			
+  var uploaded = document.getElementById("fileformlabel");
+  uploaded.innerHTML = filename;
+}
+
+
+
+// about slider slick
+$(document).ready(function(){
+
+  $('.multiple-items').slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    appendDots: $('.for-dots'),
+  });
+    
+});
+
+document.getElementById('stage').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = {index: link, event: event},
+        links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+};

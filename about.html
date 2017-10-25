@@ -8,11 +8,36 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="css/fontello-embedded.css">
-    <link rel="stylesheet" href="css/style.css">
+    
     <link  href="css/fotorama.css" rel="stylesheet">
     <script src="js/jquery-3.2.1.min.js"></script> 
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/blueimp-gallery-indicator.css">
+    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+<!-- The Gallery as inline carousel, can be positioned anywhere on the page -->
+<div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+
     <div class="wrapper">
       <div class="nav__wrapper nav__wrapper-320">
         <nav class="cd-main-nav-wrapper">
@@ -527,7 +552,7 @@
           </div>
           
         </div>
-        <p><ins>«Nobel Dent»</ins>– это стоматология инновационных технологий, специалисты которой одни из первых  стали применять метод одноэтапной имплантации зубов с немедленной нагрузкой. В нашем центре пациенты могут получить широкий спектр услуг: от терапевтического лечения зубов и десен до протезирования, и имплантации с использованием новейшего оборудования по современным методикам.</p>
+        <p class="service__content__main-description"><ins>«Nobel Dent»</ins>– это стоматология инновационных технологий, специалисты которой одни из первых  стали применять метод одноэтапной имплантации зубов с немедленной нагрузкой. В нашем центре пациенты могут получить широкий спектр услуг: от терапевтического лечения зубов и десен до протезирования, и имплантации с использованием новейшего оборудования по современным методикам.</p>
         <div class="service__container-nav">
           <div class="fix-wrapper ">
             <h3>О клинике</h3>
@@ -536,7 +561,7 @@
               <li class="container-nav__item"><a href="#about-certificate">Деятельность и сертификаты</a></li>
               <li class="container-nav__item"><a href="#about-laboratory">Зуботехническая лаборатория</a></li>
               <li class="container-nav__item"><a href="#about-technology">Технологии клиники Nobel Dent</a></li>
-              <li class="container-nav__item"><a href="#about-galllery">Фото клиники</a></li>
+              <li class="container-nav__item"><a href="#about-gallery">Фото клиники</a></li>
             </ul>
           </div>
           
@@ -650,297 +675,36 @@
 
         </div>
       </div>
-      <div class="service__sidebar">
-        <h2>Меню услуги</h2>
+      <div class="service__sidebar mini-navigation">
+        <h2>Навигация</h2>
         <div class="main-menu">
           <ul id="accordion2" class="accordion main-menu__items ">
             <li class="main-menu__item open">
-              <div class="link">Имплантация<i class="icon-angle-down"></i></div>
-              <ul class="submenu">
-                <li class="submenu__item">
-                  <div class="submenu__link">Виды имплантации<i class="icon-angle-down"></i></div>
-                  <ul class="subsubmenu__items">
-                    <li class="subsubmenu__item"><a href="#">Одноэтапная с немедленой нагрузкой</a></li>
-                    <li class="subsubmenu__item"><a href="#">Двухэтапная с отстроченной нагрузкой</a></li>
-                    <li class="subsubmenu__item"><a href="#">Производители имплантов</a></li>
-                  </ul>
-                </li>
-                <li class="submenu__item">
-                  <div class="submenu__link submenu__link-current">Имплантация all-on-4<i class="icon-angle-down"></i><div class="current-element">>></div></div>
-                  <ul class="subsubmenu__items open">
-                    <li class="subsubmenu__item"><a href="#">Концепция лечения all-on-4</a></li>
-                    <li class="subsubmenu__item"><a href="#">Трехмерная 3d визуализация планирования лечения</a></li>
-                    <li class="subsubmenu__item"><a href="#">Показание к имплантации all-on-4</a></li>
-                    <li class="subsubmenu__item"><a href="#">Этапы имплантации all-on-4</a></li>
-                    <li class="subsubmenu__item"><a href="#">Преимущества и недостатки all-on-4</a></li>
-                  </ul>
-                </li>
-                <li class="submenu__item">
-                  <div class="submenu__link">Имплантация all-on- 6<i class="icon-angle-down"></i></div>
-                  <ul class="subsubmenu__items">
-                    <li class="subsubmenu__item"><a href="#">Имплантация all-on- 6</a></li>
-                    <li class="subsubmenu__item"><a href="#">Концепция лечения all-on-6</a></li>
-                    <li class="subsubmenu__item"><a href="#">Трехмерная 3d визуализация планирования лечения all-on-6</a></li>
-                    <li class="subsubmenu__item"><a href="#">Показания к имплантации all-on-6</a></li>
-                    <li class="subsubmenu__item"><a href="#">Этапы имплантации all-on-6</a></li>
-                    <li class="subsubmenu__item"><a href="#">Преимущества и недостатки all-on-6</a></li>
-                    <li class="subsubmenu__item"><a href="#">Фото до и после all-on-6</a></li>
-                  </ul>
-                </li>
-                <li class="submenu__item">
-                  <div class="submenu__link">Немедленная нагрузка<i class="icon-angle-down"></i></div>
-                  <ul class="subsubmenu__items">
-                    <li class="subsubmenu__item"><a href="#">Немедленная нагрузка</a></li>
-                    <li class="subsubmenu__item"><a href="#">Трехмерная 3d визуализация планирования лечения</a></li>
-                    <li class="subsubmenu__item"><a href="#">Этапы имплантации с немедленой нагрузкой</a></li>
-                    <li class="subsubmenu__item"><a href="#">Преимущества метода</a></li>
-                  </ul>
-                </li>
-                <li class="submenu__item">
-                  <div class="submenu__link">Протезы на импланты<i class="icon-angle-down"></i></div>
-                  <ul class="subsubmenu__items">
-                    <li class="subsubmenu__item"><a href="#">Коронки на импланты</a></li>
-                    <li class="subsubmenu__item"><a href="#">Условно-съемные</a></li>
-                    <li class="subsubmenu__item"><a href="#">Несъемный протез</a></li>
-                    <li class="subsubmenu__item"><a href="#">Цеменьируемые конструкци</a></li>
-                    <li class="subsubmenu__item"><a href="#">Прикручиываемые конструкции</a></li>
-                  </ul>
-                </li>
-                <li class="submenu__item">
-                  <div class="submenu__link">Костная пластика<i class="icon-angle-down"></i></div>
-                  <ul class="subsubmenu__items">
-                    <li class="subsubmenu__item"><a href="#">Костная пластика</a></li>
-                    <li class="subsubmenu__item"><a href="#">Синус-лифтинг</a></li>
-                    <li class="subsubmenu__item"><a href="#">Вертикальная и горизонтальная аугментация</a></li>
-                    <li class="subsubmenu__item"><a href="#">Расщипеление альвеолярного отростка</a></li>
-                    <li class="subsubmenu__item"><a href="#">Этапы проведения операции</a></li>
-                  </ul>
-                </li>
-              </ul>
+              <div class="link current-element">О клинике<i class="icon-angle-down"></i></div>
               <div class="hr"></div>
             </li>
             <li class="main-menu__item">
-              <div class="link">Удаление зубов/ Хирургия<i class="icon-angle-down"></i></div>
-              <ul class="submenu">
-                <li class="submenu__item">
-                  <div class="submenu__link">Удаление зубов<i class="icon-angle-down"></i></div>
-                  <ul class="subsubmenu__items">
-                    <li class="subsubmenu__item"><a href="#">Удаление зуба ретенированного</a></li>
-                    <li class="subsubmenu__item"><a href="#">Простое удаление зуба</a></li>
-                    <li class="subsubmenu__item"><a href="#">Сложное удаление зуба</a></li>
-                  </ul>
-                </li>
-                <li class="submenu__item">
-                  <div class="submenu__link">Пластика уздечки<i class="icon-angle-down"></i></div>
-                  <ul class="subsubmenu__items">
-                    <li class="subsubmenu__item"><a href="#">Пластика уздечки языка</a></li>
-                    <li class="subsubmenu__item"><a href="#">Пластика уздечки губы</a></li>
-                    <li class="subsubmenu__item"><a href="#">Этапы проведения операции</a></li>
-                  </ul>
-                </li>
-                <li class="submenu__item">
-                  <div class="submenu__link">PRP сгусток крови<i class="icon-angle-down"></i></div>
-                  <ul class="subsubmenu__items">
-                    <li class="subsubmenu__item"><a href="#">Показания к применения PRP-технологии</a></li>
-                    <li class="subsubmenu__item"><a href="#">Концепция PRP-технологии в стоматологии</a></li>
-                    <li class="subsubmenu__item"><a href="#">Эфективность применения PRP-технологии</a></li>
-                  </ul>
-                </li>
-                <li class="submenu__item">
-                  <div class="submenu__link">PRF Мебрана<i class="icon-angle-down"></i></div>
-                  <ul class="subsubmenu__items">
-                    <li class="subsubmenu__item"><a href="#">Показания к применения PRF-технологии</a></li>
-                    <li class="subsubmenu__item"><a href="#">Концепция PRF-технологии в стомотологии</a></li>
-                    <li class="subsubmenu__item"><a href="#">Эффективность применения PRF-технологии</a></li>
-                  </ul>
-                </li>
-                <li class="submenu__item">
-                  <div class="submenu__link">Пластика преддверия<i class="icon-angle-down"></i></div>
-                  <ul class="subsubmenu__items">
-                    <li class="subsubmenu__item"><a href="#">Показания к вмешательству</a></li>
-                    <li class="subsubmenu__item"><a href="#">Вестибулопластика</a></li>
-                    <li class="subsubmenu__item"><a href="#">Увеличение площади кератинизированой десны</a></li>
-                    <li class="subsubmenu__item"><a href="#">Этапы проведения операции</a></li>
-                    <li class="subsubmenu__item"><a href="#">Гигиена после операции</a></li>
-                  </ul>
-                </li>
-              </ul>
+              <div class="link">До и после<i class="icon-angle-down"></i></div>
               <div class="hr"></div>
             </li>
             <li class="main-menu__item">
-              <div class="link">Протезирование<i class="icon-angle-down"></i></div>
-              <ul class="submenu">
-                <li class="submenu__item">
-                  <div class="submenu__link">Общие сведения<i class="icon-angle-down"></i></div>
-                  <ul class="subsubmenu__items">
-                    <li class="subsubmenu__item"><a href="#">Показания к протезированию зубов</a></li>
-                    <li class="subsubmenu__item"><a href="#">Виды и этапы протезирования</a></li>
-                    <li class="subsubmenu__item"><a href="#">Правила ухода за протезами</a></li>
-                  </ul>
-                </li>
-                <li class="submenu__item">
-                  <div class="submenu__link">Несъемные<i class="icon-angle-down"></i></div>
-                  <ul class="subsubmenu__items">
-                    <li class="subsubmenu__item"><a href="#">Целнокерамические (безметаловые) конструкции</a></li>
-                    <li class="subsubmenu__item"><a href="#">Металлокерамические несъемные</a></li>
-                    <li class="subsubmenu__item"><a href="#">На основе диоксида циркония</a></li>
-                    <li class="subsubmenu__item"><a href="#">Композитные</a></li>
-                  </ul>
-                </li>
-                <li class="submenu__item">
-                  <div class="submenu__link">Съемные<i class="icon-angle-down"></i></div>
-                  <ul class="subsubmenu__items">
-                    <li class="subsubmenu__item"><a href="#">Акриловые протезы</a></li>
-                    <li class="subsubmenu__item"><a href="#">Нейлоновые протезы</a></li>
-                    <li class="subsubmenu__item"><a href="#">Бюгельные протезы</a></li>
-                    <li class="subsubmenu__item"><a href="#">Виды атачментов</a></li>
-                  </ul>
-                </li>
-                <li class="submenu__item">
-                  <div class="submenu__link">Виниры<i class="icon-angle-down"></i></div>
-                  <ul class="subsubmenu__items">
-                    <li class="subsubmenu__item"><a href="#">Керамические виниры</a></li>
-                    <li class="subsubmenu__item"><a href="#">Композитные виниры</a></li>
-                    <li class="subsubmenu__item"><a href="#">Люминиры</a></li>
-                  </ul>
-                </li>
-                <li class="submenu__item">
-                  <div class="submenu__link">Виды керамики<i class="icon-angle-down"></i></div>
-                  <ul class="subsubmenu__items">
-                    <li class="subsubmenu__item"><a href="#">Duceram Kiss (Германия)</a></li>
-                    <li class="subsubmenu__item"><a href="#">Vita</a></li>
-                    <li class="subsubmenu__item"><a href="#">E-MAX (Германия)</a></li>
-                  </ul>
-                </li>
-              </ul>
+              <div class="link">Услуги<i class="icon-angle-down"></i></div>
               <div class="hr"></div>
             </li>
             <li class="main-menu__item">
-              <div class="link">Пародонтология<i class="icon-angle-down"></i></div>
-              <ul class="submenu">
-                <li class="submenu__item">
-                  <div class="submenu__link">Пародонтит<i class="icon-angle-down"></i></div>
-                  <ul class="subsubmenu__items">
-                    <li class="subsubmenu__item"><a href="#">Этиология и патоогенез</a></li>
-                    <li class="subsubmenu__item"><a href="#">Характерные симптомы</a></li>
-                    <li class="subsubmenu__item"><a href="#">Профилактика</a></li>
-                    <li class="subsubmenu__item"><a href="#">Подвижность зубов</a></li>
-                  </ul>
-                </li>
-                <li class="submenu__item">
-                  <div class="submenu__link">Хирургическая чистка<i class="icon-angle-down"></i></div>
-                  <ul class="subsubmenu__items">
-                    <li class="subsubmenu__item"><a href="#">Показания к применению</a></li>
-                    <li class="subsubmenu__item"><a href="#">Закрытый кюретаж десен</a></li>
-                    <li class="subsubmenu__item"><a href="#">Открытый кюретаж десен</a></li>
-                  </ul>
-                </li>
-                <li class="submenu__item">
-                  <div class="submenu__link">Шинирование зубов<i class="icon-angle-down"></i></div>
-                  <ul class="subsubmenu__items">
-                    <li class="subsubmenu__item"><a href="#">Показания к шинированию</a></li>
-                    <li class="subsubmenu__item"><a href="#">Способы и виды шинирования</a></li>
-                    <li class="subsubmenu__item"><a href="#">Этапы проведения процедуры</a></li>
-                  </ul>
-                </li>
-                <li class="submenu__item">
-                  <div class="submenu__link">Вектор-терапия<i class="icon-angle-down"></i></div>
-                  <ul class="subsubmenu__items">
-                    <li class="subsubmenu__item"><a href="#">Показания к применению</a></li>
-                    <li class="subsubmenu__item"><a href="#">Лечение аппаратом Вектор</a></li>
-                    <li class="subsubmenu__item"><a href="#">Продолжительность и этапы лечения</a></li>
-                  </ul>
-                </li>
-                <li class="submenu__item">
-                  <div class="submenu__link">Гингивит<i class="icon-angle-down"></i></div>
-                  <ul class="subsubmenu__items">
-                    <li class="subsubmenu__item"><a href="#">Воспаление и кровоточивость десен</a></li>
-                    <li class="subsubmenu__item"><a href="#">Диагностика и лечение</a></li>
-                    <li class="subsubmenu__item"><a href="#">Профилактика</a></li>
-                  </ul>
-                </li>
-              </ul>
+              <div class="link">Цены<i class="icon-angle-down"></i></div>
               <div class="hr"></div>
             </li>
             <li class="main-menu__item">
-              <div class="link">Лечение зубов<i class="icon-angle-down"></i></div>
-              <ul class="submenu">
-                <li class="submenu__item">
-                  <div class="submenu__link">Лечение кариеса<i class="icon-angle-down"></i></div>
-                  <ul class="subsubmenu__items">
-                    <li class="subsubmenu__item"><a href="#">Причины развития кариеса</a></li>
-                    <li class="subsubmenu__item"><a href="#">Классификация кариеса</a></li>
-                    <li class="subsubmenu__item"><a href="#">Симптомы кариеса</a></li>
-                    <li class="subsubmenu__item"><a href="#">Лечение кариеса прямым методом</a></li>
-                    <li class="subsubmenu__item"><a href="#">Лечение кариеса непрямым методом</a></li>
-                    <li class="subsubmenu__item"><a href="#">Профилактика кариеса</a></li>
-                  </ul>
-                </li>
-                <li class="submenu__item">
-                  <div class="submenu__link">Герметизация фиссур<i class="icon-angle-down"></i></div>
-                  <ul class="subsubmenu__items">
-                    <li class="subsubmenu__item"><a href="#">Показания к применению</a></li>
-                    <li class="subsubmenu__item"><a href="#">Методы и этапы проведения герметизации</a></li>
-                  </ul>
-                </li>
-                <li class="submenu__item">
-                  <div class="submenu__link">Лечение пульпита<i class="icon-angle-down"></i></div>
-                  <ul class="subsubmenu__items">
-                    <li class="subsubmenu__item"><a href="#">Причины развития пульпита</a></li>
-                    <li class="subsubmenu__item"><a href="#">Классификация пульпита</a></li>
-                    <li class="subsubmenu__item"><a href="#">Симптомы пульпита</a></li>
-                    <li class="subsubmenu__item"><a href="#">Этапы лечения пульпита</a></li>
-                  </ul>
-                </li>
-                <li class="submenu__item">
-                  <div class="submenu__link">Периодонтит<i class="icon-angle-down"></i></div>
-                  <ul class="subsubmenu__items">
-                    <li class="subsubmenu__item"><a href="#">Причины возникновения периодонтита</a></li>
-                    <li class="subsubmenu__item"><a href="#">Классификация периодонтита</a></li>
-                    <li class="subsubmenu__item"><a href="#">Терапевтическое лечение периодонтита</a></li>
-                    <li class="subsubmenu__item"><a href="#">Хирургическое лечение периодонтита</a></li>
-                  </ul>
-                </li>
-                <li class="submenu__item">
-                  <div class="submenu__link">Лечение каналов<i class="icon-angle-down"></i></div>
-                  <ul class="subsubmenu__items">
-                    <li class="subsubmenu__item"><a href="#">Механическая обработка корневых каналов</a></li>
-                    <li class="subsubmenu__item"><a href="#">Антисептическая обработка корневых каналов</a></li>
-                    <li class="subsubmenu__item"><a href="#">Пломбировка корневых каналов</a></li>
-                  </ul>
-                </li>
-                <li class="submenu__item">
-                  <div class="submenu__link">Реставрация зубов<i class="icon-angle-down"></i></div>
-                  <ul class="subsubmenu__items">
-                    <li class="subsubmenu__item"><a href="#">Реставрация по шаблону с Wax Up</a></li>
-                  </ul>
-                </li>
-              </ul>
+              <div class="link">Акции<i class="icon-angle-down"></i></div>
               <div class="hr"></div>
             </li>
             <li class="main-menu__item">
-              <div class="link">Отбеливание и гигиена<i class="icon-angle-down"></i></div>
-              <ul class="submenu">
-                <li class="submenu__item">
-                  <div class="submenu__link">Гигиеническая чистка<i class="icon-angle-down"></i></div>
-                  <ul class="subsubmenu__items">
-                    <li class="subsubmenu__item"><a href="#">Показания к чистке зубов от камня и налета</a></li>
-                    <li class="subsubmenu__item"><a href="#">Современные технологии удаления камня и налета</a></li>
-                    <li class="subsubmenu__item"><a href="#">Ультразвуковая чистка зубов от камня и налета</a></li>
-                    <li class="subsubmenu__item"><a href="#">Чистка PROPHYflex</a></li>
-                    <li class="subsubmenu__item"><a href="#">После процедуры чистки зубов</a></li>
-                  </ul>
-                </li>
-                <li class="submenu__item">
-                  <div class="submenu__link">Отбеливание<i class="icon-angle-down"></i></div>
-                  <ul class="subsubmenu__items">
-                    <li class="subsubmenu__item"><a href="#">Современные технологии отбеливания</a></li>
-                    <li class="subsubmenu__item"><a href="#">Отбеливание Zoom 4</a></li>
-                    <li class="subsubmenu__item"><a href="#">После процедуры отбеливания зубов</a></li>
-                    <li class="subsubmenu__item"><a href="#">Отбеливание в домашних условиях</a></li>
-                  </ul>
-                </li>
-              </ul>
+              <div class="link">Инфоцентр<i class="icon-angle-down"></i></div>
+              <div class="hr"></div>
+            </li>
+            <li class="main-menu__item">
+              <div class="link">Контакты<i class="icon-angle-down"></i></div>
               <div class="hr"></div>
             </li>
           </ul>
@@ -993,84 +757,139 @@
         </div>
       </div>
     </div>
-    <h2 class="galllery-carusel"  id="about-galllery">Фото из клиники NobelDent</h2>
+    <h2 class="gallery-carusel"  id="about-gallery">Фото из клиники NobelDent</h2>
+  
+       
+     
+      <div class="for-dots">
+        <div id="stage" class="grid galery__items multiple-items gallery__slider">  
+          <div class="gallery-item" >
+            <a href="img/about/gallery/foto1.jpg"><img src="img/about/gallery/thumbnails/foto1.jpg"></a>
+          </div>
+          <div class="gallery-item">
+          <a href="img/about/gallery/foto2.jpg"><img src="img/about/gallery/thumbnails/foto2.jpg"></a>
+          </div>
+          <div class="gallery-item">
+          <a href="img/about/gallery/foto3.jpg"><img src="img/about/gallery/thumbnails/foto3.jpg"></a>
+          </div>
+          <div class="gallery-item">
+            <a href="img/about/gallery/foto4.jpg"><img src="img/about/gallery/thumbnails/foto4.jpg"></a>
+          </div>
+          <div class="gallery-item">
+            <a href="img/about/gallery/foto5.jpg"><img src="img/about/gallery/thumbnails/foto5.jpg"></a>
+          </div>
+          <div class="gallery-item">
+            <a href="img/about/gallery/foto6.jpg"><img src="img/about/gallery/thumbnails/foto6.jpg"></a>
+          </div>
+          <div class="gallery-item">
+            <a href="img/about/gallery/foto7.jpg"><img src="img/about/gallery/thumbnails/foto7.jpg"></a>
+          </div>
+          <div class="gallery-item">
+            <a href="img/about/gallery/foto8.jpg"><img src="img/about/gallery/thumbnails/foto8.jpg"></a>
+          </div>
+        </div>
+
+
+      </div>
+
+
+<!--
     <div class="fotorama" data-nav="thumbs">
-      <a href="http://s.fotorama.io/2.jpg"><img src="http://s.fotorama.io/2_thumb.jpg"></a> <!--Первую картинку нужного размера-->
+      <a href="http://s.fotorama.io/2.jpg"><img src="http://s.fotorama.io/2_thumb.jpg"></a> 
       <a href="img/gallery/1.jpg"><img src="img/gallery/1_thumb.jpg"></a>
       <a href="img/gallery/1.jpg"><img src="img/gallery/1_thumb.jpg"></a>
       <a href="img/gallery/1.jpg"><img src="img/gallery/1_thumb.jpg"></a>
       <a href="img/gallery/1.jpg"><img src="img/gallery/1_thumb.jpg"></a>
       <a href="img/gallery/1.jpg"><img src="img/gallery/1_thumb.jpg"></a>
     </div>
-    <div class="service__price">
+  -->
+
+
+    <div class="block-on-off__wrapper">
       <h2 id="">В чем преимущества клиники "NobelDent"</h2>
-      <h3>Стерилизационное оборудование
-        <span class="price-close"></span>
-        <span class="price-plus"></span>
-      </h3>
-      
-
-
-      <!--
-Мы используем современное ультразвуковое оборудование для стерилизации всех применяемых в работе 
-инструментов. Именно стерильность – во многом гарантия высокого качества большинства хирургических 
-вмешательств и стоматологического лечения. Все многоразовые инструменты проходят обязательную 
-двойную стерилизацию. 
-ОБОРУДОВАНИЕ ДЛЯ  КАЧЕСТВЕННОГО ЛЕЧЕНИЯ ЗУБОВ
-БЕЗОПАСНОЕ РЕНТГЕНОБОРУДОВАНИЕ
-СОВРЕМЕННОЕ ПАРОДОНТОЛОГИЧЕСКОЕ ОБОРУДОВАНИЕ
-АППАРАТЫ ДЛЯ БЕЗОПАСНОГО ХИРУРГИЧЕСКОГО ВМЕШАТЕЛЬСТВА
-ОБОРУДОВАНИЕ ДЛЯ ПОЛУЧЕНИЯ ПЛАЗМЫ КРОВИ
-ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ ДЛЯ МОДЕЛИРОВАНИЯ ЛЕЧЕНИЯ
-ИНСТРУМЕНТЫ ДЛЯ ТОЧНОГО ПОЗИЦИОНИРОВАНИЯ ИМПЛАНТОВ
-ТЕХНОЛОГИИ ДЛЯ СОЗДАНИЯ ВЫСОКОТОЧНЫХ ПРОТЕЗОВ
-
-
-      -->
-
-
-
-      <table class="service__price__table">
-        <tr>
-          <td width="95%">
-            <strong class="ttl">Комплекс All-on-4 на имплантах OSSTEM (Юж. Корея), 1 челюсть одноэтапная, протез на 3 день</strong>
-          </td>
-          <td class="cost">150 000 грн</td>
-        </tr>
-        <tr>
-          <td width="95%">
-            <strong class="ttl">Комплекс ALL-on-6 (Nobel Biocare) на 1 челюсть одноэтапная имплантация, протез через 1-3 дня по показаниям </strong><br>
-            <span>6 Двусоставных имплантов с мульти-юнит абатментом</span>
-          </td>
-          <td class="cost">
-              <p class="old-cost del-cross"><del class="cross">150 000 грн</del></p>
-              <strong class="cost">90 000 грн</strong>
-          </td>
-        </tr>
-        <tr>
-          <td width="95%"><strong class="ttl">Комплекс ALL-on-6 (BIOMED) на 1 челюсть одноэтапная имплантация, протез через 1-3 дня по показаниям</strong>
-          </td>
-          <td class="cost">
-              <p class="old-cost del-cross"><del class="cross">370 000 грн</del></p>
-              <strong class="cost">220 000 грн</strong>
-          </td>
-        </tr>
-        <tr>
-          <td width="95%"><strong class="ttl">Комплекс ALL-on-6 на имплантах OSSTEM (Юж. Корея) на 1 челюсть одноэтапная, протез на 3 день.</strong></td>
-          <td class="cost">
-              <p class="old-cost del-cross"><del class="cross">370 000 грн</del></p>
-              <strong class="cost">220 000 грн</strong>
-          </td>
-        </tr>
-        <tr>
-          <td width="95%"><strong class="ttl">Комплекс All-on-4 (Nobel Biocare) на 1 челюсть одноэтапная имплантация, протез через 1-3 дня по показаниям</strong><br>
-          <span>4 двусоставных импланта</span></td>
-          <td class="cost">
-              <p class="old-cost del-cross"><del class="cross">370 000 грн</del></p>
-              <strong class="cost">220 000 грн</strong>
-          </td>
-        </tr>
-      </table>
+      <ul>
+        <li>
+          <h3>
+            <span class="triangle triangle-right"></span>
+            Стерилизационное оборудование
+            <span class="minus"></span>
+            <span class="plus"></span>
+          </h3>
+          <p class="block-on-off"> Мы используем современное ультразвуковое оборудование для стерилизации всех применяемых в работе инструментов. Именно стерильность – во многом гарантия высокого качества большинства хирургических вмешательств и стоматологического лечения. Все многоразовые инструменты проходят обязательную двойную стерилизацию.</p>
+        </li>
+        <li>
+          <h3>
+            <span class="triangle"></span>
+            Оборудование для  качественного лечения зубов
+            <span class="minus"></span>
+            <span class="plus plus-open"></span>
+          </h3>
+          <p class="block-on-off close"> Мы используем Оборудование для  качественного лечения зубов современное ультразвуковое оборудование для стерилизации всех применяемых в работе инструментов. Именно стерильность – во многом гарантия высокого качества большинства хирургических вмешательств и стоматологического лечения. Все многоразовые инструменты проходят обязательную двойную стерилизацию.</p>
+        </li>
+        <li>
+          <h3>
+            <span class="triangle"></span>
+            Безопасное рентгеноборудование
+            <span class="minus"></span>
+            <span class="plus plus-open"></span>
+          </h3>
+          <p class="block-on-off close"> Мы используем современное ультразвуковое оборудование для стерилизации всех применяемых в работе инструментов. Именно стерильность – во многом гарантия высокого качества большинства хирургических вмешательств и стоматологического лечения. Все многоразовые инструменты проходят обязательную двойную стерилизацию.</p>
+        </li>
+        <li>
+          <h3>
+            <span class="triangle"></span>
+            Современное пародонтологическое оборудование
+            <span class="minus"></span>
+            <span class="plus plus-open"></span>
+          </h3>
+          <p class="block-on-off close"> Мы используем современное ультразвуковое оборудование для стерилизации всех применяемых в работе инструментов. Именно стерильность – во многом гарантия высокого качества большинства хирургических вмешательств и стоматологического лечения. Все многоразовые инструменты проходят обязательную двойную стерилизацию.</p>
+        </li>
+        <li>
+          <h3>
+            <span class="triangle"></span>
+            Аппараты для безопасного хирургического вмешательства
+            <span class="minus"></span>
+            <span class="plus plus-open"></span>
+          </h3>
+          <p class="block-on-off close"> Мы используем современное ультразвуковое оборудование для стерилизации всех применяемых в работе инструментов. Именно стерильность – во многом гарантия высокого качества большинства хирургических вмешательств и стоматологического лечения. Все многоразовые инструменты проходят обязательную двойную стерилизацию.</p>
+        </li>
+        <li>
+          <h3>
+            <span class="triangle"></span>
+            Оборудование для получения плазмы крови
+            <span class="minus"></span>
+            <span class="plus plus-open"></span>
+          </h3>
+          <p class="block-on-off close"> Мы используем современное ультразвуковое оборудование для стерилизации всех применяемых в работе инструментов. Именно стерильность – во многом гарантия высокого качества большинства хирургических вмешательств и стоматологического лечения. Все многоразовые инструменты проходят обязательную двойную стерилизацию.</p>
+        </li>
+        <li>
+          <h3>
+            <span class="triangle"></span>
+            Программное обеспечение для моделирования лечения
+            <span class="minus"></span>
+            <span class="plus plus-open"></span>
+          </h3>
+          <p class="block-on-off close"> Мы используем современное ультразвуковое оборудование для стерилизации всех применяемых в работе инструментов. Именно стерильность – во многом гарантия высокого качества большинства хирургических вмешательств и стоматологического лечения. Все многоразовые инструменты проходят обязательную двойную стерилизацию.</p>
+        </li>
+        <li>
+          <h3>
+            <span class="triangle"></span>
+            Инструменты для точного позиционирования имплантов
+            <span class="minus"></span>
+            <span class="plus plus-open"></span>
+          </h3>
+          <p class="block-on-off close"> Мы используем современное ультразвуковое оборудование для стерилизации всех применяемых в работе инструментов. Именно стерильность – во многом гарантия высокого качества большинства хирургических вмешательств и стоматологического лечения. Все многоразовые инструменты проходят обязательную двойную стерилизацию.</p>
+        </li>
+        <li>
+          <h3>
+            <span class="triangle"></span>
+            Технологии для создания высокоточных протезов
+            <span class="minus"></span>
+            <span class="plus plus-open"></span>
+          </h3>
+          <p class="block-on-off close"> Мы используем современное ультразвуковое оборудование для стерилизации всех применяемых в работе инструментов. Именно стерильность – во многом гарантия высокого качества большинства хирургических вмешательств и стоматологического лечения. Все многоразовые инструменты проходят обязательную двойную стерилизацию.</p>
+        </li>
+      </ul>
     </div>
 
     <div class="service__question">
@@ -1219,54 +1038,24 @@
       </div>
 
 
-
   </div>
 
-  <script>
-    $('.tabs__stages__item a').click(function() {
-      $(this).parent().toggleClass('tabs__stages__item-active');
-      $('.tabs__stages__item a').not($(this)).parent().removeClass('tabs__stages__item-active');
-    });
-  </script>
-  <script>
-    $('.price-close').click(function() {
-      $('.service__price__table').toggleClass('service__price__table-closed');
-      $('.price-plus').toggleClass('price-plus-open');
-    });
-  </script>
-  <script>
-    $('.price-plus').click(function() {
-      $('.service__price__table').removeClass('service__price__table-closed');
-      $('.price-plus').removeClass('price-plus-open');
-    });
-  </script>
-  <script>
-    $('.send-wrapper span').click(function() {
-      $('.fieldset-wrapper-row textarea').toggleClass('open');
-      $('.fieldset-wrapper-row input[type="email"]').toggleClass('open');
-      $('.send-wrapper p').toggleClass('close');
-    });
-  </script>
+  <script src="js/blueimp-helper.js"></script>
+  <script src="js/blueimp-gallery-fullscreen.js"></script>
+  <script src="js/blueimp-gallery-indicator.js"></script>
+  <script src="js/jquery.blueimp-gallery.js"></script>
+  <script src="js/blueimp-gallery.min.js"></script>
 
 
-  <!--service__sidebar__form-->
-  <script>
-  function getName (str){
-    if (str.lastIndexOf('\\')){
-        var i = str.lastIndexOf('\\')+1;
-    }
-    else{
-        var i = str.lastIndexOf('/')+1;
-    }						
-    var filename = str.slice(i);			
-    var uploaded = document.getElementById("fileformlabel");
-    uploaded.innerHTML = filename;
-  }
 
-  </script>
+
+
   <script src="js/fotorama.js"></script>
   <script src="js/maskedinput.js" type="text/javascript"></script>
+  
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
   <script src="js/script.js"></script>
-
 </body>
 </html>
