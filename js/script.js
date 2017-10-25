@@ -273,11 +273,15 @@ $('.tabs__stages__item a').click(function() {
 $('.minus').click(function() {
   $(this).parent().siblings().toggleClass('close');
   $(this).siblings().toggleClass('plus-open');
+  $('.triangle').removeClass('plus-open');
+  $(this).siblings().siblings().removeClass('triangle-right');
 });
 
 $('.plus').click(function() {
   $(this).parent().siblings().removeClass('close');
   $(this).removeClass('plus-open');
+  $(this).siblings().toggleClass('triangle-right');
+  $('.minus').removeClass('triangle-right');
 });
 
 $('.send-wrapper span').click(function() {

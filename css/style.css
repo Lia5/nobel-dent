@@ -3050,6 +3050,7 @@ p.block-on-off {
 }
 .triangle-right {
   transform: rotate(90deg);
+  top: 50%;
 }
 .block-on-off__wrapper ul {
   padding: 0;
