@@ -113,6 +113,7 @@ p {
 Primary style
 
 -------------------------------- */
+
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1647,8 +1648,10 @@ h3 a{
   padding: 46px 0 40px 0;
   font-family: 'Raleway-ExtraBold', Arial, sans-serif;
   font-size: 36px;
+  line-height: 38px;
   text-align: center;
   color: #e6007e;
+  box-sizing: content-box; 
 }
 .about__short__we {
   margin: 15px 0 57px 0;
@@ -2306,7 +2309,8 @@ textarea,
   position: relative;
   width: 100%;
   padding: 15px;
-  text-align:justify;
+  margin-bottom: auto;
+  text-align: justify;
   justify-content: center;
   font-size: 15px;
   font-family: 'Roboto-Regular', Arial, sans-serif;
@@ -2965,6 +2969,12 @@ del.cross:before,
   padding-right: 5px;
 
 }
+.service__nav .about__nav-current .about__nav__submenu a{
+  text-decoration: none;
+}
+.service__nav .about__nav-current .about__nav__submenu a:hover{
+  text-decoration: underline;
+}
 .about__nav-current{
   position: relative;
   cursor: pointer;
@@ -3069,8 +3079,13 @@ p.block-on-off {
   margin-top: -50px;
   padding-top: 50px;
 }
-
-
+.mini-navigation .current-element {
+  background-color: #347aa5;
+  color: #ffffff;
+}
+.mini-navigation a{
+  color: #515151;
+}
 
 .for-dots {
   position: relative;
@@ -3106,6 +3121,151 @@ p.block-on-off {
 .slick-dots li.slick-active button:before {
   color: #717171;
 }
+
+/*before-after */
+.before-after__nav__submenu {
+  left: 96px;
+}
+#filter a.active {
+  background-color: #d4d4d4;
+}
+#container {
+  width: 100%;
+}
+#filter a {
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  padding: 8px 20px;
+  margin: 0px 3px 6px;
+  text-align: center;
+  border: 2px solid #fff;
+  text-decoration: none;
+  color: #000000;
+  white-space: nowrap;
+  z-index: 0;
+  transition-duration: 0.3s;
+}
+
+.filter a::after {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  border: 2px solid #000000;
+  z-index: 2;
+  margin: 0px;
+  left: 0px;
+  bottom: 0px;
+  border-top-width: 2px;
+  transition: border-top-width 0.1s 0.2s, height 0.2s 0.1s, width 0.2s 0s, margin 0.2s 0s;
+  
+}
+.before-after__items {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+}
+.before-after__item {
+  margin-bottom: 30px;
+}
+.before-after__item:last-child {
+  margin-bottom: 0;
+}
+.before-after__h3 {
+  width: auto;
+  margin: 0 auto;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  font-family: 'Raleway-Bold', Arial, sans-serif;
+  color:  #717171;
+  font-size: 21px;
+  line-height: 25px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  background-color:  #f4f3f3;
+}
+
+.before-after__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 17px;
+  background-color:  #dfe6ee;
+}
+.before-after__foto {
+  margin-right: 3px;
+  max-width: 49%;
+}
+
+.before-after__foto span {
+  display: block;
+  padding-bottom: 10px;
+  text-align: center;
+  font-family: 'Raleway-Bold', Arial, sans-serif;
+  color:  #717272;
+  font-size: 21px;
+  font-weight: 700;
+}
+.before-after__foto img {
+  width: 100%;
+}
+
+.before-after__description {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.before-after__description p {
+  margin: 0;
+  font-family: 'Roboto-Regular', Arial, sans-serif;;
+  color:  #717171;
+  font-size: 12px;
+  line-height: 19px;
+  font-weight: 400;
+}
+.before-after__description-btn {
+  margin: 0;
+  display: inline-block;
+  color: #ffffff;
+  background-color: #e6007e;
+  border: 1px solid #e6007e;
+}
+.before-after__description-btn:hover {
+   background-color: #E863AD;
+}
+.hr-left {
+  overflow: hidden;
+  text-align: right;
+  margin-top: auto;
+}
+.hr-left:before {
+  content: "";
+  /* делаем линию строчно-блочной */
+  display: inline-block;
+    /* выравниваем вертикально по середине */
+  vertical-align: middle;
+  /* не позволяем ширине превысить 100% (будет добавлен бордюр) */
+  box-sizing: border-box;
+  /* установка ширины в 100% делает линию равной ширине тега заголовка благодаря этому линия заполнит все свободное пространство слева и справа от текста  */
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, #717171 50%, #dfe6ee 0);
+  background-size: 5px 100%;
+  /* добавляем к линии левый и правый бордюр цветом основного фона заголовка благодаря этому создается нужный отступ между линиями и текстом  */
+  border-width: 0 10px;
+}
+.hr-left:before {
+  /* смещаем левую линию влево отрицательным отступом, равным 100% ширины благодаря этому линия встает слева от текста  */
+  margin-left: -100%;
+}
+
+
+
+
 
 
 
@@ -3494,6 +3654,15 @@ p.block-on-off {
   .gallery-item img {
     width: 150px;
   }
+  .before-after__item {
+    margin-bottom: 40px;
+  }
+  .before-after__foto {
+    max-width: 24%;
+  }
+  .before-after__description {
+    max-width: 50%;
+  }
 
 }
 
@@ -3785,6 +3954,7 @@ p.block-on-off {
   }
   .btn {
     margin: 1% 0 1% 1%;
+    cursor: pointer;
   }
 
   /*main-menu*/
@@ -4321,7 +4491,16 @@ p.block-on-off {
     width: auto;
 
   }
-
+  /*before-after*/
+  .before-after__item {
+    margin-bottom: 60px;
+  }
+  .before-after__foto {
+    max-width: 32%;
+  }
+  .before-after__description {
+    max-width: 36%;
+  }
 
 
 
