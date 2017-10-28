@@ -286,6 +286,13 @@ $('.plus').click(function() {
   $(this).siblings().toggleClass('triangle-right');
   $('.minus').removeClass('triangle-right');
 });
+$('.show-all').click(function() {
+  $('.plus').parent().siblings().removeClass('close');
+  $('.plus').removeClass('plus-open');
+  $('.triangle').addClass('triangle-right');
+});
+
+
 
 $('.send-wrapper span').click(function() {
   $('.fieldset-wrapper-row textarea').toggleClass('open');

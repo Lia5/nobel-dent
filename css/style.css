@@ -2561,6 +2561,8 @@ textarea,
 
 
 .block-on-off__wrapper {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -2570,6 +2572,7 @@ textarea,
   margin: 0;
   padding: 2%;
   padding-left: 92px;
+  padding-right: 44px;
   position: relative;
   font-family: 'Roboto-Bold', Arial, sans-serif;
   background: #347aa5;
@@ -3427,7 +3430,33 @@ p.block-on-off {
 .btn-close-modal:after {
   transform: rotate(-45deg);
 }
+/*PRICES*/
+.price-list__print {
+  margin-left: auto;
+  display: flex;
+  text-align: right;
+  cursor: pointer;
+}
+.price-list__print a {
+  color: #515151;text-decoration: underline;
+}
+.price-list__print img {
+  width: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.print-title {
+  text-decoration: underline;
+}
+
+.block-on-off__wrapper p {
+  margin: 0;
   
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
 
 
 
@@ -4727,3 +4756,24 @@ p.block-on-off {
 
 
 
+@media print {
+  .nav__wrapper,
+  .cd-main-content,
+  header,
+  .main-menu,
+  .fix-menu,
+  .service__nav,
+  .service__sidebar,
+  .service__question,
+  footer,
+  .call-phone,
+  .fix-form,
+  .price-list__print {
+    display: none!important;
+
+  }
+  .service__price__table td {
+    padding: 0; 
+  }
+
+}
