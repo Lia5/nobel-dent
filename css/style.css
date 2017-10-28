@@ -713,7 +713,7 @@ input {
 .uppercase {
   text-transform: uppercase;
 }
-.btn {
+.btnn {
   display: block;
   width: 184px;
   padding: 7px 0;
@@ -823,9 +823,10 @@ input {
 }
 .fix-menu__select-button-number {
   position: absolute;
-  top: -2px;
-  right: -14px;
+  right: 9px;
   color: #ffffff;
+  z-index: 3;
+  font-size: 16px;
 }
 select {
   outline:none;
@@ -4367,9 +4368,8 @@ form.form__order-fix {
 .fix-menu__item__phone .phone-mask {
   width: 100%;
 }
-.fix-menu__item__phone #select-number {
-  padding-right: 32px;
-}
+
+
 .size14 {
   font-size: 14px;
 }

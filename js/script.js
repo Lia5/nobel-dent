@@ -1,10 +1,8 @@
 //select-number form
 
 jQuery(function($){
-  
-  });
-
-$(".phone-mask").mask("+38(999) 999-9999");
+  $(".phone-mask").mask("+38(999) 999-9999");
+});
   $('.open-phone').click(function() {
     $('.fix-menu__item .form__wrapper').toggleClass('open');
     $('.select-number .form__wrapper').toggleClass('open');

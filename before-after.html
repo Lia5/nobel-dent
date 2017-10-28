@@ -468,26 +468,26 @@
           <ul class="fix-menu__items">
             <li class="fix-menu__item fix-menu__item__nd"><a href="index.html">Клиника стоматологии <b>NobelDent</b></a></li>
             <li class="fix-menu__item fix-menu__item__bef-af"><a href="before-after.html">До и После</a></li>
-            <li class="fix-menu__item fix-menu__item__phone open-phone">
-              <div class="select-number fix-menu__item__select-number">
-                <i class="icon-phone"></i>
-                <div class="form" id="select-number">
-                  <div class="form__order-fix  "><span class="size14">+38</span>(098) 794-09-58</div>
-                  <div class="form__wrapper form__wrapper__number">
-                    <div class="form__title">Заказать обратный звонок</div>
-                    <div id="messegeResult"></div>
-                    <form>
-                      <!-- Hidden Required Fields -->
-                      <input type="hidden" name="project_name" value="NobelDent">
-                      <input type="hidden" name="admin_email" value="liaforweb@gmail.com">
-                      <input type="hidden" name="form_subject" value="NobelDent-заказ обратного звонка">
-                      <!-- END Hidden Required Fields -->
-                      <input type="text" id="phone" name="Телефон" placeholder="Номер телефона" required="">
-                      <button class="form__btn">OK</button>
-                    </form>
-                  </div>
+            <li class="fix-menu__item fix-menu__item__phone">
+              <div class="select-number fix-menu__item__select-number open-phone">
+                <i class="icon-phone open-phone"></i>
+                <i class="icon-angle-down fix-menu__select-button-number open-phone"></i>
+              </div>
+              <div class="form" id="select-number">
+                <div class="form__order-fix open-phone "><span class="size14">+38</span>(098) 794-09-58</div>
+                <div class="form__wrapper form__wrapper__number">
+                  <div class="form__title open-phone">Заказать обратный звонок</div>
+                  <div id="messegeResult"></div>
+                  <form class="form__order-fix">
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="NobelDent">
+                    <input type="hidden" name="admin_email" value="liaforweb@gmail.com">
+                    <input type="hidden" name="form_subject" value="NobelDent-заказ обратного звонка">
+                    <!-- END Hidden Required Fields -->
+                    <input type="text" class="phone-mask" name="Телефон" placeholder="Номер телефона" required class="phone-mask">
+                    <button class="form__btn">OK</button>
+                  </form>
                 </div>
-                <a class="fix-menu__select-button-number "><i class="icon-angle-down"></i></a>
               </div>
             </li>
             <li class="fix-menu__item fix-menu__item__usl"><a href="prices.html">Услуги</a></li>
@@ -644,6 +644,24 @@
                   </p>
                   <div class="hr-left">
                     <button type="button" class="btn before-after__description-btn btn " data-toggle="modal" data-target=".bd-example-modal-lg" data-slide="6">Подробнее</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="before-after__item" data-tags="Протезы/реставрация/виниры">
+              <h3 class="before-after__h3">Протезирование All-on-6 на нижней челюсти</h3>
+              <div class="before-after__wrapper">
+                <div class="before-after__foto"><span>До</span><img src="img/before-after/prot-02-before.jpg" alt=""></div>
+                <div class="before-after__foto"><span>После</span><img src="img/before-after/prot-02-after.jpg" alt=""></div>
+                <div class="before-after__description">
+                  <p><b>Клинический случай:</b><br>
+                    Пациентка обратилась в клинику с просьбой 
+                    восстановить зубы нижней челюсти.<br>
+                    Врачи:<br>
+                    Иванов И.И., Петров П.П.
+                  </p>
+                  <div class="hr-left">
+                    <button type="button" class="btn before-after__description-btn btn " data-toggle="modal" data-target=".bd-example-modal-lg" data-slide="7">Подробнее</button>
                   </div>
                 </div>
               </div>
@@ -1245,6 +1263,66 @@
                 </div>
               </div>
             </div>
+            <div class="popups"> 
+              <h2 class="popups__title">Имплантации по методу All on 4</h2>
+              <div class="popups__wrapper">
+                <div class="popups__img">
+                  <div class="logo">
+                    <picture class="icon">
+                      <source srcset = "img/logo-big.png" media = "(min-width: 768px)">
+                      <img srcset="img/logo-mini.png" alt="NobelDent клиника эстетической стоматологии">
+                    </picture>
+                    <h2 class="logo__h2">
+                      <span class="part-color">Nobel</span>Dent<br>
+                    <span class="part-info">клинитка <span class="part-info-desctop">эстетической</span> стоматологии</span>
+                  </h2>
+                  </div>
+                  <div class="popup__wrapper__img-row">
+                    <div class="popup__wrapper__img">
+                      <img src="img/before-after/popups/clinic1-1.jpg" alt="Клинический случай 7">
+                    </div>
+                    <div class="popup__wrapper__img">
+                      <img src="img/before-after/popups/clinic1-2.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="popup__wrapper__img-row">
+                    <div class="popup__wrapper__img">
+                      <img src="img/before-after/popups/clinic2-3.jpg" alt="">
+                    </div>
+                    <div class="popup__wrapper__img">
+                      <img src="img/before-after/popups/clinic2-4.jpg" alt="">
+                    </div>
+                    <div class="popup__wrapper__img">
+                      <img src="img/before-after/popups/clinic2-5.jpg" alt="">
+                    </div>
+                    <div class="popup__wrapper__img">
+                      <img src="img/before-after/popups/clinic2-6.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="popup__wrapper__img-row">
+                    <div class="popup__wrapper__img">
+                      <img src="img/before-after/popups/clinic1-7.jpg" alt="">
+                    </div>
+                    <div class="popup__wrapper__img">
+                      <img src="img/before-after/popups/clinic1-8.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="popup__description">
+                  <h3 class="popup__description__title">Клинический случай</h3>
+                  <p>Пациент в 43 года обратился в клинику в связи с полным отсутствием зубов на верхней челюсти и с желанием установить несъёмную конструкцию на имплантах. После множества консультаций, полученных не в нашей клинике, у пациента сформировалось ошибочное и устойчивое мнение, что зубная имплантация будет связана с более чем 12 месячным хождением без зубов в момент приживле5ния костной подсадки и интеграции имплантов.</p>
+                  <h3 class="popup__description__title">План лечения</h3>
+                  <p>Было принято решение об имплантации по технологии All on 4 с одномоментной нагрузкой временной конструкции.<br>
+                  Объединение нескольких хирургических и пластических методик, позволило в день операции установить сразу несъемную конструкцию.</p>
+                  <h3 class="popup__description__title">Результат</h3>
+                  <p>С учетом плотности кости 1 типа, а также достаточной первичной стабильности имплантов, прошло всего 1,5 месяца между операцией и моментом фиксации постоянной работы.</p>
+                  <h3 class="popup__description__title">Врачи</h3>
+                  <p>Стогний</p>
+                  <a class="btn header__buttons__order uppercase popup__btn" href="#">Записаться на прием</a>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
