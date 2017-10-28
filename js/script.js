@@ -1,17 +1,17 @@
 //select-number form
-/*
+
 jQuery(function($){
   $("#phone").mask("+38(999) 999-9999");
   });
 
 
-  $('.select-number .form__order').click(function() {
+  $('.open-phone').click(function() {
     $('.select-number .form__wrapper').toggleClass('open');
   });
 
   $('.select-number .select-button-number').click(function() {
     $('.select-number .form__wrapper').toggleClass('open');
-  });*/
+  });
 
 //fix-menu
 $(document).ready(function() {

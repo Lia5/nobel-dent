@@ -955,7 +955,7 @@ buttons{
   right: 24px;
   z-index: 3;
 }
-.header-mobile .select-number .form__order {
+.form__order-mobile {
   border: none;
   background-color: #faa61a;
   color: #ffffff;
@@ -4319,6 +4319,18 @@ p.block-on-off {
 }
 #fix-menu__item__select-number option {
   background-color: #7fc242; 
+}
+.form__order-fix {
+  display: block;
+  padding-left: 31px;
+  font-size: 17px;
+  cursor: pointer;
+}
+.fix-menu__item__phone #select-number {
+  padding-right: 32px;
+}
+.size14 {
+  font-size: 14px;
 }
 
 .tel {

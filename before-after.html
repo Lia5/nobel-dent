@@ -26,17 +26,17 @@
           <ul class="cd-main-nav">
             <li class = "main-nav__item"><a href="about.html">О клинике</a></li>
             <li class = "main-nav__item hidden">|</li>
-            <li class = "main-nav__item"><a href="before-after.html">До и после</a></li>
+            <li class = "main-nav__item"><a class="current">До и после</a></li>
             <li class = "main-nav__item hidden">|</li>
             <li class = "main-nav__item"><a href="prices.html">Услуги</a></li>
             <li class = "main-nav__item hidden">|</li>
             <li class = "main-nav__item"><a href="prices.html">Цены</a></li>
             <li class = "main-nav__item hidden">|</li>
-            <li class = "main-nav__item"><a href="#">Акции</a></li>
+            <li class = "main-nav__item"><a href="discounts.html">Акции</a></li>
             <li class = "main-nav__item hidden">|</li>
-            <li class = "main-nav__item"><a href="#infocentr.html">Инфоцентр</a></li>
+            <li class = "main-nav__item"><a href="infocentr.html">Инфоцентр</a></li>
             <li class = "main-nav__item hidden">|</li>
-            <li class = "main-nav__item"><a href="#contacts.html">Контакты</a></li>
+            <li class = "main-nav__item"><a href="contacts.html">Контакты</a></li>
           </ul>
         </nav>
         <a href="#" class="cd-nav-trigger">"Menu"
@@ -78,7 +78,7 @@
           </div>
           <div class="select-number">
             <div class="form" id="select-number">
-              <div class="form__order"><span class="size16">+38</span>(098) 794-09-58</div>
+              <div class="form__order-mobile open-phone"><span class="size16">+38</span>(098) 794-09-58</div>
               <div class="form__wrapper form__wrapper__number">
                 <div class="form__title">Заказать обратный звонок</div>
                 <div id="messegeResult"></div>
@@ -103,13 +103,13 @@
               </div>
               <div class="menu-mobile">
                 <ul class="cd-main-nav-mobile">
-                  <li class="main-nav__item-mobile"><a href="#">О клинике</a></li>
-                  <li class="main-nav__item-mobile"><a href="#">До и после</a></li>
-                  <li class="main-nav__item-mobile"><a href="#">Услуги</a></li>
-                  <li class="main-nav__item-mobile"><a href="#">Цены</a></li>
-                  <li class="main-nav__item-mobile"><a href="#">Акции</a></li>
-                  <li class="main-nav__item-mobile"><a href="#">Инфоцентр</a></li>
-                  <li class="main-nav__item-mobile"><a href="#">Контакты</a></li>
+                  <li class="main-nav__item-mobile"><a href="about.html">О клинике</a></li>
+                  <li class="main-nav__item-mobile"><a href="before-after.html">До и после</a></li>
+                  <li class="main-nav__item-mobile"><a href="prices.html">Услуги</a></li>
+                  <li class="main-nav__item-mobile"><a href="prices.html">Цены</a></li>
+                  <li class="main-nav__item-mobile"><a href="discounts.html">Акции</a></li>
+                  <li class="main-nav__item-mobile"><a href="infocentr">Инфоцентр</a></li>
+                  <li class="main-nav__item-mobile"><a href="contacts">Контакты</a></li>
                 </ul>
               </div>
             </nav>
@@ -120,7 +120,7 @@
             <p>+38 <span class="size30">(044) 234 25 49</span></p>
             <div class="select-number">
               <div class="form"  id="select-number">
-                <div class="form__order"><span class="size16">+38</span>(098) 794-09-58</div>
+                <div class="form__order  open-phone"><span class="size16">+38</span>(098) 794-09-58</div>
                 <div class="form__wrapper form__wrapper__number">
                   <div class="form__title">Заказать обратный звонок</div>
                   <div id="messegeResult"></div>
@@ -466,24 +466,32 @@
       <div class="fix-menu">
         <div class="fix-menu__wraper">
           <ul class="fix-menu__items">
-            <li class="fix-menu__item fix-menu__item__nd"><a href="#">Клиника стоматологии <b>NobelDent</b></a></li>
-            <li class="fix-menu__item fix-menu__item__bef-af"><a href="#">До и После</a></li>
-            <li class="fix-menu__item fix-menu__item__phone">
-              <div class="fix-menu__item__select-number">
+            <li class="fix-menu__item fix-menu__item__nd"><a href="index.html">Клиника стоматологии <b>NobelDent</b></a></li>
+            <li class="fix-menu__item fix-menu__item__bef-af"><a href="before-after.html">До и После</a></li>
+            <li class="fix-menu__item fix-menu__item__phone open-phone">
+              <div class="select-number fix-menu__item__select-number">
                 <i class="icon-phone"></i>
-                <p class="tel">+38</p>
-    
-                <select id="fix-menu__item__select-number" name="select-number" size="1">
-                  <option>(098) 794-09-58</option>
-                  <option>(098) 794-09-58</option>
-                  <option>(098) 794-09-58</option>
-                  <option>(098) 794-09-58</option>
-                </select>
+                <div class="form" id="select-number">
+                  <div class="form__order-fix  "><span class="size14">+38</span>(098) 794-09-58</div>
+                  <div class="form__wrapper form__wrapper__number">
+                    <div class="form__title">Заказать обратный звонок</div>
+                    <div id="messegeResult"></div>
+                    <form>
+                      <!-- Hidden Required Fields -->
+                      <input type="hidden" name="project_name" value="NobelDent">
+                      <input type="hidden" name="admin_email" value="liaforweb@gmail.com">
+                      <input type="hidden" name="form_subject" value="NobelDent-заказ обратного звонка">
+                      <!-- END Hidden Required Fields -->
+                      <input type="text" id="phone" name="Телефон" placeholder="Номер телефона" required="">
+                      <button class="form__btn">OK</button>
+                    </form>
+                  </div>
+                </div>
                 <a class="fix-menu__select-button-number "><i class="icon-angle-down"></i></a>
               </div>
             </li>
             <li class="fix-menu__item fix-menu__item__usl"><a href="#">Услуги</a></li>
-            <li class="fix-menu__item"><a href="#">Цены</a></li>
+            <li class="fix-menu__item"><a href="prices.html">Цены</a></li>
             <li class="fix-menu__item fix-menu__item__language">
               <div class="fix-menu__item__select-language">
                 
@@ -497,8 +505,8 @@
                 </span>
               </div>
             </li>
-            <li class="fix-menu__item fix-menu__item__akcii"><a href="#">Акции</a></li>
-            <li class="fix-menu__item fix-menu__item__cont"><a href="#">Контакты</a></li>
+            <li class="fix-menu__item fix-menu__item__akcii"><a href="discounts.html">Акции</a></li>
+            <li class="fix-menu__item fix-menu__item__cont"><a href="contacts.html">Контакты</a></li>
             <li class="fix-menu__item fix-menu__item__order"><a href="#">Записаться на прием</a></li>
           </ul>
         </div>
