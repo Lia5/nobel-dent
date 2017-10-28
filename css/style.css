@@ -2106,7 +2106,7 @@ footer {
   background-color: #ffffff;
   color: #000000;
 }
-.select-number .form__wrapper {
+.form__wrapper__number {
   z-index: 20;
   margin: 0;
   position: absolute;
@@ -4354,6 +4354,18 @@ p.block-on-off {
   padding-left: 31px;
   font-size: 17px;
   cursor: pointer;
+}
+form.form__order-fix {
+  padding: 10px;
+}
+.fix-menu__item__phone .form__btn {
+  margin: 5px;
+}
+.fix-menu__item__phone .form__wrapper__number {
+  min-width: 100px;
+}
+.fix-menu__item__phone .phone-mask {
+  width: 100%;
 }
 .fix-menu__item__phone #select-number {
   padding-right: 32px;
