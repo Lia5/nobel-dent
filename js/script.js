@@ -1,4 +1,5 @@
 //select-number form
+/*
 jQuery(function($){
   $("#phone").mask("+38(999) 999-9999");
   });
@@ -10,7 +11,7 @@ jQuery(function($){
 
   $('.select-number .select-button-number').click(function() {
     $('.select-number .form__wrapper').toggleClass('open');
-  });
+  });*/
 
 //fix-menu
 $(document).ready(function() {
@@ -216,7 +217,9 @@ $(document).ready(function() {
      navPos = $('.service__description').offset().top;
    } catch (e){}
    navHeight = $('.fix-wrapper').outerHeight(true);
+   try {
    endPos = $('.galllery-carusel').offset().top;
+  } catch (e){}
  }
  
  refreshVar();
