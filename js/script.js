@@ -451,6 +451,11 @@ $(document).ready(function(){
       appendDots: $('.for-dots'),
     });
       */
+  
+  $('button[data-slide]').click(function(e) {
+    e.preventDefault();
+    var slideno = $(this).data('slide');
+    $('.single-item').slick('slickGoTo', slideno - 1);
   });
-
+});
   
