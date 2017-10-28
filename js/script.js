@@ -286,7 +286,7 @@ $('.plus').click(function() {
   $(this).siblings().toggleClass('triangle-right');
   $('.minus').removeClass('triangle-right');
 });
-$('.show-all').click(function() {
+$('.price-list__print').click(function() {
   $('.plus').parent().siblings().removeClass('close');
   $('.plus').removeClass('plus-open');
   $('.triangle').addClass('triangle-right');
