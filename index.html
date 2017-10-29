@@ -22,9 +22,7 @@
           <li class = "main-nav__item hidden">|</li>
           <li class = "main-nav__item"><a href="before-after.html">До и после</a></li>
           <li class = "main-nav__item hidden">|</li>
-          <li class = "main-nav__item"><a href="prices.html">Услуги</a></li>
-          <li class = "main-nav__item hidden">|</li>
-          <li class = "main-nav__item"><a href="prices.html">Цены</a></li>
+          <li class = "main-nav__item"><a href="prices.html">Услуги и Цены</a></li>
           <li class = "main-nav__item hidden">|</li>
           <li class = "main-nav__item"><a href="discounts.html">Акции</a></li>
           <li class = "main-nav__item hidden">|</li>
@@ -43,16 +41,16 @@
     <header>
       <div class="planka-top planka-top-320"></div>
       <div class="logo">
-        <picture class="icon">
-          <source srcset = "img/logo-big.png" media = "(min-width: 768px)">
-          <img srcset="img/logo-mini.png" alt="NobelDent клиника эстетической стоматологии">
-        </picture>
-        <h2 class="logo__h2">
-          <span class="part-color">Nobel</span>Dent<br>
-        <span class="part-info">клинитка <span class="part-info-desctop">эстетической</span> стоматологии</span>
-      </h2>
-       <!-- <img src="img/logo.png" alt="NobelDent клиника эстетической стоматологии">
-        -->
+        <a href="index.html">
+          <picture class="icon">
+            <source srcset = "img/logo-big.png" media = "(min-width: 768px)">
+            <img srcset="img/logo-mini.png" alt="NobelDent клиника эстетической стоматологии">
+          </picture>
+          <h2 class="logo__h2">
+            <span class="part-color">Nobel</span>Dent<br>
+          <span class="part-info">клинитка <span class="part-info-desctop">эстетической</span> стоматологии</span>
+          </h2>
+        </a>
       </div>
       <div class="header-mobile header-mobile-time-adress">
         <p class="header__adress-time header__adress-time-mobile">Пн.- Вс. 09:00 - 18:00 </p> 
@@ -158,8 +156,8 @@
             </select>
             <span class="select-button select-button-language "><i class="icon-angle-down"></i></span>
           </div>
-          <a class="btnn header__buttons__question uppercase" href="#">Задать вопрос</a>
-          <a class="btnn header__buttons__order uppercase" href="#">Записаться на прием</a>
+          <button type="button"  class="btn btnn header__buttons__question uppercase" data-toggle="modal" data-target="#modal__header-order">Задать вопрос</button>
+          <button type="button" class="btn btnn header__buttons__order uppercase" data-toggle="modal" data-target="#modal__header-order">Записаться на прием</button>
         </div>    
       </div>
     </header>
@@ -916,7 +914,6 @@
       </div>
     <!--Форма обратной связи-->
   
-        
       <div class="fix-form form" id="form">
         
         <div class="form__order">Записаться на прием<i class="icon-angle-down"></i></div>
@@ -931,10 +928,10 @@
             <input type="hidden" name="form_subject" value="NobelDent-вопрос">
             <!-- END Hidden Required Fields -->
             <input type="text" name="Имя" placeholder="Ваше имя" required><br>
-            <input type="text" name="Телефон" placeholder="Ваш телефон*" required><br>
+            <input type="text" class="phone-mask" name="Телефон" placeholder="Ваш телефон*"><br>
             <input type="text" name="Цель" placeholder="Цель визита" required><br>
 
-            <button class="form__btn">Подтвердить заявку</button>
+            <button class="form__btn form__btn__fix-form">Подтвердить заявку</button>
           </form>
         </div>
       </div>
@@ -952,15 +949,10 @@
   
     </div>
 
-    <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-    Launch demo modal
-  </button>
-  
   <!-- Modal header-order -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="popup__header-order" aria-hidden="true">
+  <div class="modal fade" id="modal__header-order" tabindex="-1" role="dialog" aria-labelledby="popup__header-order" aria-hidden="true">
     <div class="modal-dialog" role="document">
-      <div class="modal-content">
+      <div class="modal-content modal-content__header-order">
         <div class="modal-header modal-header__header-order">
           <h5 class="modal-title modal-title__header-order" id="popup__header-order">Бесплатная консультация врача</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -979,7 +971,7 @@
               <input type="hidden" name="admin_email" value="liaforweb@gmail.com">
               <input type="hidden" name="form_subject" value="NobelDent-записаться на прием">
               <!-- END Hidden Required Fields -->
-              <div class="fieldset-wrapper">
+              <div class="fieldset-wrapper fieldset-wrapper__header-order">
                 <input type="text" name="Имя" placeholder="Имя">
                 <input type="text" name="Телефон" placeholder="Телефон*" required class="phone-mask">
                 <input type="text" name="Email" placeholder="Email">
@@ -989,11 +981,11 @@
               
               <div class="send-wrapper">
                 <div class="fileform">
-                  <div class="selectbutton">Загрузить снимок <br> (если есть)</div>
+                  <div class="selectbutton selectbutton__header-order">Загрузить снимок <br> (если есть)</div>
                   <input type="file" name="upload" id="upload" onchange="getName(this.value);" />
                   <div id="fileformlabel"></div>
                 </div>
-                <button class="form__btn">Подтвердить заявку</button>
+                <button class="form__btn form__btn__header-order form__btn-rose">Задать вопрос</button>
               </div>
               <p>Нажимая на кнопку и отправляя форму, вы даете согласие на обработку своих персональных данных. Пользовательское соглашение и политика конфиденциальности.</p>
             </form>

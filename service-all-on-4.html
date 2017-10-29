@@ -21,9 +21,7 @@
             <li class = "main-nav__item hidden">|</li>
             <li class = "main-nav__item"><a href="before-after.html">До и после</a></li>
             <li class = "main-nav__item hidden">|</li>
-            <li class = "main-nav__item"><a href="prices.html">Услуги</a></li>
-            <li class = "main-nav__item hidden">|</li>
-            <li class = "main-nav__item"><a href="prices.html">Цены</a></li>
+            <li class = "main-nav__item"><a href="prices.html">Услуги и Цены</a></li>
             <li class = "main-nav__item hidden">|</li>
             <li class = "main-nav__item"><a href="discounts.html">Акции</a></li>
             <li class = "main-nav__item hidden">|</li>
@@ -39,19 +37,20 @@
       <main class="cd-main-content">
         <!-- main content here -->
       </main>
+
       <header>
         <div class="planka-top planka-top-320"></div>
         <div class="logo">
-          <picture class="icon">
-            <source srcset = "img/logo-big.png" media = "(min-width: 768px)">
-            <img srcset="img/logo-mini.png" alt="NobelDent клиника эстетической стоматологии">
-          </picture>
-          <h2 class="logo__h2">
-            <span class="part-color">Nobel</span>Dent<br>
-          <span class="part-info">клинитка <span class="part-info-desctop">эстетической</span> стоматологии</span>
-        </h2>
-         <!-- <img src="img/logo.png" alt="NobelDent клиника эстетической стоматологии">
-          -->
+          <a href="index.html">
+            <picture class="icon">
+              <source srcset = "img/logo-big.png" media = "(min-width: 768px)">
+              <img srcset="img/logo-mini.png" alt="NobelDent клиника эстетической стоматологии">
+            </picture>
+            <h2 class="logo__h2">
+              <span class="part-color">Nobel</span>Dent<br>
+            <span class="part-info">клинитка <span class="part-info-desctop">эстетической</span> стоматологии</span>
+            </h2>
+          </a>
         </div>
         <div class="header-mobile header-mobile-time-adress">
           <p class="header__adress-time header__adress-time-mobile">Пн.- Вс. 09:00 - 18:00 </p> 
@@ -81,7 +80,7 @@
                   <input type="hidden" name="admin_email" value="liaforweb@gmail.com">
                   <input type="hidden" name="form_subject" value="NobelDent-заказ обратного звонка">
                   <!-- END Hidden Required Fields -->
-                  <input type="text" id="phone" name="Телефон" placeholder="Номер телефона" required="">
+                  <input type="text" class="phone-mask" name="Телефон" placeholder="Номер телефона" required="">
                   <button class="form__btn">OK</button>
                 </form>
               </div>
@@ -123,14 +122,14 @@
                     <input type="hidden" name="admin_email" value="liaforweb@gmail.com">
                     <input type="hidden" name="form_subject" value="NobelDent-заказ обратного звонка">
                     <!-- END Hidden Required Fields -->
-                    <input type="text" id="phone" name="Телефон" placeholder="Номер телефона" required>
+                    <input type="text" class="phone-mask" name="Телефон" placeholder="Номер телефона" required>
                     <button class="form__btn">OK</button>
                   </form>
                 </div>
               </div>
               <a class="select-button select-button-number "><i class="icon-angle-down"></i></a>
             </div>
-            <p class="btn-order" href="#">Заказать обратный звонок</p>
+            <p class="btn-order open-phone">Заказать обратный звонок</p>
           </div>
           <div class="header__adress">
             <span class="header__metro">
@@ -157,8 +156,8 @@
               </select>
               <span class="select-button select-button-language "><i class="icon-angle-down"></i></span>
             </div>
-            <a class="btnn header__buttons__question uppercase" href="#">Задать вопрос</a>
-            <a class="btnn header__buttons__order uppercase" href="#">Записаться на прием</a>
+            <button type="button"  class="btn btnn header__buttons__question uppercase" data-toggle="modal" data-target="#modal__header-order">Задать вопрос</button>
+            <button type="button" class="btn btnn header__buttons__order uppercase" data-toggle="modal" data-target="#modal__header-order">Записаться на прием</button>
           </div>    
         </div>
       </header>
@@ -998,7 +997,7 @@
                 <input type="file" name="upload" id="upload" onchange="getName(this.value);" />
                 <div id="fileformlabel"></div>
               </div>
-              <button class="form__btn">Подтвердить заявку</button>
+              <button class="form__btn form__btn-sidebar form__btn-yellow">Подтвердить заявку</button>
             </div>
           </form>
         </div>
@@ -1182,34 +1181,33 @@
       <div class="call-phone__circle-img"><i class="icon-phone"></i> </div>
     </div>
   <!--Форма обратной связи-->
-
-      
-      <div class="form fix-form" id="form">
         
-        <div class="form__order">Записаться на прием<i class="icon-angle-down"></i></div>
-        <div class="form__wrapper">
-          <div class="form__title">Записаться на прием</div>
-          <div id="messegeResult"></div>
-        
-          <form>
-            <!-- Hidden Required Fields -->
-            <input type="hidden" name="project_name" value="NobelDent">
-            <input type="hidden" name="admin_email" value="liaforweb@gmail.com">
-            <input type="hidden" name="form_subject" value="NobelDent-вопрос">
-            <!-- END Hidden Required Fields -->
-            <input type="text" name="Имя" placeholder="Ваше имя" required><br>
-            <input type="text" name="Телефон" placeholder="Ваш телефон*" required><br>
-            <input type="text" name="Цель" placeholder="Цель визита" required><br>
+  <div class="fix-form form" id="form">
+    
+    <div class="form__order">Записаться на прием<i class="icon-angle-down"></i></div>
+    <div class="form__wrapper">
+      <div class="form__title">Записаться на прием</div>
+      <div id="messegeResult"></div>
+    
+      <form>
+        <!-- Hidden Required Fields -->
+        <input type="hidden" name="project_name" value="NobelDent">
+        <input type="hidden" name="admin_email" value="liaforweb@gmail.com">
+        <input type="hidden" name="form_subject" value="NobelDent-вопрос">
+        <!-- END Hidden Required Fields -->
+        <input type="text" name="Имя" placeholder="Ваше имя" required><br>
+        <input type="text" class="phone-mask" name="Телефон" placeholder="Ваш телефон*"><br>
+        <input type="text" name="Цель" placeholder="Цель визита" required><br>
 
-            <button class="form__btn">Подтвердить заявку</button>
-          </form>
-        </div>
-      </div>
+        <button class="form__btn form__btn__fix-form">Подтвердить заявку</button>
+      </form>
+    </div>
+  </div>
 
 
 
   </div>
-
+  <script src="js/jquery-3.2.1.min.js"></script> 
   <script src="js/fotorama.js"></script>
   <script src="js/maskedinput.js" type="text/javascript"></script>
   <script src="js/script.js"></script>
