@@ -824,6 +824,7 @@ input {
   font-size: 24px;
   line-height: 28px;
 }
+
 .fieldset-wrapper__header-order {
   display: flex;
   flex-direction: column;
@@ -840,6 +841,7 @@ input {
   font-size: 24px;
   line-height: 28px;
 }
+
 .selectbutton__header-order {
   font-family: 'Raleway-Regular', Arial, sans-serif;
   color:  #515151;
@@ -4268,6 +4270,14 @@ p.block-on-off {
   .btn {
     margin: 1% 0 1% 1%;
     cursor: pointer;
+  }
+  .modal-body__header-order {
+    background-image: url('../img/bg2-modal-header-order.png');
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  .form__header-order {
+    width: 75%;
   }
 
   /*main-menu*/
