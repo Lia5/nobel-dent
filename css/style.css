@@ -126,7 +126,18 @@ Primary style
 a {
   text-decoration: none;
 }
-
+::-webkit-input-placeholder { 
+  color: #c1c1c1; 
+}
+::-moz-placeholder          { 
+  color: #c1c1c1; 
+} /* Firefox 19+ */
+:-moz-placeholder           { 
+  color: #c1c1c1; 
+} /* Firefox 18- */
+:-ms-input-placeholder      { 
+  color: #c1c1c1; 
+}
 /* -------------------------------- 
 
 Main Components 
@@ -788,6 +799,37 @@ input {
 .header-mobile .select-number:hover {
   cursor: pointer;
 }
+/*mobal-order*/
+.modal-title__header-order {
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.modal-header__header-order {
+ background-color: #527da8;
+ justify-content: center;
+ font-family: 'Raleway-Bold', Arial, sans-serif;
+ font-size: 24px;
+ line-height: 28px;
+} 
+.modal-body__header-order{
+  background-image: url('img/bg-modal-header-order.png');
+}
+.modal-body-title__header-order {
+  font-family: 'Raleway-SemiBold', Arial, sans-serif;
+  color:  #515151;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+
+
+
+
+
+
+
+
+
 
 .fix-menu__item__select-language {
   position: relative;
@@ -2761,12 +2803,12 @@ del.cross:before,
 .service__question__form form {
   padding: 0;
 }
-.fieldset-wrapper {
+.fieldset-wrapper__service__question {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
-.fieldset-wrapper-row {
+.fieldset-wrapper__service__question-row {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -2776,16 +2818,18 @@ del.cross:before,
   margin: 15px 5px;
   padding: 12px;
   width: 45%;
+  font-size: 16px;
 }
-.fieldset-wrapper-row textarea {
+.fieldset-wrapper__service__question-row textarea {
   width: 100%;
   margin: 15px 5px;
   padding: 12px;
   height: 122px;
   max-height: 275px;
   min-height: 50px;
+  font-size: 16px;
 }
-.fieldset-wrapper-row input[type="email"] {
+.fieldset-wrapper__service__question-row input[type="email"] {
   width: 100%;
 }
 .send-wrapper {
@@ -2874,7 +2918,7 @@ del.cross:before,
   margin-top: 15px;
   font-family: 'Roboto-Italic', Arial, sans-serif;
   font-size: 13px;
-  color: #E5DBDB;
+  /*color: #E5DBDB;*/
 }
 .service__sidebar__form .send-wrapper {
   margin-top: 20px;

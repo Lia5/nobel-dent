@@ -294,8 +294,8 @@ $('.price-list__print').click(function() {
 
 
 $('.send-wrapper span').click(function() {
-  $('.fieldset-wrapper-row textarea').toggleClass('open');
-  $('.fieldset-wrapper-row input[type="email"]').toggleClass('open');
+  $('.fieldset-wrapper__service__question-row textarea').toggleClass('open');
+  $('.fieldset-wrapper__service__question input[type="email"]').toggleClass('open');
   $('.send-wrapper p').toggleClass('close');
 });
 
