@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="css/fontello-embedded.css">
-    
     <link  href="css/fotorama.css" rel="stylesheet">
     <script src="js/jquery-3.2.1.min.js"></script> 
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
@@ -32,7 +31,7 @@
             <li class = "main-nav__item"><a href="contacts.html">Контакты</a></li>
           </ul>
         </nav>
-        <a href="#" class="cd-nav-trigger">"Menu"
+        <a href="#" class="cd-nav-trigger">
           <span></span>
         </a>
       </div>
@@ -511,14 +510,13 @@
             <ul>
               <li><a href="about.html">О клинике</a></li>
               <li><a href="before-after.html">До и После</a></li>
-              <li><a>Услуги</a></li>
-              <li><a>Цены</a></li>
+              <li><a>Услуги и Цены</a></li>
               <li><a href="discounts.html">Акции</a></li>
               <li><a href="infocentr.html">Инфоцентр</a></li>
               <li><a href="contacts.html">Контакты</a></li>
             </ul>
           </div>
-         <li class="service__nav-current service__nav__submenu-current"><a>Услуги и Цены</a></li>
+          <li class="service__nav-current service__nav__submenu-current"><a>Услуги и Цены</a></li>
       </ul>
     </div>
     <div class="service">
@@ -751,11 +749,11 @@
             
             <div class="send-wrapper">
               <div class="fileform">
-                <div class="selectbutton">Загрузить снимок <br> (если есть)</div>
+                <div class="selectbutton selectbutton__sidebar">Загрузить снимок <br> (если есть)</div>
                 <input type="file" name="upload" id="upload" onchange="getName(this.value);" />
                 <div id="fileformlabel"></div>
               </div>
-              <button class="form__btn">Подтвердить заявку</button>
+              <button class="form__btn form__btn-sidebar form__btn-yellow">Подтвердить заявку</button>
             </div>
           </form>
         </div>
@@ -912,10 +910,56 @@
 
   </div>
 
+  <!-- Modal header-order -->
+  <div class="modal fade" id="modal__header-order" tabindex="-1" role="dialog" aria-labelledby="popup__header-order" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content modal-content__header-order">
+        <div class="modal-header modal-header__header-order">
+          <h5 class="modal-title modal-title__header-order" id="popup__header-order">Бесплатная консультация врача</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+          <button type="button" class="btn btn__header-order" data-dismiss="modal"><span class="btn-close-modal">Close</span></button>
+        </div>
+        <div class="modal-body modal-body__header-order">
+          <!--Форма обратной связи-->
+          <div class="form__header-order" id="form">
+            <p class="modal-body-title__header-order"> Оставьте свои контакты</p>
+            <div id="messegeResult4"></div>
+            <form>
+              <!-- Hidden Required Fields -->
+              <input type="hidden" name="project_name" value="NobelDent">
+              <input type="hidden" name="admin_email" value="liaforweb@gmail.com">
+              <input type="hidden" name="form_subject" value="NobelDent-записаться на прием">
+              <!-- END Hidden Required Fields -->
+              <div class="fieldset-wrapper fieldset-wrapper__header-order">
+                <input type="text" name="Имя" placeholder="Имя">
+                <input type="text" name="Телефон" placeholder="Телефон*" required class="phone-mask">
+                <input type="text" name="Email" placeholder="Email">
+                <textarea placeholder="Сообщение" name="content"></textarea>
+                
+              </div>
+              
+              <div class="send-wrapper">
+                <div class="fileform">
+                  <div class="selectbutton selectbutton__header-order">Загрузить снимок <br> (если есть)</div>
+                  <input type="file" name="upload" id="upload" onchange="getName(this.value);" />
+                  <div id="fileformlabel"></div>
+                </div>
+                <button class="form__btn form__btn__header-order form__btn-rose">Задать вопрос</button>
+              </div>
+              <p class="person-dan">Нажимая на кнопку и отправляя форму, вы даете согласие на обработку своих персональных данных. <a class="person-dan__doc" href="#">Пользовательское соглашение и политика конфиденциальности.</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="js/fotorama.js"></script>
   <script src="js/jquery-3.2.1.min.js"></script> 
   <script src="js/maskedinput.js" type="text/javascript"></script>
+  <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
 </body>

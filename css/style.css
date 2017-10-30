@@ -823,6 +823,7 @@ input {
   color:  #515151;
   font-size: 24px;
   line-height: 28px;
+  padding: 25px;
 }
 
 .fieldset-wrapper__header-order {
@@ -849,6 +850,7 @@ input {
   line-height: 28px;
   font-weight: 500;
   text-decoration: underline;
+  cursor: pointer;
 }
 .form__btn-rose {
   background-color: #e6007e;
@@ -862,6 +864,16 @@ input {
   padding: 12px 20px;
   font-family: 'Raleway-Bold', Arial, sans-serif;
   font-size: 18px;
+}
+.person-dan {
+  font-family: 'Raleway', Arial, sans-serif;
+  color:  #515151;
+  font-size: 16px;
+  font-weight: 500;
+}
+.person-dan__doc {
+  text-decoration: underline;
+  color: #515151;
 }
 
 
@@ -1800,11 +1812,13 @@ h3 a{
 .about__employees a:hover{
   color: #e6007e;
 }
-.mark {
+.mark, mark {
   position: absolute;
-  left: -25px;
+  left: -30px;
   top: 0;
   font-size: 25px;
+  padding: 0; 
+  background-color: transparent; 
 }
 /*advantages*/
 .advantages {
@@ -1972,8 +1986,14 @@ footer {
   cursor: pointer;
   width: 200px;
   height: 200px;
-  top: 75%;
-  left: -2%;
+  top: 74%;
+  left: 0;
+  background-color: transparent;
+  border: none;
+}
+.call-phone:focus {
+  border: none;
+  outline: none;
 }
 .call-phone__circle {
   width: 160px;
@@ -2983,7 +3003,7 @@ del.cross:before,
   width: 230px;
 }
 
-.fileform .selectbutton { 
+.selectbutton__sidebar { 
   color: #515151;
   font-size: 16px;
   text-decoration: underline;
@@ -2991,7 +3011,7 @@ del.cross:before,
   overflow: hidden;
   padding: 2px 6px;
   vertical-align: middle;
-
+  cursor: pointer;
 }
 
 .fileform #upload{
@@ -3479,31 +3499,30 @@ p.block-on-off {
   border: none;
   font-size: 2.5rem;
   position: absolute;
-  right: 1rem;
-  top: 15px;
+  right: 0;
+  top: 0;
 }
-.modal-header .btn-secondary {
+.btn__header-order {
   color: transparent;
   margin: 0;
    width: 49px;
-   padding: 15px;
+   padding: 16px;
    background-color: transparent;
    border-color: transparent; 
+   position: absolute;
+   right: 1rem;
+   top: 2px;
 }
 .btn-close-modal {
   font-size: 1.5rem;
 }
-.btn-secondary:hover {
+.btn__header-order:hover {
   color: transparent; 
   background-color: #B0B9C2;
   border-color: #B0B9C2;
 } 
-.modal-header .btn-secondary:not([disabled]):not(.disabled).active,
-.modal-header .btn-secondary:not([disabled]):not(.disabled):active,
- .show>.modal-header .btn-secondary.dropdown-toggle {
-  color: transparent;
-}
-.modal-header .btn-secondary:active {
+
+.btn__header-order:active {
   color: transparent; 
   background-color: #727b84;
   border-color: #6c757d;
@@ -3530,7 +3549,8 @@ p.block-on-off {
   cursor: pointer;
 }
 .price-list__print a {
-  color: #515151;text-decoration: underline;
+  color: #515151;
+  text-decoration: underline;
 }
 .price-list__print img {
   width: 20px;
@@ -3549,11 +3569,105 @@ p.block-on-off {
 .lowercase {
   text-transform: lowercase;
 }
+/*discounts*/
+.discounts-logo {
+  position: absolute;
+  width: 50px;
+  height: 0;
+  top: 12px;
+  left: 18px;
+  transform: rotate(0deg);
+}
+.block-on-off__discounts h3 {
+  background-color: #e2509d;
+}
+.minus-rose:after {
+  background-color: #e6007e;
+}
+.plus:before {
+  background-color: #e6007e;
+}
+.plus:after {
+  background-color: #e6007e;
+}
+/*infocentr*/
+.infocentr__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #347aa5;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.infocentr__new {
+  width: 100%;
+  padding: 10px;
+}
 
+.infocentr__new__wrapper {
+  background-color: #f4f3f3;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
 
+.infocentr__new__img img {
+  width: 100%;
+}
+.infocentr__new__title>h4 {
+  font-family: 'Raleway-Regular', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.infocentr__new__text {
+  margin-top: auto;
+}
+.infocentr__new__text p {
+  font-family: 'Roboto-Regular', Arial, sans-serif;
+  color:  #414141;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 19px;
+  text-align: left;
+}
+.infocentr__new__text a {
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: 'Raleway-Regular', Arial, sans-serif;
+  color:  #faa61a;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  text-decoration: underline;
+  text-align: right;
+}
+.infocentr__new__text a:hover {
+  color:  #C68214;
+}
+/*call-phone*/
+.modal-content__call-phone {
+  border: 20px solid #347aa5;
+  background-color: #347aa5;
+  border-radius: 20px;
+}
+.modal-header__call-phone {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #ffffff;
+}
+.modal-body__call-phone {
+  background-color: #ffffff;
+}
 
-
-
+.modal-footer__call-phone {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #ffffff;
+}
 
 
 
@@ -3974,6 +4088,16 @@ p.block-on-off {
   }
   .popup__description {
     width: 36%;
+  }
+  /*infocentr*/
+  .infocentr__new {
+    width: 50%;
+  }
+  .infocentr__new:nth-child(2n-1) {
+    border-right: 1px solid #347aa5;
+  }
+  .infocentr__new__wrapper {
+    min-height: 435px;
   }
 
 
@@ -4862,6 +4986,21 @@ form.form__order-fix {
   .modal-dialog {
     max-width: 1170px;
   }
+  /*infocentr*/
+  .infocentr__new {
+    width: 33%;
+  }
+  .infocentr__new:nth-child(2n-1) {
+    border-right: none;
+  }
+  .infocentr__new:not(:nth-child(3n)) {
+    border-right: 1px solid #347aa5;
+  }
+  .infocentr__new__wrapper {
+    min-height: 424px;
+  }
+
+
 
 }
 
@@ -4886,5 +5025,10 @@ form.form__order-fix {
   .service__price__table td {
     padding: 0; 
   }
+
+
+
+
+
 
 }
