@@ -3717,7 +3717,7 @@ p.block-on-off {
   font-family: 'Raleway-SemiBold', Arial, sans-serif;
   font-weight: 600;
 }
-.fieldset-wrapper____call-phone label {
+.fieldset-wrapper____call-phone input {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
