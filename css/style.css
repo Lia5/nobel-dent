@@ -3254,6 +3254,17 @@ p.block-on-off {
   margin-top: -50px;
   padding-top: 50px;
 }
+/*for aside fix*/
+.sticky {
+  position: fixed;
+  z-index: 2;
+  top: -43px;
+}
+.stop {
+  position: relative;
+  z-index: 2;
+}
+
 .mini-navigation__title {
   padding-bottom: 40px;
   margin-bottom: 18px;
@@ -4948,12 +4959,6 @@ form.form__order-fix {
     margin: 0 0 0 -15px;
     position: absolute;
     width: 30px;
-  }
-  .fix-wrapper-fixed {
-    position: fixed;
-    top: 0;
-    width: 164px;
-    margin-top: 42px;
   }
 
 
