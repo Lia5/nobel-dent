@@ -1221,7 +1221,8 @@ buttons{
 .submenu__item a {
   color: #000000;
 }
-.submenu__link {
+.submenu__link,
+.submenu__link--open {
   position: relative;
   padding: 15px;
   display: block;
@@ -1235,7 +1236,8 @@ buttons{
   -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
-.submenu__link:hover {
+.submenu__link:hover,
+.submenu__link--open:hover{
   background: #3e6b98;
   color: #ffffff;
 }
@@ -3042,6 +3044,7 @@ del.cross:before,
   margin-top: 20px;
   margin-bottom: 20px;
   justify-content: flex-start;
+  cursor: pointer;
 }
 .fileform { 
   cursor: pointer;
@@ -3076,6 +3079,7 @@ del.cross:before,
   font-size: 150px; 
   height: 30px; 
   z-index:20;
+  cursor: pointer;
 }
 
 .fileform #fileformlabel { 
@@ -4582,9 +4586,7 @@ p.block-on-off {
     left: 0;
 
   }
-  .submenu__link {
-    min-width: 189px;
-  }
+ 
 
   .main-menu__item .submenu {
     display: none!important;
@@ -4602,7 +4604,9 @@ p.block-on-off {
     padding-right: 0;
     color: #ffffff;
   }
-  .submenu__link {
+  .submenu__link,
+  .submenu__link--open {
+    min-width: 189px;
     color: #ffffff;
     padding: 15px 9px 15px 11px;
   /* -webkit-box-shadow: 0px 5px 4px -2px rgba(56,94,133,0.65);
@@ -4986,9 +4990,6 @@ form.form__order-fix {
     background-color: #f4f3f3;
     color: #000000;
   }
-  .service__sidebar  .submenu__link {
-    min-width: none; 
-  }
   .service__sidebar .main-menu__item .submenu {
     display: none!important;
   }  
@@ -5002,12 +5003,15 @@ form.form__order-fix {
   .service__sidebar .submenu a {
     color: #000000;
   }
-  .service__sidebar .submenu__link {
+  .service__sidebar  .submenu__link,
+  .service__sidebar  .submenu__link--open {    
+    min-width: none; 
     color: #6383E7;
     padding: 12px;
     padding-left: 42px;
   }
-  .service__sidebar .submenu__link:hover {
+  .service__sidebar .submenu__link:hover
+  .service__sidebar .submenu__link--open:hover{
     color: #ffffff;
   }
   .service__sidebar .subsubmenu__items {

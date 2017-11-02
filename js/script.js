@@ -125,7 +125,14 @@ jQuery(document).ready(function($){
   });
 
 
+
+
    // меню nav, menu sidebar
+
+   
+
+
+
    $(function() {
    var Accordion = function(el, multiple) {
      this.el = el || {};
@@ -149,27 +156,13 @@ jQuery(document).ready(function($){
    var accordion = new Accordion($('#accordion'), false);
    var accordion2 = new Accordion($('#accordion2'), false);
  });
-
- /*
- $(document).ready(function() {
-  
-   $(window).resize(function(){
-     var windowWidth = $(window).width();
-     if(windowWidth < 1170)
-     else ();
-   });
- });
-
-*/
-
-
 $(function() {
     var Accordion = function(el, multiple) {
       this.el = el || {};
       this.multiple = multiple || false;
 
       // Variables privadas
-      var links = this.el.find('.submenu__link');
+      var links = this.el.find('.submenu__link--open');
       // Evento
       links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
     }
@@ -183,11 +176,87 @@ $(function() {
         $el.find('.submenu__items').not($next).slideUp().parent().removeClass('open');
       };
     }	
-    var accordion = new Accordion($('#accordion'), false);
+
     var accordion2 = new Accordion($('#accordion2'), false);
+
   });
 
 
+  $(window).resize(function () {
+    if($(window).width() < 1244){
+      $(function() {
+    var Accordion = function(el, multiple) {
+      this.el = el || {};
+      this.multiple = multiple || false;
+
+      // Variables privadas
+      var links = this.el.find('.submenu__link--open');
+      // Evento
+      links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+    }
+    Accordion.prototype.dropdown = function(e) {
+      var $el = e.data.el;
+        $this = $(this),
+        $next = $this.next();
+      $next.slideToggle();              
+      $this.parent().toggleClass('open');        
+      if (!e.data.multiple) {
+        $el.find('.submenu__items').not($next).slideUp().parent().removeClass('open');
+      };
+    }	
+
+    var accordion = new Accordion($('#accordion'), false);
+
+  });
+    };
+   });
+
+   
+
+   function windowSize(){
+    if ($(window).width() <= '1244'){
+
+      $(function() {
+    var Accordion = function(el, multiple) {
+      this.el = el || {};
+      this.multiple = multiple || false;
+
+      // Variables privadas
+      var links = this.el.find('.submenu__link--open');
+      // Evento
+      links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+    }
+    Accordion.prototype.dropdown = function(e) {
+      var $el = e.data.el;
+        $this = $(this),
+        $next = $this.next();
+      $next.slideToggle();              
+      $this.parent().toggleClass('open');        
+      if (!e.data.multiple) {
+        $el.find('.submenu__items').not($next).slideUp().parent().removeClass('open');
+      };
+    }	
+
+    var accordion = new Accordion($('#accordion'), false);
+
+
+  });
+    } 
+    $(window).load(windowSize); // при загрузке
+    $(window).resize(windowSize); // при изменении размеров
+    // или "два-в-одном", вместо двух последних строк:
+    $(window).on('load resize',windowSize);
+    
+}
+
+
+
+
+
+
+
+
+  
   //fix form розовая справа внизу
   $(function() {
   var Order = function(el, multiple) {
