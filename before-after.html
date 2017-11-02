@@ -42,6 +42,7 @@
       <main class="cd-main-content">
         <!-- main content here -->
       </main>
+
       <header>
         <div class="planka-top planka-top-320"></div>
         <div class="logo">
@@ -72,25 +73,13 @@
               <i class="icon-angle-down"></i>
             </span>
           </div>
-          <div class="select-number">
-            <div class="form" id="select-number">
-              <div class="form__order-mobile open-phone"><span class="size16">+38</span>(098) 794-09-58</div>
-              <div class="form__wrapper form__wrapper__number">
-                <div class="form__title">Заказать обратный звонок</div>
-                <div id="messegeResult"></div>
-                <form>
-                  <!-- Hidden Required Fields -->
-                  <input type="hidden" name="project_name" value="NobelDent">
-                  <input type="hidden" name="admin_email" value="liaforweb@gmail.com">
-                  <input type="hidden" name="form_subject" value="NobelDent-заказ обратного звонка">
-                  <!-- END Hidden Required Fields -->
-                  <input type="text" class="phone-mask" name="Телефон" placeholder="Номер телефона" required="">
-                  <button class="form__btn">OK</button>
-                </form>
-              </div>
-            </div>
-            <a class="select-button select-button-number "><i class="icon-angle-down"></i></a>
-          </div>
+  
+          <button type="button" class="select-number" data-toggle="modal" data-target="#small__call-phone">
+            <div class="form__order-mobile"><span class="size16">+38</span>(098) 794-09-58</div>
+              <a class="select-button select-button-number "><i class="icon-angle-down"></i></a>
+          </button>
+  
+          
           <div class="nav__wrapper-mobile">
             <nav class="cd-main-nav-wrapper-mobile">
               <div class="buttons"> 
@@ -116,25 +105,13 @@
             <p>+38 <span class="size30">(044) 234 25 49</span></p>
             <div class="select-number">
               <div class="form"  id="select-number">
-                <div class="form__order  open-phone"><span class="size16">+38</span>(098) 794-09-58</div>
-                <div class="form__wrapper form__wrapper__number">
-                  <div class="form__title">Заказать обратный звонок</div>
-                  <div id="messegeResult"></div>
-                  <form>
-                    <!-- Hidden Required Fields -->
-                    <input type="hidden" name="project_name" value="NobelDent">
-                    <input type="hidden" name="admin_email" value="liaforweb@gmail.com">
-                    <input type="hidden" name="form_subject" value="NobelDent-заказ обратного звонка">
-                    <!-- END Hidden Required Fields -->
-                    <input type="text" class="phone-mask" name="Телефон" placeholder="Номер телефона" required>
-                    <button class="form__btn">OK</button>
-                  </form>
-                </div>
+                <div class="form__order"><span class="size16">+38</span>(098) 794-09-58</div>
               </div>
               <a class="select-button select-button-number "><i class="icon-angle-down"></i></a>
             </div>
-            <p class="btn-order open-phone">Заказать обратный звонок</p>
+            <button type="button"  class="btn btn-order" data-toggle="modal" data-target="#small__call-phone">Заказать обратный звонок</button>
           </div>
+  
           <div class="header__adress">
             <span class="header__metro">
             <img src="img/logo-metro.png" alt="метро">
@@ -163,6 +140,31 @@
             <button type="button"  class="btn btnn header__buttons__question uppercase" data-toggle="modal" data-target="#modal__header-order">Задать вопрос</button>
             <button type="button" class="btn btnn header__buttons__order uppercase" data-toggle="modal" data-target="#modal__header-order">Записаться на прием</button>
           </div>    
+        </div>
+        <div class="modal fade" id="small__call-phone" tabindex="-1" role="dialog" aria-labelledby="small__call-phone" aria-hidden="true">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content modal-content__small__call-phone">
+              <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    <button type="button" class="btn small__btn__call-phone" data-dismiss="modal"><span class="small__btn-close-modal">Close</span></button>
+                  </button>
+                <div class="form__wrapper__number">
+                  <div class="form__title">Заказать обратный звонок</div>
+                  <div id="messegeResult"></div>
+                  <form>
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="NobelDent">
+                    <input type="hidden" name="admin_email" value="liaforweb@gmail.com">
+                    <input type="hidden" name="form_subject" value="NobelDent-заказ обратного звонка">
+                    <!-- END Hidden Required Fields -->
+                    <input type="text" class="phone-mask" name="Телефон" placeholder="Номер телефона" required>
+                    <button class="form__btn">OK</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </header>
       <div class="main-menu">
@@ -465,26 +467,11 @@
             <li class="fix-menu__item fix-menu__item__nd"><a href="index.html">Клиника стоматологии <b>NobelDent</b></a></li>
             <li class="fix-menu__item fix-menu__item__bef-af"><a href="before-after.html">До и После</a></li>
             <li class="fix-menu__item fix-menu__item__phone">
-              <div class="select-number fix-menu__item__select-number open-phone">
-                <i class="icon-phone open-phone"></i>
-                <i class="icon-angle-down fix-menu__select-button-number open-phone"></i>
-              </div>
-              <div class="form" id="select-number">
-                <div class="form__order-fix open-phone "><span class="size14">+38</span>(098) 794-09-58</div>
-                <div class="form__wrapper form__wrapper__number">
-                  <div class="form__title open-phone">Заказать обратный звонок</div>
-                  <div id="messegeResult"></div>
-                  <form class="form__order-fix">
-                    <!-- Hidden Required Fields -->
-                    <input type="hidden" name="project_name" value="NobelDent">
-                    <input type="hidden" name="admin_email" value="liaforweb@gmail.com">
-                    <input type="hidden" name="form_subject" value="NobelDent-заказ обратного звонка">
-                    <!-- END Hidden Required Fields -->
-                    <input type="text" class="phone-mask" name="Телефон" placeholder="Номер телефона" required class="phone-mask">
-                    <button class="form__btn">OK</button>
-                  </form>
-                </div>
-              </div>
+              <button type="button" class="select-number fix-menu__item__select-number" data-toggle="modal" data-target="#small__call-phone">
+                <i class="icon-phone icon-phone__fix-menu"></i>
+                <i class="icon-angle-down fix-menu__select-button-number"></i>
+                <div class="form__order-fix"><span class="size14">+38</span>(098) 794-09-58</div>
+              </button>
             </li>
             <li class="fix-menu__item fix-menu__item__usl"><a href="prices.html">Услуги</a></li>
             <li class="fix-menu__item"><a href="prices.html">Цены</a></li>
@@ -858,7 +845,7 @@
     <button type="button" id="call-phone" class="call-phone" data-toggle="modal" data-target="#modal__call-phone">
       <div class="call-phone__circle"></div>
       <div class="call-phone__circle-fill"></div>
-      <div class="call-phone__circle-img"><i class="icon-phone"></i> </div>
+      <div class="call-phone__circle-img"><i class="icon-phone icon-phone__call-phone"></i> </div>
     </button>
   <!--Форма обратной связи-->
 
