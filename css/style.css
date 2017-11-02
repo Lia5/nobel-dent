@@ -106,7 +106,7 @@ p {
   padding: 0;
 }
 .btn:focus {
-  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 1);
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0);
 }
 /*nav*/
 
@@ -595,11 +595,75 @@ header {
   font-size: 33px;
 
 }
+
+
+/*call-phone*/
+.small__btn__call-phone {
+  color: transparent;
+  margin: 0;
+  padding: 16px;
+  background-color: transparent;
+  border-color: transparent;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 10px;
+  padding: 22px;
+  background-color: transparent;
+  border-radius: 50%;
+}
+.small__btn__call-phone:hover {
+  color: transparent; 
+  background-color: #B0B9C2;
+  border-color: #B0B9C2;
+} 
+
+.small__btn__call-phone:active {
+  color: transparent; 
+  background-color: #727b84;
+  border-color: #6c757d;
+}
+.small__btn-close-modal:before, 
+.small__btn-close-modal:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+.small__btn-close-modal:before {
+  transform: rotate(45deg);
+}
+.small__btn-close-modal:after {
+  transform: rotate(-45deg);
+}
+.small__btn-close-modal {
+    width: 40px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 5px;
+  right: -2px;
+}
+.small__btn-close-modal__call-phone {
+
+  right: 0;
+  top: 0;
+}
+.small__btn-close-modal__call-phone::before, 
+.small__btn-close-modal__call-phone::after {
+  background-color: #ffffff; 
+}
+
 .header__wrapper .select-button-number {
   left: -10px;
 }
 
 .btn-order {
+  background-color: transparent;
   display: inline-block;
   color: #99cc00;
   border-bottom: 1px dotted #ff0000;
@@ -930,7 +994,7 @@ input {
 select {
   outline:none;
 }
-.fix-menu .icon-phone {
+.icon-phone__fix-menu {
   position: absolute;
   font-size: 16px;
   color: #ffffff;
@@ -1043,7 +1107,6 @@ buttons{
   margin: 0 auto;
 }
 .header-mobile .select-number {
-  padding-top: 9px;
   background-color: #faa61a;
   color: #ffffff;
   z-index: 2;
@@ -2160,7 +2223,7 @@ footer {
   40%{-o-transform:rotate(25deg) scale(1) skew(1deg)  }
   100%,50%{-o-transform:rotate(0deg) scale(1) skew(1deg)  }
 }
-.icon-phone {
+.icon-phone__call-phone {
   position: absolute;
   font-size: 39px;
   color: #527da8;
@@ -2214,27 +2277,18 @@ footer {
   background-color: #ffffff;
   color: #000000;
 }
-.form__wrapper__number {
-  z-index: 20;
-  margin: 0;
-  position: absolute;
-  left: 0;
-  min-width: 100px;
-  width: 100%;
-  font-size: 15px;
-  padding: 10px;
 
+.modal-content__small__call-phone {
+  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
 }
-.select-number form {
-  padding: 0;
-}
-.select-number input {
+
+.form__wrapper__number input {
   width: 74%;
   display: inline;
-  float: left;
-  padding: 11px;
 }
-.select-number .form__btn {
+.form__wrapper__number .form__btn {
   display: inline;
   margin: 0;
   background-color: #e2509d;
@@ -2255,13 +2309,10 @@ footer {
   background-color: #e6007e;
   font-size: 17px;
   color: #ffffff;
-  cursor: pointer;
-
 }
 form {
   padding: 25px;
 }
-
 
 .fix-form input{
   height: 50px;
@@ -4637,7 +4688,7 @@ p.block-on-off {
   font-size: 18px;
   position: relative;
   background-color: #7fc242;  
-  padding-top: 10px;
+  padding: 10px 34px 11px 10px;
 }
 .fix-menu__item__phone {
   background-color: #7fc242;  
@@ -4658,8 +4709,8 @@ p.block-on-off {
 }
 .form__order-fix {
   display: block;
-  padding-left: 31px;
   font-size: 17px;
+  color: #ffffff;
   cursor: pointer;
 }
 form.form__order-fix {
@@ -4668,9 +4719,7 @@ form.form__order-fix {
 .fix-menu__item__phone .form__btn {
   margin: 5px;
 }
-.fix-menu__item__phone .form__wrapper__number {
-  min-width: 100px;
-}
+
 .fix-menu__item__phone .phone-mask {
   width: 100%;
 }
