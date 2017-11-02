@@ -537,7 +537,9 @@ header {
 .part-info-desctop {
   display: none;
 }
-
+.logo a {
+  text-decoration: none;
+}
 
 
 .header__wrapper {
@@ -814,6 +816,8 @@ input {
   color: #ffffff;
   background-color: #e2509d;
   border: 1px solid #e2509d;
+  border-radius: 0;
+  margin: 0;
 }
 .header__buttons__order:hover {
   color: #e2509d;
@@ -1305,9 +1309,10 @@ buttons{
 }
 .planka-top {
   min-height: 25px;
-  width: 100%;
+  width: 1170px;
   background-image: url("../img/planka-top-line.png");
   background-size: cover;
+  margin: 0 auto;
 }
 .planka-top-680 {
   display: none;
@@ -1966,9 +1971,11 @@ h4 {
 }
 .planka-bottom {
   min-height: 39px;
-  width: 100%;
+  width: 1170px;
   background-image: url("../img/planka-bottom-line.png");
   background-size: cover;
+  width: 1170px;
+  margin: 0 auto;
 }
 /*footer*/
 footer {
@@ -2379,14 +2386,13 @@ button::-moz-focus-inner {
 .service__nav {
   width: 100%;
   justify-content: center;
-  padding: 45px 10px;
 }
 .service__nav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  padding: 0;
+  padding: 45px 0;
 }
 .service__nav li {
   padding: 0 5px;
@@ -3250,7 +3256,7 @@ p.block-on-off {
   color: #e6007e;
   font-size: 39px;
   font-weight: 600;
-  line-height: 54px;
+  line-height: 1.1;
   margin-top: -50px;
   padding-top: 50px;
 }
@@ -3586,6 +3592,7 @@ p.block-on-off {
 .btn__header-order {
   color: transparent;
   margin: 0;
+  margin-top: 10px;
    width: 49px;
    padding: 16px;
    background-color: transparent;
@@ -3593,6 +3600,7 @@ p.block-on-off {
    position: absolute;
    right: 1rem;
    top: 2px;
+
 }
 .btn-close-modal {
   font-size: 1.5rem;
@@ -3608,13 +3616,14 @@ p.block-on-off {
   background-color: #727b84;
   border-color: #6c757d;
 }
-.btn-close-modal:before, .btn-close-modal:after {
+.btn-close-modal:before, 
+.btn-close-modal:after {
   position: absolute;
   left: 15px;
   content: ' ';
   height: 33px;
   width: 2px;
-  background-color: #333;
+  background-color: #ffffff;
 }
 .btn-close-modal:before {
   transform: rotate(45deg);
@@ -3623,6 +3632,10 @@ p.block-on-off {
   transform: rotate(-45deg);
 }
 /*PRICES*/
+
+.block-on-off__wrapper__prices h2 {
+  padding-top: 15px;
+}
 .price-list__print {
   margin-left: auto;
   display: flex;
@@ -3682,6 +3695,8 @@ p.block-on-off {
 .infocentr__new {
   width: 100%;
   padding: 10px;
+  padding-bottom: 64px;
+  padding-top: 19px;
 }
 
 .infocentr__new__wrapper {
@@ -3694,6 +3709,12 @@ p.block-on-off {
 .infocentr__new__img img {
   width: 100%;
 }
+.infocentr__new__title:hover {
+  text-decoration: underline;
+  color: #e6007e;
+  cursor: pointer;
+}
+
 .infocentr__new__title>h4 {
   font-family: 'Raleway-Regular', Arial, sans-serif;
   font-size: 16px;
@@ -3705,6 +3726,11 @@ p.block-on-off {
 }
 .infocentr__new__text {
   margin-top: auto;
+}
+.infocentr__new__text:hover {
+  text-decoration: underline;
+
+  cursor: pointer;
 }
 .infocentr__new__text p {
   font-family: 'Roboto-Regular', Arial, sans-serif;
@@ -4556,7 +4582,6 @@ p.block-on-off {
     margin: 2%;
   }
   .btn {
-    margin: 1% 0 1% 1%;
     cursor: pointer;
   }
   .modal-body__header-order {
