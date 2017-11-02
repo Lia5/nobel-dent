@@ -298,7 +298,7 @@ $(document).ready(function() {
    } catch (e){}
    navHeight = $('.fix-wrapper').outerHeight(true);
    try {
-   endPos = $('.galllery-carusel').offset().top;
+   endPos = $('.gallery-carusel').offset().top;
   } catch (e){}
  }
  
@@ -450,7 +450,7 @@ items.each(function(i){
 });
 
 // Creating the "Everything" option in the menu:
-createList('Everything',items);
+createList('Все работы',items);
 
 // Looping though the arrays in itemsByTags:
 $.each(itemsByTags,function(k,v){
