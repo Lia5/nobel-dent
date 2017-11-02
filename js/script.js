@@ -150,8 +150,20 @@ jQuery(document).ready(function($){
    var accordion2 = new Accordion($('#accordion2'), false);
  });
 
+ /*
+ $(document).ready(function() {
+  
+   $(window).resize(function(){
+     var windowWidth = $(window).width();
+     if(windowWidth < 1170)
+     else ();
+   });
+ });
 
-    $(function() {
+*/
+
+
+$(function() {
     var Accordion = function(el, multiple) {
       this.el = el || {};
       this.multiple = multiple || false;
