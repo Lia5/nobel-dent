@@ -2727,8 +2727,6 @@ button::-moz-focus-inner {
   content: ">>";
   padding-right: 5px;
 }
-
-
 .block-on-off__wrapper {
   display: flex;
   flex-direction: column;
@@ -3016,11 +3014,91 @@ del.cross:before,
   font-family: 'Roboto-Bold', Arial, sans-serif;
   text-transform: uppercase;
 }
+
+/*discount__baner*/
+
 .discount__baner {
   border-top: 2px dotted #527da8;
-  padding: 25px 10px;
+  padding: 20px 0;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
 }
+.discount__baner__title {
+  width: 100%;
+  align-self: center;
+}
+.discount__baner__price {
+  width: 50%;
+  color: #ffffff;
+}
+.discount__baner__price-new {
+  position: relative;
+  background-color: #e6007e;
+}
+.discount__baner__price-new:after {
+  content: "";
+  position: absolute;
+  left: -1px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 14px solid white;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+}
+.discount__baner__price-old {
+  position: relative;
+  background-color: #347aa5;
+}
+.discount__baner__price-old:before {
+  content: "";
+  position: absolute;
+  right: -9px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 14px solid #347aa5;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  z-index: 2;
+  
+}
+
+
+
+
+#pointer {
+  width: 200px;
+  height: 40px;
+  position: relative;
+  background: red;
+}
+#pointer:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid white;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+#pointer:before {
+  content: "";
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid red;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+
+
+
 .service__sidebar__form {
   border: 1px solid #000000;
   padding: 10px;
