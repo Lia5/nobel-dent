@@ -1173,6 +1173,7 @@ buttons{
   background: #347aa5;
   color: #ffffff;
 }
+
 .main-menu__item:last-child .link {
    border-bottom: 0; 
 }
@@ -4673,6 +4674,10 @@ p.block-on-off {
   }
   .main-menu__item i.icon-angle-down {
     right: 0;
+  }
+  
+  .accordion-center .main-menu__item:hover .submenu{
+    display: flex!important;
   }
   .accordion .link {
     padding: 15px 31px 15px 31px;
