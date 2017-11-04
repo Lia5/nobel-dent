@@ -1309,9 +1309,11 @@ buttons{
 }
 .planka-top {
   min-height: 25px;
-  width: 1170px;
+  width: 100%;
   background-image: url("../img/planka-top-line.png");
-  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
   margin: 0 auto;
 }
 .planka-top-680 {
@@ -1970,11 +1972,12 @@ h4 {
   color: #e6007e;
 }
 .planka-bottom {
-  min-height: 39px;
-  width: 1170px;
+  min-height: 38px;
+  width: 100%;
   background-image: url("../img/planka-bottom-line.png");
-  background-size: cover;
-  width: 1170px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
   margin: 0 auto;
 }
 /*footer*/
@@ -2752,6 +2755,7 @@ button::-moz-focus-inner {
   border: 1px solid #ffffff;
 }
 .service__price__table {
+  width: 100%;
   border-collapse: collapse;
   border-spacing: 2px;
   background-color: #f4f3f3;
@@ -5011,6 +5015,12 @@ form.form__order-fix {
     padding: 0;
   }
   .advantages__info {
+    width: 1170px;
+  }
+  .planka-top {
+    width: 1170px;
+  }
+  .planka-bottom {
     width: 1170px;
   }
   .footer {
