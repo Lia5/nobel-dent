@@ -1161,7 +1161,7 @@ buttons{
   cursor: pointer;
   display: block;
   padding: 15px 15px 15px 15px;
-  font-weight: 700;
+  font-weight: 500;
   position: relative;
   text-transform: uppercase;
   border-bottom: 1px solid #cccccc;
@@ -2084,6 +2084,7 @@ footer {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
+  background-color: #ffffff;
   border: 2px solid rgba(82,125,168,0.4);
   -webkit-animation: call-phone__circle-anim 1.2s infinite ease-in-out;
   -moz-animation: call-phone__circle-anim 1.2s infinite ease-in-out;
@@ -3000,14 +3001,13 @@ del.cross:before,
 .service__discounts {
   background-color: #f4f3f3;
   margin: 62px 0;
-
+  padding: 2px;
 }
 .service__discounts__title {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  
   background-color: #527da8;
   color: #ffffff;
 }
@@ -3029,19 +3029,39 @@ del.cross:before,
 /*discount__baner*/
 
 .discount__baner {
-  border-top: 2px dotted #527da8;
-  padding: 20px 0;
+  border-bottom: 2px dotted #527da8;
+  padding: 12px 0;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
 }
+.discount__baner:first-child {
+  border-top: 2px dotted #527da8;
+}
 .discount__baner__title {
   width: 100%;
   align-self: center;
+  font-family: 'Raleway-Bold', Arial, sans-serif;
+  color:  #515151;
+  font-size: 19px;
+  font-weight: 700;
+  padding-bottom: 8px;
 }
 .discount__baner__price {
   width: 50%;
   color: #ffffff;
+  font-family: 'Roboto-Bold', Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 900;
+  padding: 5px;
+}
+.discount__baner__wrapper--part {
+  width: 50%;
+}
+.discount__baner__price span{
+  font-family: 'Roboto-Regular', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
 }
 .discount__baner__price-new {
   position: relative;
@@ -3054,10 +3074,11 @@ del.cross:before,
   bottom: 0;
   width: 0;
   height: 0;
-  border-left: 14px solid white;
-  border-top: 25px solid transparent;
-  border-bottom: 25px solid transparent;
+  border-left: 17px solid white;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
 }
+
 .discount__baner__price-old {
   position: relative;
   background-color: #347aa5;
@@ -3065,16 +3086,90 @@ del.cross:before,
 .discount__baner__price-old:before {
   content: "";
   position: absolute;
-  right: -9px;
+  right: -12px;
   bottom: 0;
   width: 0;
   height: 0;
-  border-left: 14px solid #347aa5;
-  border-top: 25px solid transparent;
-  border-bottom: 25px solid transparent;
+  border-left: 17px solid #347aa5;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
   z-index: 2;
   
 }
+.discount__baner__wrapper {
+  display: flex;
+  background-image: url('../img/bg-akcii.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.discount__baner__wrapper--part {
+  font-family: 'Roboto-Regular', Arial, sans-serif;
+  color:  #327eab;
+  font-size: 12px;
+  line-height: 1.1;
+  font-weight: 500;
+  font-style: italic;
+  padding: 5px;
+}
+.discount__baner__wrapper--discount {
+  font-family: 'Raleway-Bold', Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  font-style: normal;
+}
+.discount__baner__wrapper--number {
+  position: relative;
+  font-style: normal;
+  font-size: 46px;
+  font-weight: 700;
+  text-align: left;
+}
+.discount__baner__wrapper--number:after {
+  content: "%";
+  font-size: 23px;
+  position: absolute;
+  top: 7px;
+  right: -18px;
+
+}
+.discount__baner__procent {
+  width: 46px;
+  height: 46px;
+  margin: 0 auto;
+}
+.discount__baner__procent img {
+  width: 100%;
+}
+.discount__baner__get-discount {
+  font-family: 'Raleway-Bold', Arial, sans-serif;
+  color:  #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  text-align: left;
+  font-style: normal;
+}
+.discount__baner__get-discount:before {
+  content: ">";
+  padding: 4px;
+}
+.discount__baner__wrapper--part a {
+  display: block;
+  margin-top: 14px;
+  padding: 8px 5px;
+  background-color: #e6007e;
+}
+.discount__baner__wrapper--part a:hover {
+  text-decoration: none;
+  background-color: #e2509d;
+}
+
+
+
+
+
+
+
 
 
 

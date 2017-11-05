@@ -85,7 +85,7 @@ jQuery(document).ready(function($){
   function moveNavigation(){
     var navigation = $('.cd-main-nav-wrapper');
       var screenSize = checkWindowWidth();
-        if ( screenSize ) {
+        if (screenSize) {
           //desktop screen - insert navigation inside header element
       navigation.detach();
       navigation.insertBefore('.cd-nav-trigger');
@@ -98,28 +98,28 @@ jQuery(document).ready(function($){
   
   function checkWindowWidth() {
     var mq = window.getComputedStyle(document.querySelector('.nav__wrapper'), '::before').getPropertyValue('content').replace(/"/g, '');
-    return ( mq == 'mobile' ) ? false : true;
+    return (mq == 'mobile') ? false : true;
   }
   });
 
 
 //menu-mobile
 
-  $( document ).ready(function() {
-    $( ".button__hamburger" ).click(function() {
+  $(document).ready(function() {
+    $(".button__hamburger").click(function() {
       
-      $( ".menu-mobile" ).slideToggle( "slow", function() {
-        $( ".menu-mobile" ).toggleClass('menu-mobile-open');
-        $( ".button__hamburger" ).toggleClass('close');
-        $( ".button__cross" ).removeClass('close');
+      $(".menu-mobile").slideToggle("slow", function() {
+        $(".menu-mobile").toggleClass('menu-mobile-open');
+        $(".button__hamburger").toggleClass('close');
+        $(".button__cross").removeClass('close');
       });
     });
     
-    $( ".button__cross" ).click(function() {
-      $( ".menu-mobile" ).slideToggle( "slow", function() {
+    $(".button__cross").click(function() {
+      $(".menu-mobile").slideToggle("slow", function() {
          $('.menu-mobile').removeClass('menu-mobile-open');
-         $( ".button__cross" ).toggleClass('close');
-        $( ".button__hamburger" ).removeClass('close');
+         $(".button__cross").toggleClass('close');
+        $(".button__hamburger").removeClass('close');
       });
     });
   });
@@ -537,7 +537,7 @@ function createList(text,items){
 }
 });
 
-$( document ).ready(function() {
+$(document).ready(function() {
   $('.btn-slider').on('click', function() {
     $('.sliderPop').show();
     $('.ct-sliderPop-container').addClass('open');

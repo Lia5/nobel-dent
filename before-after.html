@@ -22,17 +22,17 @@
       <div class="nav__wrapper nav__wrapper-320">
         <nav class="cd-main-nav-wrapper">
           <ul class="cd-main-nav">
-            <li class = "main-nav__item"><a href="about.html">О клинике</a></li>
-            <li class = "main-nav__item hidden">|</li>
-            <li class = "main-nav__item"><a href="before-after.html">До и после</a></li>
-            <li class = "main-nav__item hidden">|</li>
-            <li class = "main-nav__item"><a href="prices.html">Услуги и Цены</a></li>
-            <li class = "main-nav__item hidden">|</li>
-            <li class = "main-nav__item"><a href="discounts.html">Акции</a></li>
-            <li class = "main-nav__item hidden">|</li>
-            <li class = "main-nav__item"><a href="infocentr.html">Инфоцентр</a></li>
-            <li class = "main-nav__item hidden">|</li>
-            <li class = "main-nav__item"><a href="contacts.html">Контакты</a></li>
+            <li class="main-nav__item"><a href="about.html">О клинике</a></li>
+            <li class="main-nav__item hidden">|</li>
+            <li class="main-nav__item"><a href="before-after.html">До и после</a></li>
+            <li class="main-nav__item hidden">|</li>
+            <li class="main-nav__item"><a href="prices.html">Услуги и Цены</a></li>
+            <li class="main-nav__item hidden">|</li>
+            <li class="main-nav__item"><a href="discounts.html">Акции</a></li>
+            <li class="main-nav__item hidden">|</li>
+            <li class="main-nav__item"><a href="infocentr.html">Инфоцентр</a></li>
+            <li class="main-nav__item hidden">|</li>
+            <li class="main-nav__item"><a href="contacts.html">Контакты</a></li>
           </ul>
         </nav>
         <a href="#" class="cd-nav-trigger">
@@ -145,10 +145,8 @@
           <div class="modal-dialog modal-sm">
             <div class="modal-content modal-content__small__call-phone">
               <div class="modal-body">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                    <button type="button" class="btn small__btn__call-phone" data-dismiss="modal"><span class="small__btn-close-modal">Close</span></button>
-                  </button>
+                <button type="button" class="btn small__btn__call-phone" data-dismiss="modal"><span class="small__btn-close-modal">Close</span></button>
+
                 <div class="form__wrapper__number">
                   <div class="form__title">Заказать обратный звонок</div>
                   <div id="messegeResult"></div>
@@ -692,16 +690,44 @@
             <h2>Акции и скидки</h2>
           </div>
           <div class="discount__baner">
-            <p>Банер 1</p>
+            <div class="discount__baner__title" >Имплантация All-on-4</div>
+            <div class="discount__baner__price discount__baner__price-old">
+              <del class="cross">
+                <span class="uppercase">Старая цена:</span><br> 250 000 р.
+              </del>
+            </div>
+            <div class="discount__baner__price discount__baner__price-new"><span class="uppercase">Новая цена:</span><br> 250 000 р.</div>
           </div>
           <div class="discount__baner">
-            <p>Банер 2</p>
+            <div class="discount__baner__title" >Имплантация All-on-6</div>
+            <div class="discount__baner__price discount__baner__price-old">
+              <del class="cross">
+                <span class="uppercase">Старая цена:</span><br> 290 000 р.
+              </del>
+            </div>
+            <div class="discount__baner__price discount__baner__price-new"><span class="uppercase">Новая цена:</span><br> 260 000 р.</div>
           </div>
           <div class="discount__baner">
-            <p>Банер 3</p>
+            <div class="discount__baner__title">Простое удаление зуба</div>
+            <div class="discount__baner__price discount__baner__price-old">
+              <del class="cross">
+                <span class="uppercase">Старая цена:</span><br> 800 р.
+              </del>
+            </div>
+            <div class="discount__baner__price discount__baner__price-new"><span class="uppercase">Новая цена:</span><br> 500 р.</div>
           </div>
-          <div class="discount__baner">
-            <p>Банер 4</p>
+        </div>
+        <div class="service__discounts">
+          <div class="discount__baner__wrapper">
+            <div class="discount__baner__wrapper--part">наши aкции<br>
+              <span class="discount__baner__wrapper--discount">экономьте</span><br>
+              до<br>
+              <span class="discount__baner__wrapper--number">30</span>
+            </div>
+            <div class="discount__baner__wrapper--part">
+              <div class="discount__baner__procent"><img src="img/baner__procent.png" alt=""></div>
+              <a href="#"><span class="discount__baner__get-discount">получить скидку</span></a>
+            </div>
           </div>
         </div>
         <!--Форма обратной связи-->
@@ -808,7 +834,7 @@
         </div>
         <div class="footer__list">
           <ul class="footer__list__items">
-            <li class="footer__list__item"><a href="#">Болезни и лечение</li>
+            <li class="footer__list__item"><a href="#">Болезни и лечение</a></li>
             <li class="footer__list__item"><a href="#">Годовое обслуживание</a></li>
             <li class="footer__list__item"><a href="#">Рекомендации после лечения</a></li>
             <li class="footer__list__item"><a href="#">Полезные материалы и графика</a></li>
@@ -1314,9 +1340,6 @@
       <div class="modal-content modal-content__header-order">
         <div class="modal-header modal-header__header-order">
           <h5 class="modal-title modal-title__header-order" id="popup__header-order">Бесплатная консультация врача</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-          </button>
           <button type="button" class="btn btn__header-order" data-dismiss="modal"><span class="btn-close-modal">Close</span></button>
         </div>
         <div class="modal-body modal-body__header-order">
