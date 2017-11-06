@@ -8,14 +8,10 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="css/fontello-embedded.css">
+    <link  href="css/fotorama.css" rel="stylesheet">
     <script src="js/jquery-3.2.1.min.js"></script> 
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>     
     <link rel="stylesheet" href="css/style.css">
-     <!--[if lt IE 9]>
-          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
 </head>
 <body>
     <div class="wrapper">
@@ -42,7 +38,6 @@
       <main class="cd-main-content">
         <!-- main content here -->
       </main>
-
       <header>
         <div class="planka-top planka-top-320"></div>
         <div class="logo">
@@ -146,7 +141,6 @@
             <div class="modal-content modal-content__small__call-phone">
               <div class="modal-body">
                 <button type="button" class="btn small__btn__call-phone" data-dismiss="modal"><span class="small__btn-close-modal">Close</span></button>
-
                 <div class="form__wrapper__number">
                   <div class="form__title">Заказать обратный звонок</div>
                   <div id="messegeResult"></div>
@@ -458,7 +452,6 @@
           </li>
         </ul>
       </div>
-      
       <div class="fix-menu">
         <div class="fix-menu__wraper">
           <ul class="fix-menu__items">
@@ -499,160 +492,53 @@
           <div class="service__nav__submenu about__nav__submenu">
             <ul>
               <li><a href="about.html">О клинике</a></li>
-              <li><a>До и После</a></li>
+              <li><a href="before-after.html">До и После</a></li>
               <li><a href="prices.html">Услуги и Цены</a></li>
               <li><a href="discounts.html">Акции</a></li>
               <li><a href="infocentr.html">Инфоцентр</a></li>
-              <li><a href="contacts.html">Контакты</a></li>
+              <li><a>Контакты</a></li>
             </ul>
           </div>
-          <li class="service__nav-current service__nav__submenu-current"><a>О клинике</a></li>
+          <li class="service__nav-current service__nav__submenu-current"><a>Контакты</a></li>
       </ul>
     </div>
+    <div class="service">
+      <div class="contacts__content" id="article">
+        <h2 class="contacts__h2">Контакты</h2>
+        <div class="contacts__wrapper">
+          <div class="contacts__about">
+            <div class="contacts__about__item contacts__about__item__adress">
+              <h4>Наш адрес</h4>
+              <p>01032, г. Киев, б-р Тараса Шевченко, 48 а, корпус 1</p>
+              <p>Шаговая доступность от метро Осокорки</p>
+            </div>
+            <div class="contacts__about__item">
+              <h4>Телефон, email</h4>
+              <p>+38 (098) 794-09-58<br>
+                  +38 (098) 794-09-58</p>
+              <p>Напишите нам: <br>
+              info@nobeldent.com.ua</p>
+            </div>
+            <div class="contacts__about__item">
+              <h4>График работы</h4>
+              <p>Пн.-Пт. 9:00 — 19:00<br>
+                  Сб. 9:00 — 17:00</p>
+              <p>Вс. Выходной</p>
+            </div>
+          </div>
+          <div class="contacts__location">
+            <h2 class="contacts__h2">Наше расположение</h2>
+            <div class="contacts__map__location">
 
-    <div class="service before-after">
-      <div class="service__content" id="article">
-        <h2 class="service__content__h2 about__h2">Фото до и после лечения в<span class="part-color">Nobel</span>Dent</h2>
+            </div>
+          </div>
+          <div class="contacts__route">
+            <h2 class="contacts__h2">Как добраться от м. Осокорки</h2>
+            <div class="contacts__map__route">
 
-        <nav id="filter" class="filter">
-          <!-- Здесь будет меню, сгенерированное jQuery -->
-        </nav>
-        <section id="container">
-          <ul id="stage" class="before-after__items">  
-            <li class="before-after__item" data-tags="Имплантация зубов">
-              <h3 class="before-after__h3">All-on-4 на верхней челюсти</h3>
-              <div class="before-after__wrapper">
-                <div class="before-after__foto"><span>До</span><img src="img/before-after/impl-01-before.jpg" alt=""></div>
-                <div class="before-after__foto"><span>После</span><img src="img/before-after/impl-01-after.jpg" alt=""></div>
-                <div class="before-after__description">
-                  <p><b>Клинический случай:</b><br>
-                    Зубы на верхней челюсти пациентки были 
-                    сильно повреждены и она обратилась в клинику 
-                    с просьбой восстановить их функциональность.<br>
-                    Врачи:<br>
-                    Иванов И.И., Петров П.П.
-                  </p>
-                  <div class="hr-left">
-                    <button type="button" class="btn before-after__description-btn btn " data-toggle="modal" data-target=".more-about-clinic-case" data-slide="1">Подробнее</button>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="before-after__item" data-tags="Протезы/реставрация/виниры">
-              <h3 class="before-after__h3">Протезирование нижней челюсти методом All-on-4</h3>
-              <div class="before-after__wrapper">
-                <div class="before-after__foto"><span>До</span><img src="img/before-after/prot-01-before.jpg" alt=""></div>
-                <div class="before-after__foto"><span>После</span><img src="img/before-after/prot-01-after.jpg" alt=""></div>
-                <div class="before-after__description">
-                  <p><b>Клинический случай:</b><br>
-                    Пациент обратился в клинику с отсутствующими 
-                    зубами нижней челюсти (остался один зуб) для 
-                    восстановления зубов.<br>
-                    Врачи:<br>
-                    Иванов И.И., Петров П.П.
-                  </p>
-                  <div class="hr-left">
-                    <button type="button" class="btn before-after__description-btn btn " data-toggle="modal" data-target=".more-about-clinic-case" data-slide="2">Подробнее</button>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="before-after__item" data-tags="Лечение зубов">
-              <h3 class="before-after__h3">Восстановление зубов верхней челюсти</h3>
-              <div class="before-after__wrapper">
-                <div class="before-after__foto"><span>До</span><img src="img/before-after/prot-02-before.jpg" alt=""></div>
-                <div class="before-after__foto"><span>После</span><img src="img/before-after/prot-02-after.jpg" alt=""></div>
-                <div class="before-after__description">
-                  <p><b>Клинический случай:</b><br>
-                    Пациент обратился в клинику с просьбой 
-                    восстановить зубы верхней челюсти.<br>
-                    Врачи:<br>
-                    Иванов И.И., Петров П.П.
-                  </p>
-                  <div class="hr-left">
-                    <button type="button" class="btn before-after__description-btn btn " data-toggle="modal" data-target=".more-about-clinic-case" data-slide="3">Подробнее</button>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="before-after__item" data-tags="Протезы/реставрация/виниры">
-              <h3 class="before-after__h3">Восстановление зубов после зубного моста</h3>
-              <div class="before-after__wrapper">
-                <div class="before-after__foto"><span>До</span><img src="img/before-after/prot-03-before.jpg" alt=""></div>
-                <div class="before-after__foto"><span>После</span><img src="img/before-after/prot-03-after.jpg" alt=""></div>
-                <div class="before-after__description">
-                  <p><b>Клинический случай:</b><br>
-                    Пациент обратился в клинику с просьбой 
-                    восстановить зубы верхней челюсти.<br>
-                    Врачи:<br>
-                    Иванов И.И., Петров П.П.
-                  </p>
-                  <div class="hr-left">
-                    <button type="button" class="btn before-after__description-btn btn " data-toggle="modal" data-target=".more-about-clinic-case" data-slide="4">Подробнее</button>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="before-after__item" data-tags="Имплантация зубов">
-              <h3 class="before-after__h3">Однофазная имплантация двух челюстей за 3 дня!</h3>
-              <div class="before-after__wrapper">
-                <div class="before-after__foto"><span>До</span><img src="img/before-after/imp-02-before.jpg" alt=""></div>
-                <div class="before-after__foto"><span>После</span><img src="img/before-after/imp-02-after.jpg" alt=""></div>
-                <div class="before-after__description">
-                  <p><b>Клинический случай:</b><br>
-                    Зубы пациентки были полностью разрушены, 
-                    необходимо было восстановление всех зубов.<br>
-                    Врачи:<br>
-                    Иванов И.И., Петров П.П.
-                  </p>
-                  <div class="hr-left">
-                    <button type="button" class="btn before-after__description-btn btn " data-toggle="modal" data-target=".more-about-clinic-case" data-slide="5">Подробнее</button>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="before-after__item" data-tags="Протезы/реставрация/виниры">
-              <h3 class="before-after__h3">Протезирование All-on-6 на нижней челюсти</h3>
-              <div class="before-after__wrapper">
-                <div class="before-after__foto"><span>До</span><img src="img/before-after/prot-02-before.jpg" alt=""></div>
-                <div class="before-after__foto"><span>После</span><img src="img/before-after/prot-02-after.jpg" alt=""></div>
-                <div class="before-after__description">
-                  <p><b>Клинический случай:</b><br>
-                    Пациентка обратилась в клинику с просьбой 
-                    восстановить зубы нижней челюсти.<br>
-                    Врачи:<br>
-                    Иванов И.И., Петров П.П.
-                  </p>
-                  <div class="hr-left">
-                    <button type="button" class="btn before-after__description-btn btn " data-toggle="modal" data-target=".more-about-clinic-case" data-slide="6">Подробнее</button>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="before-after__item" data-tags="Протезы/реставрация/виниры">
-              <h3 class="before-after__h3">Протезирование All-on-6 на нижней челюсти</h3>
-              <div class="before-after__wrapper">
-                <div class="before-after__foto"><span>До</span><img src="img/before-after/prot-02-before.jpg" alt=""></div>
-                <div class="before-after__foto"><span>После</span><img src="img/before-after/prot-02-after.jpg" alt=""></div>
-                <div class="before-after__description">
-                  <p><b>Клинический случай:</b><br>
-                    Пациентка обратилась в клинику с просьбой 
-                    восстановить зубы нижней челюсти.<br>
-                    Врачи:<br>
-                    Иванов И.И., Петров П.П.
-                  </p>
-                  <div class="hr-left">
-                    <button type="button" class="btn before-after__description-btn btn " data-toggle="modal" data-target=".more-about-clinic-case" data-slide="7">Подробнее</button>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-          
-        </section>
-        <div class="btn before-after__description-btn">Смотреть ещё</div>
-      
-        
+            </div>
+          </div>
+        </div>
       </div>
       <div class="service__sidebar mini-navigation" id="aside2">
         <h2 class="mini-navigation__title">Навигация</h2>
@@ -662,8 +548,8 @@
               <a class="link" href="about.html">О клинике</a>
               <div class="hr"></div>
             </li>
-            <li class="main-menu__item open">
-              <a class="link current-element" >До и после</a>
+            <li class="main-menu__item">
+              <a class="link" href="before-after.html">До и после</a>
               <div class="hr"></div>
             </li>
             <li class="main-menu__item">
@@ -678,8 +564,8 @@
               <a class="link" href="infocentr.html">Инфоцентр</a>
               <div class="hr"></div>
             </li>
-            <li class="main-menu__item">
-              <a class="link" href="contacts.html">Контакты</a>
+            <li class="main-menu__item open">
+              <a class="link current-element">Контакты</a>
               <div class="hr"></div>
             </li>
           </ul>
@@ -760,6 +646,9 @@
         </div>
       </div>
     </div>
+    
+       
+     
 
     <div class="service__question">
       <div class="service__question__doctor">
@@ -806,6 +695,13 @@
       </div>
     </div>
     <div class="planka-bottom"></div>
+
+
+
+
+
+
+
 
     
 
@@ -897,442 +793,9 @@
         </form>
       </div>
     </div>
+
+
   </div>
-
-  <!-- Modal Подробнее-->
-  <div class="modal fade more-about-clinic-case" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Описание клинического случая</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal"><span class="btn-close-modal">Close</span></button>
-        </div>
-        <div class="modal-body">
-          <div class="single-item"  data-hash="true">
-            <div class="popups"> 
-              <h2 class="popups__title">Имплантация на беззубых челюстях</h2>
-              <div class="popups__wrapper">
-                <div class="popups__img">
-                  <div class="logo">
-                    <picture class="icon">
-                      <source srcset = "img/logo-big.png" media = "(min-width: 768px)">
-                      <img srcset="img/logo-mini.png" alt="NobelDent клиника эстетической стоматологии">
-                    </picture>
-                    <h2 class="logo__h2">
-                      <span class="part-color">Nobel</span>Dent<br>
-                    <span class="part-info">клинитка <span class="part-info-desctop">эстетической</span> стоматологии</span>
-                  </h2>
-                  </div>
-                  <div class="popup__wrapper__img-row">
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic1-1.jpg" alt="Клинический случай 1">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic1-2.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="popup__wrapper__img-row">
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic1-3.jpg" alt="">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic1-4.jpg" alt="">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic1-5.jpg" alt="">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic1-6.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="popup__wrapper__img-row">
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic1-7.jpg" alt="">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic1-8.jpg" alt="">
-                    </div>
-                  </div>
-                </div>
-                <div class="popup__description">
-                  <h3 class="popup__description__title">Клинический случай</h3>
-                  <p>Пациент 68 лет обратился по поводу невозможности пережевывания пищи и отсутствия зубов. С правой стороны верхней челюсти мостовидный протез с опорой на 12 и 17 зубы. Подвижность моста 3 степени локальный пародонтит. Остальные корни в области 21, 22, 27 зубов разрушены ниже уровня кости.</p>
-                  <h3 class="popup__description__title">План лечения</h3>
-                  <p>Было принято решение об имплантации. Чтобы уменьшить неприятные моменты операционного вмешательства, и сохранить максимально большой объём костной ткани, было принято решении об одномоментной имплантации в день удаления зубов, с одномоментной нагрузкой имплантов. <br>
-                  В день операции было удалено 7 зубов, установлено 6 имплантов, и одновременно нагружено 4 импланта временной армированной конструкцией.</p>
-                  <h3 class="popup__description__title">Результат</h3>
-                  <p>Через 3 месяца работа была полностью закончена, и пациент ушёл с постоянной керамической работой.</p>
-                  <h3 class="popup__description__title">Врачи</h3>
-                  <p>Березин П.В., Копылов И.П.</p>
-                  <a class="btn header__buttons__order uppercase popup__btn" href="#">Записаться на прием</a>
-                </div>
-              </div>
-            </div>
-            <div class="popups"> 
-              <h2 class="popups__title">Имплантации на беззубых челюстях</h2>
-              <div class="popups__wrapper">
-                <div class="popups__img">
-                  <div class="logo">
-                    <picture class="icon">
-                      <source srcset = "img/logo-big.png" media = "(min-width: 768px)">
-                      <img srcset="img/logo-mini.png" alt="NobelDent клиника эстетической стоматологии">
-                    </picture>
-                    <h2 class="logo__h2">
-                      <span class="part-color">Nobel</span>Dent<br>
-                    <span class="part-info">клинитка <span class="part-info-desctop">эстетической</span> стоматологии</span>
-                  </h2>
-                  </div>
-                  <div class="popup__wrapper__img-row">
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic1-1.jpg" alt="Клинический случай 2">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic1-2.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="popup__wrapper__img-row">
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic2-3.jpg" alt="">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic2-4.jpg" alt="">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic2-5.jpg" alt="">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic2-6.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="popup__wrapper__img-row">
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic1-7.jpg" alt="">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic1-8.jpg" alt="">
-                    </div>
-                  </div>
-                </div>
-                <div class="popup__description">
-                  <h3 class="popup__description__title">Клинический случай</h3>
-                  <p>Пациент 56 лет с частичным съемным протезом на нижней челюсти, Обращение обуславливалось жалобами на постоянное выпадение протеза, в том числе во время разговора. В полости рта расположен акриловый, частично съемный протез с фиксацией на 34 и 35 зубах, имеющих 4-ую степень подвижности. Мелкое преддверие полости рта вместе с сильной атрофией и высоким прикреплением мышц исключало возможность улучшения и фиксацию любого съемного протеза.</p>
-                  <h3 class="popup__description__title">План лечения</h3>
-                  <p>Было принято решение об имплантации по технологии All on 4 с использованием хирургического 3D шаблона и винтовой системой фиксации Multiunit.<br>
-                  Объединение нескольких хирургических и пластических методик, позволило в день операции установить сразу несъемную конструкцию.</p>
-                  <h3 class="popup__description__title">Результат</h3>
-                  <p>Сразу же в день операции пациент ушел с зубами.</p>
-                  <h3 class="popup__description__title">Врачи</h3>
-                  <p>Чередниченко</p>
-                  <a class="btn header__buttons__order uppercase popup__btn" href="#">Записаться на прием</a>
-                </div>
-              </div>
-            </div>
-            <div class="popups"> 
-              <h2 class="popups__title">Имплантации на беззубых челюстях</h2>
-              <div class="popups__wrapper">
-                <div class="popups__img">
-                  <div class="logo">
-                    <picture class="icon">
-                      <source srcset = "img/logo-big.png" media = "(min-width: 768px)">
-                      <img srcset="img/logo-mini.png" alt="NobelDent клиника эстетической стоматологии">
-                    </picture>
-                    <h2 class="logo__h2">
-                      <span class="part-color">Nobel</span>Dent<br>
-                    <span class="part-info">клинитка <span class="part-info-desctop">эстетической</span> стоматологии</span>
-                  </h2>
-                  </div>
-                  <div class="popup__wrapper__img-row">
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic1-1.jpg" alt="Клинический случай 3">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic1-2.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="popup__wrapper__img-row">
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic2-3.jpg" alt="">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic2-4.jpg" alt="">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic2-5.jpg" alt="">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic2-6.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="popup__wrapper__img-row">
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic1-7.jpg" alt="">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic1-8.jpg" alt="">
-                    </div>
-                  </div>
-                </div>
-                <div class="popup__description">
-                  <h3 class="popup__description__title">Клинический случай</h3>
-                  <p>Пациент 43 года. Обращение в клинику в связи с отсутствием жевательной группы зубов вверху справа. Имплантация в этой области усложняется отсутствием нужного объема кости из за низкого расположения бухты гайморовой пазухи. Имплантация  по классической методике сопровождалась бы очень длительным и дорогостоящим лечением, в связи с костной подсадкой.</p>
-                  <h3 class="popup__description__title">План лечения</h3>
-                  <p>Было принято решение создания хирургического плана лечения с использованием 3D компьютерного моделирования и шаблона.<br>
-                  В день операции было установлено 2 импланта в минимальный объем кости, При этом был осуществлен обход гайморовой пазухи.</p>
-                  <h3 class="popup__description__title">Результат</h3>
-                  <p>Через 3 месяца работа была полностью закончена, Пациент ушёл с постоянной керамической работой.</p>
-                  <h3 class="popup__description__title">Врачи</h3>
-                  <p>Алиева</p>
-                  <a class="btn header__buttons__order uppercase popup__btn" href="#">Записаться на прием</a>
-                </div>
-              </div>
-            </div>
-            <div class="popups"> 
-              <h2 class="popups__title">Имплантации на беззубых челюстях</h2>
-              <div class="popups__wrapper">
-                <div class="popups__img">
-                  <div class="logo">
-                    <picture class="icon">
-                      <source srcset = "img/logo-big.png" media = "(min-width: 768px)">
-                      <img srcset="img/logo-mini.png" alt="NobelDent клиника эстетической стоматологии">
-                    </picture>
-                    <h2 class="logo__h2">
-                      <span class="part-color">Nobel</span>Dent<br>
-                    <span class="part-info">клинитка <span class="part-info-desctop">эстетической</span> стоматологии</span>
-                  </h2>
-                  </div>
-                  <div class="popup__wrapper__img-row">
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic1-1.jpg" alt="Клинический случай 4">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic1-2.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="popup__wrapper__img-row">
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic2-3.jpg" alt="">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic2-4.jpg" alt="">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic2-5.jpg" alt="">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic2-6.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="popup__wrapper__img-row">
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic1-7.jpg" alt="">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic1-8.jpg" alt="">
-                    </div>
-                  </div>
-                </div>
-                <div class="popup__description">
-                  <h3 class="popup__description__title">Клинический случай</h3>
-                  <p>Пациентка в 36 летнем возрасте обратилась в клинику с жалобами на невозможность носить частично съемный протез в связи с повышенным рвотным рефлексом. В полости рта нейлоновый съемный протез с опорами на 16 и 22/23 зубы. Оставшиеся зубы имели 2-3 степень подвижности. Сильная атрофия кости верхней челюсти справа, во фронтальном и боковом участках. Клинический случай усложнялся низким расположением бухты гайморовой пазухи. Со слов пациента, до момента обращения в нашу клинику, ранее уже проводился синус-лифтинг (поднятие бухты гайморовой пазухи ) и была произведена установка имплантов, что в свою очередь ни к чему не привело. Некоторую часть имплантов пациент потерял ещё до обращения в нашу клинику.</p>
-                  <h3 class="popup__description__title">План лечения</h3>
-                  <p>Было принято решение об одномоментной установке новых имплантов с удалением части ранее установленных (не нами) имплантов.<br> 
-                  Благодаря 3Д планированию и определённому расположению имплантов, что способствовало правильно нагрузить каждый из участков челюсти, нам удалось устранить клиническую проблему Клиента. <br>
-                  После проведения ряда манипуляций в день операции нам не удалось нагрузить сразу импланты зубами, с учетом анатомической специфики ситуации. Это мы сделали спустя 1,5 месяца. После всех отказов, с которыми пациент столкнулся в других клиниках, для него этот вариант оказался просто сказочным.</p>
-                  <h3 class="popup__description__title">Результат</h3>
-                  <p>Через 1,5 месяца работа была полностью закончена.</p>
-                  <h3 class="popup__description__title">Врачи</h3>
-                  <p>Макаренко</p>
-                  <a class="btn header__buttons__order uppercase popup__btn" href="#">Записаться на прием</a>
-                </div>
-              </div>
-            </div>
-            <div class="popups"> 
-              <h2 class="popups__title">Имплантации по методу All on 4</h2>
-              <div class="popups__wrapper">
-                <div class="popups__img">
-                  <div class="logo">
-                    <picture class="icon">
-                      <source srcset = "img/logo-big.png" media = "(min-width: 768px)">
-                      <img srcset="img/logo-mini.png" alt="NobelDent клиника эстетической стоматологии">
-                    </picture>
-                    <h2 class="logo__h2">
-                      <span class="part-color">Nobel</span>Dent<br>
-                    <span class="part-info">клинитка <span class="part-info-desctop">эстетической</span> стоматологии</span>
-                  </h2>
-                  </div>
-                  <div class="popup__wrapper__img-row">
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic1-1.jpg" alt="Клинический случай 5">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic1-2.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="popup__wrapper__img-row">
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic2-3.jpg" alt="">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic2-4.jpg" alt="">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic2-5.jpg" alt="">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic2-6.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="popup__wrapper__img-row">
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic1-7.jpg" alt="">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic1-8.jpg" alt="">
-                    </div>
-                  </div>
-                </div>
-                <div class="popup__description">
-                  <h3 class="popup__description__title">Клинический случай</h3>
-                  <p>Пациент в 43 года обратился в клинику в связи с полным отсутствием зубов на верхней челюсти и с желанием установить несъёмную конструкцию на имплантах. После множества консультаций, полученных не в нашей клинике, у пациента сформировалось ошибочное и устойчивое мнение, что зубная имплантация будет связана с более чем 12 месячным хождением без зубов в момент приживле5ния костной подсадки и интеграции имплантов.</p>
-                  <h3 class="popup__description__title">План лечения</h3>
-                  <p>Было принято решение об имплантации по технологии All on 4 с одномоментной нагрузкой временной конструкции.<br>
-                  Объединение нескольких хирургических и пластических методик, позволило в день операции установить сразу несъемную конструкцию.</p>
-                  <h3 class="popup__description__title">Результат</h3>
-                  <p>С учетом плотности кости 1 типа, а также достаточной первичной стабильности имплантов, прошло всего 1,5 месяца между операцией и моментом фиксации постоянной работы.</p>
-                  <h3 class="popup__description__title">Врачи</h3>
-                  <p>Матяш</p>
-                  <a class="btn header__buttons__order uppercase popup__btn" href="#">Записаться на прием</a>
-                </div>
-              </div>
-            </div>
-            <div class="popups"> 
-              <h2 class="popups__title">Имплантации по методу All on 4</h2>
-              <div class="popups__wrapper">
-                <div class="popups__img">
-                  <div class="logo">
-                    <picture class="icon">
-                      <source srcset = "img/logo-big.png" media = "(min-width: 768px)">
-                      <img srcset="img/logo-mini.png" alt="NobelDent клиника эстетической стоматологии">
-                    </picture>
-                    <h2 class="logo__h2">
-                      <span class="part-color">Nobel</span>Dent<br>
-                    <span class="part-info">клинитка <span class="part-info-desctop">эстетической</span> стоматологии</span>
-                  </h2>
-                  </div>
-                  <div class="popup__wrapper__img-row">
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic1-1.jpg" alt="Клинический случай 6">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic1-2.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="popup__wrapper__img-row">
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic2-3.jpg" alt="">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic2-4.jpg" alt="">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic2-5.jpg" alt="">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic2-6.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="popup__wrapper__img-row">
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic1-7.jpg" alt="">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic1-8.jpg" alt="">
-                    </div>
-                  </div>
-                </div>
-                <div class="popup__description">
-                  <h3 class="popup__description__title">Клинический случай</h3>
-                  <p>Пациент в 43 года обратился в клинику в связи с полным отсутствием зубов на верхней челюсти и с желанием установить несъёмную конструкцию на имплантах. После множества консультаций, полученных не в нашей клинике, у пациента сформировалось ошибочное и устойчивое мнение, что зубная имплантация будет связана с более чем 12 месячным хождением без зубов в момент приживле5ния костной подсадки и интеграции имплантов.</p>
-                  <h3 class="popup__description__title">План лечения</h3>
-                  <p>Было принято решение об имплантации по технологии All on 4 с одномоментной нагрузкой временной конструкции.<br>
-                  Объединение нескольких хирургических и пластических методик, позволило в день операции установить сразу несъемную конструкцию.</p>
-                  <h3 class="popup__description__title">Результат</h3>
-                  <p>С учетом плотности кости 1 типа, а также достаточной первичной стабильности имплантов, прошло всего 1,5 месяца между операцией и моментом фиксации постоянной работы.</p>
-                  <h3 class="popup__description__title">Врачи</h3>
-                  <p>Стогний</p>
-                  <a class="btn header__buttons__order uppercase popup__btn" href="#">Записаться на прием</a>
-                </div>
-              </div>
-            </div>
-            <div class="popups"> 
-              <h2 class="popups__title">Имплантации по методу All on 4</h2>
-              <div class="popups__wrapper">
-                <div class="popups__img">
-                  <div class="logo">
-                    <picture class="icon">
-                      <source srcset = "img/logo-big.png" media = "(min-width: 768px)">
-                      <img srcset="img/logo-mini.png" alt="NobelDent клиника эстетической стоматологии">
-                    </picture>
-                    <h2 class="logo__h2">
-                      <span class="part-color">Nobel</span>Dent<br>
-                    <span class="part-info">клинитка <span class="part-info-desctop">эстетической</span> стоматологии</span>
-                  </h2>
-                  </div>
-                  <div class="popup__wrapper__img-row">
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic1-1.jpg" alt="Клинический случай 7">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic1-2.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="popup__wrapper__img-row">
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic2-3.jpg" alt="">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic2-4.jpg" alt="">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic2-5.jpg" alt="">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic2-6.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="popup__wrapper__img-row">
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic1-7.jpg" alt="">
-                    </div>
-                    <div class="popup__wrapper__img">
-                      <img src="img/before-after/popups/clinic1-8.jpg" alt="">
-                    </div>
-                  </div>
-                </div>
-                <div class="popup__description">
-                  <h3 class="popup__description__title">Клинический случай</h3>
-                  <p>Пациент в 43 года обратился в клинику в связи с полным отсутствием зубов на верхней челюсти и с желанием установить несъёмную конструкцию на имплантах. После множества консультаций, полученных не в нашей клинике, у пациента сформировалось ошибочное и устойчивое мнение, что зубная имплантация будет связана с более чем 12 месячным хождением без зубов в момент приживле5ния костной подсадки и интеграции имплантов.</p>
-                  <h3 class="popup__description__title">План лечения</h3>
-                  <p>Было принято решение об имплантации по технологии All on 4 с одномоментной нагрузкой временной конструкции.<br>
-                  Объединение нескольких хирургических и пластических методик, позволило в день операции установить сразу несъемную конструкцию.</p>
-                  <h3 class="popup__description__title">Результат</h3>
-                  <p>С учетом плотности кости 1 типа, а также достаточной первичной стабильности имплантов, прошло всего 1,5 месяца между операцией и моментом фиксации постоянной работы.</p>
-                  <h3 class="popup__description__title">Врачи</h3>
-                  <p>Стогний</p>
-                  <a class="btn header__buttons__order uppercase popup__btn" href="#">Записаться на прием</a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
 
   <!-- Modal header-order -->
   <div class="modal fade" id="modal__header-order" tabindex="-1" role="dialog" aria-labelledby="popup__header-order" aria-hidden="true">
@@ -1377,7 +840,7 @@
     </div>
   </div>
 
-
+  
 <!-- popup call-phone -->
 <div class="modal fade" id="modal__call-phone" tabindex="-1" role="dialog" aria-labelledby="call-phone" aria-hidden="true">
   <div class="modal-dialog modal-dialog__call-phone" role="document">
@@ -1415,15 +878,11 @@
     </div>
   </div>
 </div>
-
   <script src="js/fotorama.js"></script>
   <script src="js/jquery-3.2.1.min.js"></script> 
   <script src="js/maskedinput.js" type="text/javascript"></script>
-  <script src="js/jquery.quicksand.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
- 
   <script src="js/script.js"></script>
 </body>
 </html>

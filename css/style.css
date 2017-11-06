@@ -4036,6 +4036,54 @@ p.block-on-off {
   border: 10px solid #347aa5;
   border-radius: 50%;
 }
+/*Страница contacts*/
+.contacts__content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: auto;
+  text-align: justify;
+  justify-content: center;
+  font-size: 15px;
+  font-family: 'OpenSans-Regular', Arial, sans-serif;
+  color: #515151;
+}
+.contacts__h2 {
+  font-family: 'Raleway-Bold', Arial, sans-serif;
+  color: #e6007e;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.contacts__about {
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contacts__about__item {
+  width: 100%;
+  padding: 5px;
+  margin: 10px;
+ 
+}
+.contacts__about__item__adress {
+  margin: 10px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -4469,6 +4517,28 @@ p.block-on-off {
   .fieldset-wrapper____call-phone label {
     width: 48%;
   }
+/*Страница contacts*/
+  .contacts__content {
+    display: flex;
+    width: 76%;
+  }
+  .contacts__about__item {
+    width: 45%;
+  }
+  .contacts__about__item__adress {
+    width: 100%;
+  }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -5352,6 +5422,19 @@ form.form__order-fix {
   .modal-dialog__call-phone {
     max-width: 842px;
   }
+  /*contacts*/
+  .contacts__about__item {
+    width: 23%;
+  }
+  .contacts__about__item__adress {
+    margin: 0;
+  }
+
+
+
+
+
+
 
 
 }
