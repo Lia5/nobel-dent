@@ -2552,6 +2552,12 @@ button::-moz-focus-inner {
 .container-nav__item {
   margin-bottom: 10px;
 }
+.container-nav__item a{
+  color: #515151;
+}
+.container-nav__item a:hover{
+  color: #007bff;
+}
 .service__description {
   width: 100%;
   padding: 10px;
@@ -2712,14 +2718,14 @@ button::-moz-focus-inner {
   text-align: center;
 }
 .gallery-btn {
-  margin: 2% auto;
-  cursor: pointer;
-
-}
-.gallery-btn:hover {
+  margin: 52px auto;
+  border: none;
   color: #ffffff;
   background-color: #e6007e;
-  border: 1px solid #ffffff;;
+}
+.gallery-btn:hover {
+  cursor: pointer;
+  background-color: #E863AD;
 }
 
 .service__sidebar {
@@ -2995,6 +3001,9 @@ del.cross:before,
 .form__btn-yellow {
   background-color: #faa61a;
 }
+.form__btn-yellow:hover {
+  background-color: #F1C476;
+}
 .form__btn-cons {
   margin-right: 5px;
 }
@@ -3027,7 +3036,9 @@ del.cross:before,
 }
 
 /*discount__baner*/
-
+.service__discounts a:hover {
+  text-decoration: none;
+}
 .discount__baner {
   border-bottom: 2px dotted #527da8;
   padding: 12px 0;
@@ -3055,6 +3066,19 @@ del.cross:before,
   font-weight: 900;
   padding: 5px;
 }
+.discount__baner:hover .discount__baner__price-old {
+  cursor: pointer;
+  background-color: #5F97B9;
+
+}
+.discount__baner:hover .discount__baner__price-new {
+  cursor: pointer;
+  background-color: #E863AD;
+
+}
+.discount__baner:hover .discount__baner__price-old:before  {
+  border-left: 17px solid #5F97B9;
+}
 .discount__baner__wrapper--part {
   width: 50%;
 }
@@ -3065,7 +3089,7 @@ del.cross:before,
 }
 .discount__baner__price-new {
   position: relative;
-  background-color: #e6007e;
+  background-color: #e2509d;
 }
 .discount__baner__price-new:after {
   content: "";
@@ -3489,6 +3513,9 @@ p.block-on-off {
   background-color: #e6007e;
   color: #ffffff;
 }
+#filter a.active:hover {
+  background-color: #E863AD;
+}
 #container {
   width: 100%;
 }
@@ -3508,7 +3535,9 @@ p.block-on-off {
   z-index: 0;
   transition-duration: 0.3s;
 }
-
+#filter a:hover {
+   background-color: #5F97B9;
+}
 .filter a::after {
   box-sizing: border-box;
   position: absolute;
@@ -4392,7 +4421,7 @@ p.block-on-off {
     padding-right: 20px;
   }
   .service__img-wrapper img {
-    max-width: 305px;
+    max-width: 48% /*305px*/;
   }
   .note__item {
     display: flex;
@@ -4466,6 +4495,88 @@ p.block-on-off {
     width: 34%;
   }
 
+
+
+  .service__sidebar .main-menu {
+    width: none;
+    font-size: 14px;
+  }
+  .service__sidebar .main-menu .icon-angle-down {
+    display: block;
+  }
+  .service__sidebar .main-menu__items {
+    display: block;
+    width: 100%;
+  }
+  .service__sidebar .main-menu__item i.icon-angle-down {
+    right: 14px;
+  }
+  .service__sidebar .accordion   { 
+    text-transform: none; 
+  }
+  .service__sidebar .accordion .link {
+    padding: 15px;
+  }
+  .service__sidebar .accordion li:first-child .link {
+    padding-left: 15px;
+  }
+  .service__sidebar .accordion li:last-child .link {
+    padding-right: 15px;
+  }
+
+
+  .service__sidebar .submenu {
+    display: block;
+    position: static;
+    background-color: #f4f3f3;
+    color: #000000;
+  }
+  .service__sidebar .main-menu__item .submenu {
+    display: none!important;
+  }  
+  .service__sidebar .open .submenu {
+    display: block!important;
+  }
+
+  .service__sidebar .submenu__item {
+    border-bottom: 1px solid #4b4a5e;
+  }
+  .service__sidebar .submenu a {
+    color: #000000;
+  }
+  .service__sidebar .submenu__link,
+  .service__sidebar .submenu__link--open {    
+    min-width: auto; 
+    color: #6383E7;
+    padding: 12px;
+    padding-left: 42px;
+  }
+  .service__sidebar .submenu__link:hover,
+  .service__sidebar .submenu__link--open:hover{
+    color: #ffffff;
+  }
+  .service__sidebar .subsubmenu__items {
+    display: none;
+    font-size: 15px;
+    line-height: 1.15;
+    padding: 0;
+  }
+  .service__sidebar .open {
+    display: block;
+  }
+  .service__sidebar .subsubmenu__item {
+    padding: 6px 26px 6px 60px;
+  }
+  .service__sidebar .subsubmenu__item:hover a {
+    color: #ffffff;
+  }
+  .service__sidebar .open .hr {
+    display: none;
+  }
+
+
+
+
   .block-on-off__wrapper {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -4484,6 +4595,13 @@ p.block-on-off {
   
   .fix-form {
     display: block;
+  }
+  .fix-form .form__order:hover {
+    background-color: #E863AD;
+    cursor: pointer;
+  }
+  .footer {
+    padding: 40px 0;
   }
   /*about*/
   .certificate__item {
@@ -5276,82 +5394,7 @@ form.form__order-fix {
 
 
 
-  .service__sidebar .main-menu {
-    width: none;
-    font-size: 14px;
-  }
-  .service__sidebar .main-menu .icon-angle-down {
-    display: block;
-  }
-  .service__sidebar .main-menu__items {
-    display: block;
-    width: 100%;
-  }
-  .service__sidebar .main-menu__item i.icon-angle-down {
-    right: 14px;
-  }
-  .service__sidebar .accordion   { 
-    text-transform: none; 
-  }
-  .service__sidebar .accordion .link {
-    padding: 15px;
-  }
-  .service__sidebar .accordion li:first-child .link {
-    padding-left: 15px;
-  }
-  .service__sidebar .accordion li:last-child .link {
-    padding-right: 15px;
-  }
-
-
-  .service__sidebar .submenu {
-    display: block;
-    position: static;
-    background-color: #f4f3f3;
-    color: #000000;
-  }
-  .service__sidebar .main-menu__item .submenu {
-    display: none!important;
-  }  
-  .service__sidebar .open .submenu {
-    display: block!important;
-  }
-
-  .service__sidebar .submenu__item {
-    border-bottom: 1px solid #4b4a5e;
-  }
-  .service__sidebar .submenu a {
-    color: #000000;
-  }
-  .service__sidebar  .submenu__link,
-  .service__sidebar  .submenu__link--open {    
-    min-width: none; 
-    color: #6383E7;
-    padding: 12px;
-    padding-left: 42px;
-  }
-  .service__sidebar .submenu__link:hover
-  .service__sidebar .submenu__link--open:hover{
-    color: #ffffff;
-  }
-  .service__sidebar .subsubmenu__items {
-    display: none;
-    font-size: 15px;
-    line-height: 1.15;
-    padding: 0;
-  }
-  .service__sidebar .open {
-    display: block;
-  }
-  .service__sidebar .subsubmenu__item {
-    padding: 6px 26px 6px 60px;
-  }
-  .service__sidebar .subsubmenu__item:hover a {
-    color: #ffffff;
-  }
-  .service__sidebar .open .hr {
-    display: none;
-  }
+ 
   .send-wrapper .form__btn {
     white-space: nowrap;
   }
