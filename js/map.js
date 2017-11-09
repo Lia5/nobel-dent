@@ -89,6 +89,14 @@ function initMap2() {
   var locations = [
 		{
 			title: 'NobelDent',
+			position: {lat: 50.395391, lng: 30.616117},
+			icon: {
+				url: "img/logo-metro.png",
+				scaledSize: new google.maps.Size(35, 35)
+			}
+		},
+		{
+			title: 'NobelDent',
 			position: {lat: 50.388958, lng: 30.625908},
 			icon: {
 				url: "img/marker.png",
