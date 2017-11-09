@@ -770,7 +770,7 @@ input {
   border: none;
   height: 22px;    /* Меньше, чем рисованная "кнопочка" на ширину нужного border'а */
   line-height: 22px;
-  padding-left: 30px;
+  padding-left: 22px;
   position: relative;    /* Это нужно, чтобы работал z-index */
   background: none;    /* Через прозрачный фон будет видно кнопку */
   z-index: 3;
@@ -4944,7 +4944,7 @@ p.block-on-off {
     right: 4%;
   }
   .icon-globe {
-    left: 10px;
+    left: 6px;
   }
   .select-language {
     margin-right: 15px;
@@ -4953,7 +4953,7 @@ p.block-on-off {
   #select-language {
     width: 128px;
     margin-right: 10px;
-    padding-left: 39px;
+    padding-left: 31px;
   }
   .header__buttons__question {
     margin: 2%;
