@@ -361,6 +361,7 @@ $(document).ready(function() {
 
 
  //fix button order
+ /*
 $(document).ready(function() {
   
   var winPos, endPos;
@@ -379,7 +380,7 @@ $(document).ready(function() {
     }
   });
 });
-
+*/
 
 
 
