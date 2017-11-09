@@ -2866,6 +2866,9 @@ del.cross:before,
   background: rgba(0,0,0,0) url(../img/cross.svg) no-repeat;
   background-size:100% 100%; /* растягивает фон на всю ширину и высоту блока */
 }
+.currency {
+  text-align: right;
+}
 .service__question {
   width: 100%;
   display: flex;

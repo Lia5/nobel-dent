@@ -419,6 +419,16 @@ $('.send-wrapper span').click(function() {
   $('.send-wrapper p').toggleClass('close');
 });
 
+/*price*/
+
+$('#currency__name__ru').click(function()   {
+  $('.cost__ru').removeClass('close');
+  $('.cost__ua').addClass('close');
+});
+$('#currency__name__ua').click(function()   {
+  $('.cost__ua').removeClass('close');
+  $('.cost__ru').addClass('close');
+});
 //service__sidebar__form
 
 function getName (str){
@@ -585,3 +595,5 @@ $(document).ready(function(){
   });
 });
   
+
+
