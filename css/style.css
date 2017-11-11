@@ -2505,7 +2505,7 @@ button::-moz-focus-inner {
   justify-content: center;
   width: 100%;
   padding: 30px;
-  margin-right: 35px;
+  margin-right: 20px;
   background-color: #f4f3f3;
   text-align: center;
 }
